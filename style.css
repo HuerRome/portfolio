@@ -1,0 +1,243 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=PT+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Inter:wght@300&family=Montserrat:wght@700&family=PT+Mono&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Inter:wght@300&family=Montserrat:wght@700&family=PT+Mono&family=Roboto:wght@300&family=Shadows+Into+Light&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Inspiration&family=Inter:wght@300&family=Montserrat:wght@700&family=PT+Mono&family=Roboto:wght@300&family=Shadows+Into+Light&family=Sora:wght@300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Inspiration&family=Inter:wght@300&family=Montserrat:wght@700&family=PT+Mono&family=Roboto:wght@300&family=Shadows+Into+Light&family=Sora:wght@300;400;600;800&display=swap');
+
+:root{
+    --bg-white: rgba(151, 151, 151, 0.3);
+    --br: 5px;
+    --border: solid 1px rgba(255, 255, 255, 0.5);
+    --black: #212121;
+    --gray: #131212;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Sora,Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body{
+    width: 100%;
+    height: auto;
+}
+
+#particles-js{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, #141e30, #243b55);;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    
+    background: #000428;  
+    background: -webkit-linear-gradient(to bottom, #004e92, #000428);  
+    background: linear-gradient(to bottom, #004e92, #000428);
+}
+
+.container{
+    width: 100%;
+    position: absolute;
+}
+
+/*-----------------------------------------------------menu responsive----------------------------------------------------------*/
+.container .links{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    z-index: 1000;
+}
+
+.container .links strong{
+    font-family: 'Inspiration','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #62edd1;
+    font-size: 30px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #62edd1;   
+}
+
+.links div{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+
+.links div a{
+    font-size: 17px;
+    color: #c7d3ff;
+}
+
+.links div a span{
+    color: #62edd1;
+}
+
+/*------------------Boton dia noche------------------*/
+
+label{
+    position: relative;
+    /*top: -150px;*/
+    width: 100px;/*150*/
+    height: 50px;/*75*/
+    background: #212121;
+    border-radius: 10px;
+}
+
+label input{
+    appearance: none;
+}
+
+label span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px; /*75*/
+    height: 50px; /*75*/
+    background: #333;
+    border: 6px solid #212121;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label input:checked ~ span{
+    left: 50px; /*75*/
+}
+
+label span ion-icon{
+    color: rgba(255, 255, 255, 0.25);
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+
+label input:checked ~ span ion-icon{
+    color: rgba(255, 255, 255, 1);
+    filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff) drop-shadow(0 0 15px #fff);
+}
+/*
+.bulb{
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 348px;
+    height: 408px;
+    pointer-events: none;
+    background: url(bulb_off.jpg);
+    transition: 0.5s;
+}
+
+label input:checked ~ .bulb{
+    background: url(bulb_on.jpg);
+
+}
+*/
+
+/*--------------------------------------------body------------------------------------------------*/
+main{
+    width: 100%;
+    height: auto;
+    top: 80px;
+    position: absolute;
+}
+
+/*---------------------start---------------------*/
+main .start{
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    gap: 15px;
+}
+
+main .start small{
+    color: #52dee5;
+    font-size: 30px;
+    line-height: 36px;
+    font-family: 'Fira Code';
+    font-weight: 4000;
+}
+
+main .start strong{
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 96px;
+    color: #c7d3ff;
+}
+
+main .start span{
+    font-weight: 400;
+    font-size: 60px;
+    color: #a1abbf;
+    line-height: 60px;
+}
+
+main .start p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #a1abbf;
+    width: 60%;
+}
+
+main .start p span{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #52dee5;
+}
+
+main .start div{
+    display: flex;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+main .start div a{
+    width: 200px;
+    height: 45px;
+    border: 2px solid #52dee5;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .start div a:first-child{
+    color: #52dee5;
+}
+
+main .start div a:last-child{
+    color: #0a192f;
+    background: #52dee5;
+}
+
+
+
+
+
+
+
+
+
