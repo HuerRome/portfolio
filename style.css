@@ -1,10 +1,10 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=PT+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;1,200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Inter:wght@300&family=Montserrat:wght@700&family=PT+Mono&family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Inter:wght@300&family=Montserrat:wght@700&family=PT+Mono&family=Roboto:wght@300&family=Shadows+Into+Light&display=swap');*/
+
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Inspiration&family=Inter:wght@300&family=Montserrat:wght@700&family=PT+Mono&family=Roboto:wght@300&family=Shadows+Into+Light&family=Sora:wght@300;400;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Inspiration&family=Inter:wght@300&family=Montserrat:wght@700&family=PT+Mono&family=Roboto:wght@300&family=Shadows+Into+Light&family=Sora:wght@300;400;600;800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fira+Code&family=Inspiration&family=Inter:wght@300&family=Montserrat:wght@700&family=PT+Mono&family=Roboto:wght@300&family=Shadows+Into+Light&family=Sora:wght@300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fira+Code&family=Inspiration&family=Inter:wght@300&family=Montserrat:wght@700&family=PT+Mono&family=Roboto:wght@300&family=Shadows+Into+Light&family=Sora:wght@300;400;600;800&display=swap');
+
 :root{
     --bg-white: rgba(151, 151, 151, 0.3);
     --br: 5px;
@@ -33,7 +33,7 @@ body{
 
 #particles-js{
     width: 100%;
-    height: auto;
+    height: 100vh;
     background: linear-gradient(to right, #141e30, #243b55);;
     background: #0F2027;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
@@ -47,10 +47,12 @@ body{
     background: -webkit-linear-gradient(to bottom, #004e92, #000428);  
     background: linear-gradient(to bottom, #003392, #11152b);
     background: #11152b;
+    position: relative;
 }
 
 .container{
     width: 100%;
+    height: 100%;
     position: absolute;
 }
 
@@ -329,34 +331,26 @@ label input:checked ~ span ion-icon{
     }
 }
 
-/*--------------------------------------------body------------------------------------------------*/
-/*main
-    width: 100%;
-    height: auto;   
-    position: absolute;
-    background: #04e6b7;
-}*/
+/*--------------------------------------------body----------------------------------------------*/
 /*---------------------start---------------------*/
-.start{
-    top: 75px;
+.container > .start{
     width: 100%;
-    position: absolute;
-    top: 75px;
-    display: flex;
-    flex-wrap: wrap;
-    background: #004e92;
-}
-
-.start > div:first-child{
-    width: 60vw;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.start small{
+.container > .start > div:first-child{
+    width: calc(100vw - 350px - 6vw - 45px);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 75px;
+    padding-left: 6vw;
+}
+
+.container > .start small{
     font-size: 28px;
     line-height: 36px;
     font-family: 'Fira Code';
@@ -365,7 +359,7 @@ label input:checked ~ span ion-icon{
 }
 
 /*------------------------------------*/
-.start strong{
+.container > .start strong{
     font-weight: 800;
     font-size: 93px;
     line-height: 93px;
@@ -379,7 +373,7 @@ label input:checked ~ span ion-icon{
     color: transparent;
 }
 
-.start strong{
+.container > .start strong{
     animation: fluido 13s ease-in-out infinite;
     background: linear-gradient(-45deg,#ee7752,#8e6de7, #23a6d5, #23d5ab);
     background-size: 300%;
@@ -395,14 +389,14 @@ label input:checked ~ span ion-icon{
 }
 /*---------------------------------------*/
 
-main .start span{
+.container > .start span{
     font-weight: 400;
     font-size: 50px;
     line-height: 50px;
     color: rgba(255, 255, 255, 0.8);
 }
 
-main .start p{
+.container > .start p{
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -410,20 +404,20 @@ main .start p{
     width: 50%;
 }
 
-main .start p span{
+.container > .start p span{
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: rgb(82, 222, 229);
 }
 
-main .start > div:first-child div{
+.container > .start > div:first-child div{
     display: flex;
     gap: 25px;
     margin-top: 60px;
 }
 
-main .start > div:first-child div a{
+.container > .start > div:first-child div a{
     font-size: 16px;
     width: 200px;
     height: 45px;
@@ -437,13 +431,13 @@ main .start > div:first-child div a{
     box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
-main .start > div:first-child div a:first-child{
+.container > .start > div:first-child div a:first-child{
     color: #52dee5;
     border: 2px solid #52dee5;
     backdrop-filter: blur(3px);
 }
 
-main .start > div:first-child div a:first-child:hover{
+.container .start > div:first-child div a:first-child:hover{
     color: #11152b;
     background: #d9a7c7;  
     background: -webkit-linear-gradient(to bottom, #ffffff, #baa7d9);  
@@ -451,7 +445,7 @@ main .start > div:first-child div a:first-child:hover{
     border: 1px solid rgba(167, 168, 217, 0.02);
 }
 
-main .start > div:first-child div a:last-child{
+.container .start > div:first-child div a:last-child{
     color: #11152b;
     font-weight: 500;
     background: #d9a7c7;  
@@ -460,7 +454,7 @@ main .start > div:first-child div a:last-child{
     border: 1px solid rgba(167, 168, 217, 0.02); 
 }
 
-main .start > div:first-child div a:last-child ion-icon{
+.container .start > div:first-child div a:last-child ion-icon{
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
@@ -469,14 +463,14 @@ main .start > div:first-child div a:last-child ion-icon{
     font-size: 20px;
 }
 
-main .start > div:first-child div a:last-child:hover{
+.container .start > div:first-child div a:last-child:hover{
     border: 2px solid #52dee5;
     color: #52dee5;
     background: transparent;
     backdrop-filter: blur(3px);
 }
 
-main .start > div:first-child div a:last-child:hover ion-icon{
+.container > .start > div:first-child div a:last-child:hover ion-icon{
     color: #52dee5;
 }
 
@@ -492,12 +486,58 @@ main .start > div:first-child div a:last-child:hover ion-icon{
 .code{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
-.code div{
-    background: #39a2ff;
+.code > div{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(200deg, #3B4264, #262c4e, #11152b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(200deg, #3B4264, #262c4e, #11152b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    background: linear-gradient(200deg, rgba(59, 66, 100, 0.9), rgba(41, 48, 85, 0.9), rgba(17, 21, 43, 0.9));
+    backdrop-filter: blur(3px);
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.18);
     width: 350px;
-    height: 170px;
+    height: 175px;
+    padding: 28px 0 0px 30px;
+}
+.code > div:last-child{
+    margin-left: 50px;
+}
+
+.start .code div p{
+    font-family: Barlow,Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    width: 100%;
+}
+
+.start .code div div{
+    margin-left: 15px;
+}
+
+.start .code > div p .span{
+    color: #ec91ff;
+    margin-right: 5px;
+    font-family: Barlow,Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.start .code > div .comment{
+    color: #586c7a;
+}
+
+.start .code div div p span{
+    color: #73d9ff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-weight: normal;
+    text-decoration: none;
+    display: flex;
+    font-family: Barlow,Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 5px;
 }
 /*-------------------------------------------------main-----------------------------------------------*/
 

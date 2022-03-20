@@ -13,3 +13,4 @@ button.addEventListener('click',()=>{
 })
 
 /*--------------------*/
+console.log(window.innerWidth);
