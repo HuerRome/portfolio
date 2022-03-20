@@ -18,6 +18,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Sora,Arial, Helvetica, sans-serif;
+    color: blue;
 }
 
 a{
@@ -166,7 +167,7 @@ label input:checked ~ span ion-icon{
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
-        transition: transform 330ms ease-out;
+        transition: transform 200ms ease-out;
     }  
     .wrapper-menu.open {
         transform: rotate(-45deg);  
