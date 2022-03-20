@@ -18,7 +18,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Sora,Arial, Helvetica, sans-serif;
-    color: blue;
 }
 
 a{
@@ -251,11 +250,7 @@ label input:checked ~ span ion-icon{
         opacity: 1;
         background-color: rgba(17, 21, 43, 0.9);
     }
-
-    main{
-        display: none;
-    }
-
+    
     .container .links-cel{
         width: 100%;
     }
@@ -267,7 +262,6 @@ label input:checked ~ span ion-icon{
         justify-content: center;
         align-items: center;    
     }
-
     /*.menu div:first-child a{
         text-align: center;
         width: 100%;
@@ -277,8 +271,6 @@ label input:checked ~ span ion-icon{
         -webkit-box-shadow: 0px 8px 7px -6px rgba(68,255,153,0.75);
         -moz-box-shadow: 0px 8px 7px -6px rgba(68,255,153,0.75);
     }*/
-
-    
     .menu div:first-child div{
         border-radius: 1px;
         width: 100%;
@@ -338,27 +330,33 @@ label input:checked ~ span ion-icon{
 }
 
 /*--------------------------------------------body------------------------------------------------*/
-main{
+/*main
     width: 100%;
-    height: auto;
-    top: 80px;
+    height: auto;   
     position: absolute;
+    background: #04e6b7;
+}*/
+/*---------------------start---------------------*/
+.start{
+    top: 75px;
+    width: 100%;
+    position: absolute;
+    top: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #004e92;
 }
 
-/*---------------------start---------------------*/
-main .start{
-    width: 100%;
-    height: calc(100vh - 100px);
+.start > div:first-child{
+    width: 60vw;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 90px;
     gap: 4px;
-
 }
 
-main .start small{
-    color: #52dee5;
+.start small{
     font-size: 28px;
     line-height: 36px;
     font-family: 'Fira Code';
@@ -367,7 +365,7 @@ main .start small{
 }
 
 /*------------------------------------*/
-main .start strong{
+.start strong{
     font-weight: 800;
     font-size: 93px;
     line-height: 93px;
@@ -381,7 +379,7 @@ main .start strong{
     color: transparent;
 }
 
-main .start strong{
+.start strong{
     animation: fluido 13s ease-in-out infinite;
     background: linear-gradient(-45deg,#ee7752,#8e6de7, #23a6d5, #23d5ab);
     background-size: 300%;
@@ -419,13 +417,13 @@ main .start p span{
     color: rgb(82, 222, 229);
 }
 
-main .start div{
+main .start > div:first-child div{
     display: flex;
     gap: 25px;
     margin-top: 60px;
 }
 
-main .start div a{
+main .start > div:first-child div a{
     font-size: 16px;
     width: 200px;
     height: 45px;
@@ -439,13 +437,13 @@ main .start div a{
     box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
-main .start div a:first-child{
+main .start > div:first-child div a:first-child{
     color: #52dee5;
     border: 2px solid #52dee5;
     backdrop-filter: blur(3px);
 }
 
-main .start div a:first-child:hover{
+main .start > div:first-child div a:first-child:hover{
     color: #11152b;
     background: #d9a7c7;  
     background: -webkit-linear-gradient(to bottom, #ffffff, #baa7d9);  
@@ -453,7 +451,7 @@ main .start div a:first-child:hover{
     border: 1px solid rgba(167, 168, 217, 0.02);
 }
 
-main .start div a:last-child{
+main .start > div:first-child div a:last-child{
     color: #11152b;
     font-weight: 500;
     background: #d9a7c7;  
@@ -462,7 +460,7 @@ main .start div a:last-child{
     border: 1px solid rgba(167, 168, 217, 0.02); 
 }
 
-main .start div a:last-child ion-icon{
+main .start > div:first-child div a:last-child ion-icon{
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
@@ -471,30 +469,33 @@ main .start div a:last-child ion-icon{
     font-size: 20px;
 }
 
-main .start div a:last-child:hover{
+main .start > div:first-child div a:last-child:hover{
     border: 2px solid #52dee5;
     color: #52dee5;
     background: transparent;
     backdrop-filter: blur(3px);
 }
 
-main .start div a:last-child:hover ion-icon{
+main .start > div:first-child div a:last-child:hover ion-icon{
     color: #52dee5;
 }
 
 /*wave effect*/
-.code{
-    display: flex;
-    flex-direction: column;
+/*.code{
     position: absolute;
     top: 0;
     left: auto;
     right: 90px;
-    bottom: auto;
+    bottom: 0;
     margin: auto;
+}*/
+.code{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .code div{
-    background: #004e92;
+    background: #39a2ff;
     width: 350px;
     height: 170px;
 }
