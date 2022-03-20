@@ -150,6 +150,13 @@ label input:checked ~ span ion-icon{
     color: rgba(255, 255, 255, 1);
     filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff) drop-shadow(0 0 15px #fff);
 }
+@media (max-width: 480px){
+    .menu div:first-child a{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+}
 
 @media (max-width: 768px){
     .wrapper-menu {
@@ -216,7 +223,7 @@ label input:checked ~ span ion-icon{
     
     .menu{
         position: absolute;
-        top: 69px;
+        top: 67px;
         right: 0;
         left: -61%;
         bottom: 0;
@@ -228,7 +235,7 @@ label input:checked ~ span ion-icon{
         height: calc(100vh - 70px);
         max-height: 450px;
         padding: 4.5vh 0 4vh 0;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s ease-in-out;
         backdrop-filter: blur(7px);
         box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.18);
         border-radius: 0 6px 6px 0;
@@ -272,10 +279,11 @@ label input:checked ~ span ion-icon{
 
     
     .menu div:first-child div{
+        border-radius: 1px;
         width: 100%;
         height: 2px;
         margin: 15px 0;
-        background: #04e6b7;
+        background: rgba(4, 230, 183, 0.9);
         box-shadow: 0px 2px 6px 1px rgba(68,255,153,0.66);
         -webkit-box-shadow: 0px 2px 6px 1px rgba(68,255,153,0.66);
         -moz-box-shadow: 0px 2px 6px 1px rgba(68,255,153,0.66);
@@ -307,7 +315,7 @@ label input:checked ~ span ion-icon{
 
     .links-cel{
         width: 100%;
-        height: 70px;
+        height: 68px;
         display: flex;
         position: fixed;
         justify-content: space-between;
