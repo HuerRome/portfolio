@@ -64,7 +64,6 @@ body{
     align-items: center;
     padding: 0 30px;
     z-index: 1000;
-    border-bottom: 1px solid white;
     backdrop-filter: blur(7px);
     box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.18);
     background-color: rgba(17, 21, 43, 0.3);
@@ -87,7 +86,7 @@ body{
 .links div{
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 2.4vw;
     align-items: center;
 }
 
@@ -108,13 +107,12 @@ body{
 /*------------------Boton dia noche------------------*/
 label{
     position: relative;
-    /*top: -150px;*/
-    width: 100px;/*150*/
-    height: 50px;/*75*/
+    width: 100px;
+    height: 50px;
     background: #1a274b;
     backdrop-filter: blur(20px);
     border-radius: 10px;
-    margin-left: 20px;
+    margin-left: 2.3vw;
 }
 
 label input{
@@ -171,6 +169,8 @@ label input:checked ~ span ion-icon{
         border-radius: 2.5px;
         width: 100%;
         height: 3px;
+        color: rgba(255, 255, 255, 1);
+        filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff) drop-shadow(0 0 15px #fff);
     }  
     .line-menu.half {
         width: 50%;
@@ -200,6 +200,7 @@ label input:checked ~ span ion-icon{
         width: 90px;
         height: 45px;
         border-radius: 8px;
+        margin-left: 0;
     }
     
     label span{
@@ -215,26 +216,80 @@ label input:checked ~ span ion-icon{
     
     .menu{
         position: absolute;
-        top: 70px;
+        top: 69px;
         right: 0;
-        left: 0;
+        left: -61%;
         bottom: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        width: 50%;
+        width: 60%;
         height: calc(100vh - 70px);
-        background: #004e92;
-        padding: 8vh 0 4vh 0;
+        max-height: 450px;
+        padding: 4.5vh 0 4vh 0;
+        transition: all 0.3s ease-in-out;
+        backdrop-filter: blur(7px);
+        box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.18);
+        border-radius: 0 6px 6px 0;
+        border-right: 1px solid rgba(255, 255, 255, 0.05);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        opacity: 1;
+        background: transparent;
+    }
+    
+    .menu.active{
+        left: 0;
+        opacity: 1;
+        background-color: rgba(17, 21, 43, 0.9);
+    }
+
+    main{
+        display: none;
+    }
+
+    .container .links-cel{
+        width: 100%;
     }
 
     .menu div:first-child{
+        width: 80%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        gap: 5vh;
+        align-items: center;    
+    }
+
+    /*.menu div:first-child a{
+        text-align: center;
+        width: 100%;
+        padding: 2.4vh 0;
+        border-bottom: 1px solid rgb(68, 255, 153);
+        box-shadow: 0px 8px 7px -6px rgba(68,255,153,0.75);
+        -webkit-box-shadow: 0px 8px 7px -6px rgba(68,255,153,0.75);
+        -moz-box-shadow: 0px 8px 7px -6px rgba(68,255,153,0.75);
+    }*/
+
+    
+    .menu div:first-child div{
+        width: 100%;
+        height: 2px;
+        margin: 15px 0;
+        background: #04e6b7;
+        box-shadow: 0px 2px 6px 1px rgba(68,255,153,0.66);
+        -webkit-box-shadow: 0px 2px 6px 1px rgba(68,255,153,0.66);
+        -moz-box-shadow: 0px 2px 6px 1px rgba(68,255,153,0.66);
+
+    }
+
+    .menu div:last-child{
+        display: flex;
+        gap: 5vw;
+    }
+
+    .menu div:last-child a{
+        color: #c7d3ff;
+        font-size: 18px;
     }
 
     .container .links-cel strong{
@@ -257,7 +312,7 @@ label input:checked ~ span ion-icon{
         position: fixed;
         justify-content: space-between;
         align-items: center;
-        padding: 0 30px;
+        padding: 0 10px 0 20px;
         z-index: 1000;
         border-bottom: 1px solid white;
         backdrop-filter: blur(7px);
@@ -302,6 +357,7 @@ main .start small{
     color: #04e6b7;
 }
 
+/*------------------------------------*/
 main .start strong{
     font-weight: 800;
     font-size: 93px;
@@ -309,19 +365,34 @@ main .start strong{
     margin-top: 6px;
     margin-bottom: 30px;
     color: #d56de7;
-    background-image: linear-gradient(to right,#8e6de7,#9a72f6,#5dbeff,#d56de7);
+    background-image: linear-gradient(to right,#8e6de7,#d56de7,#5dbeff,#d56de7);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
+main .start strong{
+    animation: fluido 13s ease-in-out infinite;
+    background: linear-gradient(-45deg,#ee7752,#8e6de7, #23a6d5, #23d5ab);
+    background-size: 300%;
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes fluido {
+    0% { background-position: 0 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0 50% }
+}
+/*---------------------------------------*/
+
 main .start span{
     font-weight: 400;
     font-size: 50px;
-    color: #a1abbf;
     line-height: 50px;
-    color: #c7d3ff;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 main .start p{
@@ -336,7 +407,7 @@ main .start p span{
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    color: #52dee5;
+    color: rgb(82, 222, 229);
 }
 
 main .start div{
@@ -346,9 +417,9 @@ main .start div{
 }
 
 main .start div a{
+    font-size: 16px;
     width: 200px;
     height: 45px;
-    border: 2px solid #52dee5;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -356,27 +427,68 @@ main .start div a{
     box-shadow: -1px 2px 17px 0px rgba(0,0,0,0.6);
     -webkit-box-shadow: -1px 2px 17px 0px rgba(0,0,0,0.6);
     -moz-box-shadow: -1px 2px 17px 0px rgba(0,0,0,0.6);
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 main .start div a:first-child{
     color: #52dee5;
+    border: 2px solid #52dee5;
+    backdrop-filter: blur(3px);
+}
+
+main .start div a:first-child:hover{
+    color: #11152b;
+    background: #d9a7c7;  
+    background: -webkit-linear-gradient(to bottom, #ffffff, #baa7d9);  
+    background: linear-gradient(to bottom, #ffffff, #cfaae7); 
+    border: 1px solid rgba(167, 168, 217, 0.02);
 }
 
 main .start div a:last-child{
-    color: #0a192f;
-    background: #52dee5;
+    color: #11152b;
+    font-weight: 500;
+    background: #d9a7c7;  
+    background: -webkit-linear-gradient(to bottom, #ffffff, #baa7d9);  
+    background: linear-gradient(to bottom, #ffffff, #cfaae7);
+    border: 1px solid rgba(167, 168, 217, 0.02); 
 }
 
-main .start div a:last-child span{
+main .start div a:last-child ion-icon{
     font-size: 20px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: 700;
     color: #0a192f;
-    margin-left: 10px;
+    margin-left: 9px;
+    font-size: 20px;
+}
+
+main .start div a:last-child:hover{
+    border: 2px solid #52dee5;
+    color: #52dee5;
+    background: transparent;
+    backdrop-filter: blur(3px);
+}
+
+main .start div a:last-child:hover ion-icon{
+    color: #52dee5;
 }
 
 /*wave effect*/
-
+.code{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 90px;
+    bottom: auto;
+    margin: auto;
+}
+.code div{
+    background: #004e92;
+    width: 350px;
+    height: 170px;
+}
 /*-------------------------------------------------main-----------------------------------------------*/
 
 
