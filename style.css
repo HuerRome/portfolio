@@ -185,7 +185,7 @@ label input:checked ~ span ion-icon{
         width: 50%;
     } 
     .line-menu.start {
-        transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+        transition: transform 200ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
         transform-origin: right;
     }
     .open .line-menu.start {
@@ -193,7 +193,7 @@ label input:checked ~ span ion-icon{
     } 
     .line-menu.end {
         align-self: flex-end;
-        transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+        transition: transform 200ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
         transform-origin: left;
     }
     .open .line-menu.end {
