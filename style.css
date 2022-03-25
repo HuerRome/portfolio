@@ -716,9 +716,7 @@ label input:checked ~ span ion-icon{
 
 @media (max-width: 320px){
     .container .introduction > div:first-child small{
-      /*font-weight: 400;*/
       font-size: 18px;
-      /*line-height: 25px;*/
     }
     .container .introduction > div:first-child strong{
         font-weight: 800;
@@ -753,7 +751,7 @@ label input:checked ~ span ion-icon{
 
 @media (max-width: 320px) and (max-height: 470px){
     .container .introduction > div:first-child small{
-        font-size: 17px;
+        font-size: 1px;
     }
     .container .introduction > div:first-child strong{
         font-size: 39px;
