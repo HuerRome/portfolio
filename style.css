@@ -338,15 +338,16 @@ label input:checked ~ span ion-icon{
     width: calc(100vw - 350px - 6vw - 4.6vw - 4vw);
     display: flex;
     flex-direction: column;
-    margin-top: 9vh;
-    
+    margin-top: 13vh;
+    opacity: 0;
+    transition: all 0.5s ease-out;
 }
 
 .container > .introduction small{
     font-size: 28px;
     line-height: 36px;
     font-family: 'Fira Code';
-    font-weight: 4000;
+    font-weight: 400;
     color: #04e6b7;
 }
 
@@ -404,7 +405,7 @@ label input:checked ~ span ion-icon{
     color: rgb(82, 222, 229);
 }
 
-.container > .introduction > div:first-child div{
+.container > .introduction > div:first-child > div{
     display: flex;
     gap: 25px;
     margin-top: 11.2vh;
@@ -466,7 +467,7 @@ label input:checked ~ span ion-icon{
 .container > .introduction > div:first-child div a:last-child:hover ion-icon{
     color: #52dee5;
 }
-
+/*-------------------------------------targetas de codigo------------------------------------------*/
 .code{
     display: flex;
     flex-direction: column;
@@ -553,6 +554,8 @@ label input:checked ~ span ion-icon{
         color: #edf2f5;
     }
 }
+
+
 
 /*-----------media queries--------------*/
 
@@ -749,5 +752,15 @@ label input:checked ~ span ion-icon{
 }
 
 /*-------------------------------------------------main-----------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Mono&family=Roboto:wght@300&display=swap');
+        *{margin: 0;padding: 0;box-sizing: border-box;font-family: Montserrat, sans-serif;}
+        body{width: 100%;}
+        nav{position: fixed;top: 0;width: 100%;height: auto;}
+        nav.up{top: calc(-27px - 0.1em);}
+        .navbar{width: 100%;display: flex;align-items: center;justify-content: start;padding: 0.1em 1vw;gap: 1vw;border-bottom: 3px solid #084e46;background: #ffff;}
+        .navbar a{font-size: 12px; border: none;text-decoration: none;padding: 4px 0.7vw;border-radius: 0.5em;}
+        .btn{color: rgba(0, 0, 0, 0.7);}
+        .active, .btn:hover{background:#084e46;color: #ffff;} 
+        
+        @media (max-width: 900px){
+            nav a{padding: 4px 0.5em;}
+        }
+        /*menu*/
+  </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="index.html" class="btn a"><strong>AgroVenti</strong> <small>Market</small></a>
+            <a href="new.html" class="btn a"><strong>AgroVenti</strong> <small>News</small></a>
+            <a href="pay.html" class="btn a"><strong>AgroVenti</strong> <small>Pay</small></a>
+        </div>
+    </nav>
+
+    <script>
+        const currentLocation= location.href;
+        const menuItem= document.querySelectorAll(".a");
+        const menuLength= menuItem.length;
+        for(let i=0; i<menuLength; i++){
+            if(menuItem[i].href === currentLocation){
+                menuItem[i].className="active";
+            }
+        }
+        //menu scroll
+        let menu= document.querySelector("nav");
+        window.addEventListener("scroll",() => {
+          menu.classList.toggle("up", window.scrollY>50)
+        })
+    </script>
+</body>
+</html>
+
+</body>
+</html>
+
+
+
+
+

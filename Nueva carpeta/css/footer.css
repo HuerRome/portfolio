@@ -1,0 +1,192 @@
+/*-----------------------------footer-----------------------------*/
+/*primer div*/
+footer > div:first-child{
+    background: rgba(0, 0, 0, 0.85);
+    padding: 2.2em 5%;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+}
+footer div #icon{
+    font-size: 30px;
+}
+footer > div:first-child div div{display: flex;flex-direction: row;}
+footer > div:first-child div div strong{
+    font-size: 16px;
+    width: 13em;
+}
+footer > div:first-child div div input{
+    width: 26.5em;
+    height: 3.1em;
+    padding-left: 1.5em;
+    border-radius: 9px;
+    border: 1px solid rgba(0, 0, 0, 0.0);
+}
+footer > div:first-child div a{
+    color: #fff;
+    display: grid;
+    place-items: center;
+    width: 13em;
+    height: 3.1em;
+    font-size: 14px;
+    border-radius: 9px;
+    background: #084e46;
+    
+}
+
+footer > div:first-child div{
+   display: flex;
+   gap: 1em;
+}
+/*segundo div*/
+footer > div:nth-child(2){
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 3.3em 8%;
+    gap: 2%;
+    background: rgba(0, 0, 0, 0.75);
+}
+footer .links > div{
+    width: 23.5%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 0.8em;
+}
+
+footer .links > div strong{
+    padding-bottom: 0.8em;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+footer .links > div a{
+    color: #fff;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+footer .links div:last-child p{
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    line-height: 1.8em;
+}
+footer .links div:last-child p strong{border-bottom: none;}
+footer .links > div:last-child div span{
+    padding: 0.35em;
+    margin-right: 0.3em;
+    font-size: 23px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+}
+footer .links > div:last-child{
+    gap: 2em;
+}
+/*tercer div*/
+footer > div:last-child{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: center;
+    color: rgba(255, 255, 255,0.4);
+    background: rgba(8, 8, 8, 0.8);
+}
+footer > div:last-child small a{
+    color: rgba(255, 255, 255,0.4);
+}
+
+footer > div:last-child span{margin-right: 5px;}
+
+/*media queries*/
+@media (max-width:768px){
+    footer > div:first-child{
+        background: rgba(0, 0, 0, 0.7);
+    }
+    footer > div:first-child, footer > div:first-child div{
+        flex-direction: column;
+    }
+    footer > div:first-child #icon{
+        width: 100vw;
+        font-size: 28px;
+        padding: 0.6em;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.3);
+    }
+    footer > div:first-child > div{
+        padding: 0 0.4em;
+        width: 100%;
+    }
+    footer > div:first-child div > a{
+        background: #1b7dda;
+    }
+    footer > div:first-child div div strong{
+        margin: 1em 0 0.8em 0;
+        text-align: center;
+        margin-right: 0;
+        font-size: 10px;
+    }
+    footer > div:first-child div div strong,
+    footer > div:first-child div div input,
+    footer > div:first-child div > a,
+    footer > div:first-child > div div
+    {
+        width: 100%;
+    }
+    footer .links{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .links > div{
+        width: 60%;
+        text-align:  center;
+        margin-bottom: 2.2em;
+    }
+    footer .links > div:last-child{
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width:1024px){
+    footer > div:last-child{
+        justify-content: flex-start;
+        padding-left: 1em;
+    }
+    footer .links > div:last-child div span{
+        padding: 0.32em;
+        margin-right: 0.2em;
+        font-size: 19px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.2);
+    }
+    footer > div:nth-child(2){
+        padding: 3.3em 4%;
+    }
+    footer .links > div strong{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:1200px){
+    footer > div:first-child div div{
+        flex-direction: column;
+    }
+    footer > div:first-child div{
+        align-items: flex-end;
+    }
+    footer > div:first-child div div strong{
+        width: 100%;
+        font-size: 16px;
+    }
+    footer > div:first-child{
+        padding: 1.3em 2%;
+    }
+}
+@media (max-width:870px){
+    footer > div:last-child{
+        padding-right: 35%;
+    }
+}
