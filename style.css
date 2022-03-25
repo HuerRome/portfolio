@@ -434,8 +434,8 @@ label input:checked ~ span ion-icon{
 .container .introduction > div:first-child div a:first-child:hover{
     color: #11152b;
     background: #d9a7c7;  
-    background: -webkit-linear-gradient(to bottom, #ffffff, #baa7d9);  
-    background: linear-gradient(to bottom, #ffffff, #cfaae7); 
+    background: -webkit-linear-gradient(to bottom, #ffffff, #ddbbf3);  
+    background: linear-gradient(to bottom, #ffffff, #ddbbf3); 
     border: 1px solid rgba(167, 168, 217, 0.02);
 }
 
@@ -443,8 +443,8 @@ label input:checked ~ span ion-icon{
     color: #11152b;
     font-weight: 500;
     background: #d9a7c7;  
-    background: -webkit-linear-gradient(to bottom, #ffffff, #baa7d9);  
-    background: linear-gradient(to bottom, #ffffff, #cfaae7);
+    background: -webkit-linear-gradient(to bottom, #ffffff, #ddbbf3);  
+    background: linear-gradient(to bottom, #ffffff, #ddbbf3);
     border: 1px solid rgba(167, 168, 217, 0.02); 
 }
 
