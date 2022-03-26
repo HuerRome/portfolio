@@ -70,7 +70,10 @@ body{
     box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.18);
     background-color: rgba(17, 21, 43, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.5s ease-in-out;
 }
+
+
 
 .container .links strong, .container .links-cel strong{
     font-family: 'Inspiration','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -313,6 +316,7 @@ label input:checked ~ span ion-icon{
         box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.18);
         background-color: rgba(17, 21, 43, 0.3);
         border: 1px solid rgba(255, 255, 255, 0.05);
+        transition: all 0.3s ease-in;
     }
 }
 
@@ -554,8 +558,6 @@ label input:checked ~ span ion-icon{
         color: #edf2f5;
     }
 }
-
-
 
 /*-----------media queries--------------*/
 
