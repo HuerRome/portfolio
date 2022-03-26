@@ -109,8 +109,8 @@ body{
 /*------------------Boton dia noche------------------*/
 label{
     position: relative;
-    width: 100px;
-    height: 50px;
+    width: 90px;
+    height: 45px;
     background: #1a274b;
     backdrop-filter: blur(20px);
     border-radius: 10px;
@@ -125,8 +125,8 @@ label span{
     position: absolute;
     top: 0;
     left: 0;
-    width: 50px; /*75*/
-    height: 50px; /*75*/
+    width: 45px; 
+    height: 45px; 
     background: #304275;
     border: 6px solid #1a274b;
     backdrop-filter: blur(20px);
@@ -139,12 +139,12 @@ label span{
 }
 
 label input:checked ~ span{
-    left: 50px; /*75*/
+    left: 45px; 
 }
 
 label span ion-icon{
     color: rgba(255, 255, 255, 0.3);
-    font-size: 1.5em;
+    font-size: 1.4em;
     transition: 0.5s;
 }
 
@@ -152,12 +152,12 @@ label input:checked ~ span ion-icon{
     color: rgba(255, 255, 255, 1);
     filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff) drop-shadow(0 0 15px #fff);
 }
+
 @media (max-width: 480px){
     .menu div:first-child a{
         font-size: 16px;
         font-weight: 400;
     }
-
 }
 
 @media (max-width: 768px){
@@ -206,23 +206,23 @@ label input:checked ~ span ion-icon{
     } 
 
     label{
-        width: 90px;
-        height: 45px;
+        width: 84px;
+        height: 40px;
         border-radius: 8px;
         margin-left: 0;
     }
     
     label span{
-        width: 45px; 
-        height: 45px; 
+        width: 42px; 
+        height: 42px; 
         border: 6px solid #1a274b;
         border-radius: 10px;
     }
 
     label input:checked ~ span{
-        left: 45px; 
+        left: 42px; 
     }
-    
+
     .menu{
         position: absolute;
         top: 67px;
@@ -301,7 +301,7 @@ label input:checked ~ span ion-icon{
 
     .links-cel{
         width: 100%;
-        height: 68px;
+        height: 62px;
         display: flex;
         position: fixed;
         justify-content: space-between;
@@ -442,7 +442,7 @@ label input:checked ~ span ion-icon{
 .container .introduction > div:first-child div a:last-child{
     color: #11152b;
     font-weight: 500;
-    background: #d9a7c7;  
+    background: #f1c4e1;  
     background: -webkit-linear-gradient(to bottom, #ffffff, #e1c1f7);  
     background: linear-gradient(to bottom, #ffffff, #e1c1f7);
     border: 1px solid rgba(167, 168, 217, 0.02); 
@@ -667,12 +667,10 @@ label input:checked ~ span ion-icon{
         line-height: 24px;  
         width: 90%;     
     }
+
     .container > .introduction > div:first-child div{
         display: flex;
-        gap: 25px;
         margin-top: 11.2vh;
-    }
-    .container .introduction > div:first-child div{
         gap: 4%;
         justify-content: space-between;
         font-weight: 400;
@@ -716,7 +714,7 @@ label input:checked ~ span ion-icon{
 
 @media (max-width: 320px){
     .container .introduction > div:first-child small{
-      font-size: 1px;
+      font-size: 17px;
     }
     .container .introduction > div:first-child strong{
         font-weight: 800;
@@ -751,7 +749,7 @@ label input:checked ~ span ion-icon{
 
 @media (max-width: 320px) and (max-height: 470px){
     .container .introduction > div:first-child small{
-        font-size: 1px;
+        font-size: 17px;
     }
     .container .introduction > div:first-child strong{
         font-size: 39px;
