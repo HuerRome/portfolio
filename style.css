@@ -703,7 +703,7 @@ label input:checked ~ span ion-icon{
     }
     .container .introduction > div:first-child small{
         font-weight: 400;
-        font-size: 2px;
+        font-size: 18px;
         line-height: 30px;
     }
     .menu{
