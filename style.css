@@ -46,6 +46,17 @@ body{
     background: #11152b;
 }
 
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('img/loader3.gif') 50% 50% no-repeat #000810;
+    
+}
+
 /*-----------------------------------------------------menu responsive----------------------------------------------------------*/
 .links{
     width: 100%;
@@ -264,7 +275,7 @@ label input:checked ~ span ion-icon{
     }
 
     .menu div:last-child a{
-        font-size: 18px;
+        font-size: 22px;
         color: rgba(255, 255, 255, 0.8);
     }
 
@@ -310,16 +321,14 @@ label input:checked ~ span ion-icon{
         font-weight: 400;
     }
     .links-cel{
-        height: 62px;
+        height: 64px;
     }
     .menu{
-        top: 62px;
+        top: 63px;
     }
 }
 
-
 /*--------------------------------------------body----------------------------------------------*/
-
 .introduction{
     width: 100%;
     display: flex;
@@ -336,46 +345,8 @@ label input:checked ~ span ion-icon{
 
 .container > .introduction > .code{
     width: calc(25vw + 30px);
-    margin: 0 5.3vw 0 4vw;
+    margin: 0 6vw 0 3.3vw;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .container .introduction header small{
     font-size: 28px;
@@ -450,10 +421,12 @@ label input:checked ~ span ion-icon{
 }
 
 .container .introduction header div a:first-child{
-    color: #52dee5;
-    border: 2px solid #52dee5;
+    border: 2px solid #21ebff;
+    color: #21ebff;
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+    background: transparent;
     backdrop-filter: blur(3px);
-    box-shadow: 0 0 10px 0 #52dee5 inset, 0 0 10px 4px #52dee5;
 }
 
 .container .introduction header div a:first-child:hover{
@@ -462,6 +435,7 @@ label input:checked ~ span ion-icon{
     background: -webkit-linear-gradient(to bottom, #ffffff, #f0dbff);  
     background: linear-gradient(to bottom, #ffffff, #f0dbff); 
     border: 1px solid rgba(167, 168, 217, 0.02);
+    box-shadow: 0 0 50px #212121; 
 }
 
 .container .introduction header div a:last-child{
@@ -471,6 +445,7 @@ label input:checked ~ span ion-icon{
     background: -webkit-linear-gradient(to bottom, #ffffff, #f0dbff);  
     background: linear-gradient(to bottom, #ffffff, #f0dbff);
     border: 1px solid rgba(167, 168, 217, 0.02); 
+    box-shadow: 0 0 50px #212121; 
 }
 
 .container .introduction header div a:last-child ion-icon{
@@ -483,8 +458,10 @@ label input:checked ~ span ion-icon{
 }
 
 .container .introduction header div a:last-child:hover{
-    border: 2px solid #52dee5;
-    color: #52dee5;
+    border: 2px solid #21ebff;
+    color: #21ebff;
+    box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
     background: transparent;
     backdrop-filter: blur(3px);
 }
@@ -818,23 +795,6 @@ label input:checked ~ span ion-icon{
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .code{
     display: flex;
     flex-direction: column;
@@ -892,10 +852,6 @@ label input:checked ~ span ion-icon{
     font-family: Barlow,Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 5px;
 }
-
-
-
-
 
 /*-----------------------------animacion-----------------------------*/
 .code div p .line1{
