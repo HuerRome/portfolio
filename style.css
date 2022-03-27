@@ -27,21 +27,11 @@ a{
 body{
     width: 100%;
     height: auto;
-    background: #000428;
-
-}
-
-#particles-js{
-    width: 100%;
-    height: auto;
-    background: linear-gradient(to right, #141e30, #243b55);;
-    
-    
+    background: #11152b;
 }
 
 .container{
     width: 100%;
-    background: #000428;  
     background: #11152b;
     background: -webkit-linear-gradient(to bottom, #075da8, #000428);  
     background: linear-gradient(30deg, #11152b,#11152b,#3b4264e6);
@@ -51,8 +41,9 @@ body{
     background: linear-gradient(to right, #061700, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
     background: #0F2027;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    background: -webkit-linear-gradient(to top, #2C5364, #203A43, #11152b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top,#11152b,#293055e6, #3b4264e6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+    background: #11152b;
 }
 
 /*-----------------------------------------------------menu responsive----------------------------------------------------------*/
@@ -155,18 +146,6 @@ label input:checked ~ span ion-icon{
     filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff) drop-shadow(0 0 15px #fff);
 }
 
-@media (max-width: 480px){
-    .menu div:first-child a{
-        font-size: 16px;
-        font-weight: 400;
-    }
-    .links-cel{
-        height: 62px;
-    }
-    .menu{
-        top: 62px;
-    }
-}
 
 @media (max-width: 768px){
     .wrapper-menu {
@@ -193,7 +172,7 @@ label input:checked ~ span ion-icon{
         width: 50%;
     } 
     .line-menu.start {
-        transition: transform 200ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+        transition: transform 100ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
         transform-origin: right;
     }
     .open .line-menu.start {
@@ -201,7 +180,7 @@ label input:checked ~ span ion-icon{
     } 
     .line-menu.end {
         align-self: flex-end;
-        transition: transform 200ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+        transition: transform 100ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
         transform-origin: left;
     }
     .open .line-menu.end {
@@ -324,6 +303,20 @@ label input:checked ~ span ion-icon{
         display: none;
     }
 }
+
+@media (max-width: 480px){
+    .menu div:first-child a{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .links-cel{
+        height: 62px;
+    }
+    .menu{
+        top: 62px;
+    }
+}
+
 
 /*--------------------------------------------body----------------------------------------------*/
 
@@ -466,8 +459,8 @@ label input:checked ~ span ion-icon{
 .container .introduction header div a:first-child:hover{
     color: #11152b;
     background: #d9a7c7;  
-    background: -webkit-linear-gradient(to bottom, #ffffff, #ecd1ff);  
-    background: linear-gradient(to bottom, #ffffff, #ecd1ff); 
+    background: -webkit-linear-gradient(to bottom, #ffffff, #f0dbff);  
+    background: linear-gradient(to bottom, #ffffff, #f0dbff); 
     border: 1px solid rgba(167, 168, 217, 0.02);
 }
 
@@ -475,8 +468,8 @@ label input:checked ~ span ion-icon{
     color: #11152b;
     font-weight: 500;
     background: #f1c4e1;  
-    background: -webkit-linear-gradient(to bottom, #ffffff, #ecd1ff);  
-    background: linear-gradient(to bottom, #ffffff, #ecd1ff);
+    background: -webkit-linear-gradient(to bottom, #ffffff, #f0dbff);  
+    background: linear-gradient(to bottom, #ffffff, #f0dbff);
     border: 1px solid rgba(167, 168, 217, 0.02); 
 }
 
@@ -507,7 +500,7 @@ label input:checked ~ span ion-icon{
     gap: 30px;
 }
 .code > div{
-    background: linear-gradient(200deg, rgba(59, 66, 100, 0.9), rgba(41, 48, 85, 0.9), rgba(17, 21, 43, 0.9));
+    background: linear-gradient(200deg, #3b4264e6, #293055e6, #11152b);
     backdrop-filter: blur(3px);
     box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.18);
     width: 25vw;
@@ -616,7 +609,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header > div{
-        margin: 12vh 0 12vh 0;
+        margin: 9vh 0 12vh 0;
     }
 
     .container > .introduction header strong{
@@ -640,7 +633,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header small{
-        margin-top: 9vh;
+        margin-top: 8vh;
         font-size: 25px;
         line-height: 36px;
         font-weight: 400;
@@ -660,7 +653,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header > div{
-        margin: 11vh 0 12vh 0;
+        margin: 8vh 0 12vh 0;
     }
 
     .container > .introduction header strong{
@@ -684,7 +677,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header small{
-        margin-top: 8vh;
+        margin-top: 7vh;
         font-size: 23px;
         line-height: 36px;
         font-weight: 400;
