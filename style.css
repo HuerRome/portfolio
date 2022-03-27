@@ -711,7 +711,7 @@ label input:checked ~ span ion-icon{
     }
 }
 
-@media (max-width: 320px){
+@media (max-width: 390px){
     .container .introduction .code{
         display: none;
     }
