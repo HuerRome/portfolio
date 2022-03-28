@@ -320,10 +320,10 @@ label input:checked ~ span ion-icon{
         font-weight: 400;
     }
     .links-cel{
-        height: 64px;
+        height: 62px;
     }
     .menu{
-        top: 63px;
+        top: 61px;
     }
 }
 
@@ -671,6 +671,11 @@ label input:checked ~ span ion-icon{
         line-height: 24px;
         font-weight: 400;
     }
+    .container .introduction header p span{
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 400;
+    }
 
     body .container .introduction header > div{
         margin: 9vh 0 12vh 0;
@@ -683,8 +688,8 @@ label input:checked ~ span ion-icon{
 
     .container > .introduction header strong{
         font-weight: 800;
-        font-size: 60px;
-        line-height: 55px;
+        font-size: 58px;
+        line-height: 52px;
     }
 }
 
@@ -715,6 +720,11 @@ label input:checked ~ span ion-icon{
     
     .container > .introduction header p{
         width: 85%;
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    .container .introduction header p span{
         font-size: 15px;
         line-height: 24px;
         font-weight: 400;
@@ -769,18 +779,25 @@ label input:checked ~ span ion-icon{
     .container > .introduction header p{
         width: 85%;
         font-size: 14px;
-        line-height: 24px;
+        line-height: 22px;
+        font-weight: 400;
+    }
+
+    .container .introduction header p span{
+        font-size: 15px;
+        line-height: 22px;
         font-weight: 400;
     }
 
     body .container .introduction header > div{
-        margin: 8vh 0 10vh 0;
+        margin: 8vh 0 12vh 0;
         width: 100%;
         gap: 4;
     }
     body .container .introduction header > div a{
         width: 48%;
         font-size: 13px;
+        height: 45px;
     }
     .container .introduction header div a:last-child ion-icon{
         margin-left: 5px;
@@ -789,8 +806,8 @@ label input:checked ~ span ion-icon{
 
     .container > .introduction header strong{
         font-weight: 800;
-        font-size: 58px;
-        line-height: 55px;
+        font-size: 56px;
+        line-height: 52px;
     }
 }
 
