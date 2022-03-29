@@ -21,7 +21,6 @@ window.addEventListener("load",()=>{
 })
 
 //menu scroll
-//menu scroll
 let menu= document.querySelector(".links");
 window.addEventListener("scroll",() => {
   menu.classList.toggle("up", window.scrollY>0)
@@ -32,13 +31,28 @@ window.addEventListener("scroll",() => {
   menu1.classList.toggle("up", window.scrollY>0)
 })
 
-/*let menu2= document.querySelector(".links-cel");
-let ubicacionPrincipal2 = window.pageYOffset;
-window.onscroll = function(){
-  let Desplazamiento_Actual = window.pageYOffset;
+//------------------go top button----------------------
+//Get the button:
+mybutton = document.getElementById("gotop");
 
-  ubicacionPrincipal2 >= Desplazamiento_Actual ? menu2.style.top = '0' : menu2.style.top = '-79px';
-}*/
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 170 || document.documentElement.scrollTop > 150) {
+    mybutton.classList.add('show');
+  } else {
+    mybutton.classList.remove("show");
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+mybutton.addEventListener("click",topFunction)
 
 /*--------------------*/
 console.log(window.innerWidth);

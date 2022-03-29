@@ -12,6 +12,8 @@
     --gray: #131212;
 }
 
+html{scroll-behavior: smooth;}
+
 *{
     margin: 0;
     padding: 0;
@@ -420,8 +422,8 @@ label input:checked ~ span ion-icon{
 }
 
 .container .introduction header div a:first-child{
-    border: 2px solid #21ebff;
-    color: #21ebff;
+    border: 2px solid hsl(185, 100%, 63%);
+    color: #51f1ff;
     box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
     transition: all 0.2s ease;
     background: transparent;
@@ -458,7 +460,7 @@ label input:checked ~ span ion-icon{
 
 .container .introduction header div a:last-child:hover{
     border: 2px solid #21ebff;
-    color: #21ebff;
+    color: #51f1ff;
     box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
     transition: all 0.2s ease;
     background: transparent;
@@ -530,7 +532,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header small{
-        margin-top: 10vh;
+        margin-top: 8vh;
     }
     body .container > .introduction header .span{
         margin: 4vh 0 1vh 0;
@@ -541,7 +543,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header > div{
-        margin: 10vh 0 12vh 0;
+        margin: 7vh 0 10vh 0;
     }
     .container .introduction header div a{
         font-size: 16px;
@@ -585,7 +587,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header > div{
-        margin: 9vh 0 9vh 0;
+        margin: 6vh 0 8vh 0;
     }
 
     .container > .introduction header strong{
@@ -609,7 +611,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header small{
-        margin-top: 8vh;
+        margin-top: 7vh;
         font-size: 25px;
         line-height: 36px;
         font-weight: 400;
@@ -629,7 +631,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header > div{
-        margin: 8vh 0 9vh 0;
+        margin: 6vh 0 9vh 0;
     }
 
     .container > .introduction header strong{
@@ -678,7 +680,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header > div{
-        margin: 9vh 0 12vh 0;
+        margin: 8.5vh 0 9vh 0;
         width: 100%;
         gap: 4;
     }
@@ -731,7 +733,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header > div{
-        margin: 8vh 0 12vh 0;
+        margin: 8vh 0 11vh 0;
         width: 100%;
         gap: 4;
     }
@@ -790,7 +792,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header > div{
-        margin: 8vh 0 12vh 0;
+        margin: 8vh 0 10vh 0;
         width: 100%;
         gap: 4;
     }
@@ -895,5 +897,67 @@ label input:checked ~ span ion-icon{
 @keyframes slidein2{
     100%{
         color: #edf2f5;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------boton de ir arriba-----------------*/
+#gotop{
+    width: 52px;
+    height: 50px;
+    z-index: 100;
+    top: auto;
+    bottom: 1.5em;
+    left: auto;
+    right: -52px;
+    margin: auto;
+    position: fixed;
+    border-radius: 10px 0 0 10px;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+#gotop.show{
+    right: 0;
+}
+@media only screen and (max-width: 768px){
+    #gotop{
+        width: 48px;
+        height: 46px;
+        border-radius: 9px 0 0 9px;
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    #gotop{
+        width: 44px;
+        height: 42px;
+        border-radius: 10px 0 0 10px;
+        font-size: 25px;
     }
 }
