@@ -233,7 +233,7 @@ label input:checked ~ span ion-icon{
         align-items: center;
         width: 60%;
         height: calc(100vh - 70px);
-        max-height: 480px;
+        max-height: 472px;
         padding: 4.5vh 0 4vh 0;
         transition: all 0.2s ease-in-out;
         backdrop-filter: blur(7px);
@@ -318,7 +318,7 @@ label input:checked ~ span ion-icon{
 
 @media (max-width: 480px){
     .menu div:first-child a{
-        font-size: 6px;
+        font-size: 14px;
         font-weight: 400;
     }
     .links-cel{
@@ -811,6 +811,9 @@ label input:checked ~ span ion-icon{
         font-weight: 800;
         font-size: 56px;
         line-height: 52px;
+    }
+    .menu div:first-child div{
+        margin: 14px 0;
     }
 }
 
