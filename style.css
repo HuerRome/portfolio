@@ -906,7 +906,7 @@ label input:checked ~ span ion-icon{
     height: 50px;
     z-index: 100;
     top: auto;
-    bottom: 1.6em;
+    bottom: 6vh;
     left: auto;
     right: -52px;
     margin: auto;
@@ -932,7 +932,7 @@ label input:checked ~ span ion-icon{
         width: 46px;
         height: 46px;
         font-size: 25px;
-        bottom: 1.9em;
+        bottom: 9vh;
     }
 }
 
