@@ -2,7 +2,7 @@
     width: 100%;
     background: #11152b;
     background: #212e75;
-    height: 800px;
+    height: 1700px;
     position: relative;
 }
 
@@ -107,7 +107,8 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: #3B4264;  
-  background-image: linear-gradient(to top,#8e6de7,#d56de7,#5dbeff,#d56de7); 
+  background-image: linear-gradient(to top,#8e6de7,#d56de7,#5dbeff);
+  /*background-image: linear-gradient(to top,#56ccf2, #2f80ed);*/
   border-radius: 20px;       
   border: 3px solid #262c4e;  
 }
