@@ -31,6 +31,15 @@ window.addEventListener("scroll",() => {
   menu1.classList.toggle("up", window.scrollY>0)
 })
 
+/*------------------scroll effect----------------------
+let progress = document.getElementById('progressbar');
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+
+window.onscroll = function(){
+  let progressHeight = (window.pageYOffset / totalHeight) * 100;
+  progress.style.height = progressHeight + "%";
+}*/
+
 //------------------go top button----------------------
 //Get the button:
 mybutton = document.getElementById("gotop");
