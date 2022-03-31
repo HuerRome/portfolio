@@ -78,7 +78,7 @@ body{
 }
 
 .links strong, .container .links-cel strong{
-    font-family: 'Inspiration','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inspiration', Tahoma, Geneva, Verdana, sans-serif;
     color: #62edd1;
     font-size: 30px; 
     display: flex;
@@ -352,7 +352,7 @@ label input:checked ~ span ion-icon{
 .container .introduction header small{
     font-size: 28px;
     line-height: 36px;
-    font-family: 'Fira Code';
+    font-family: 'Fira Code','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     color: #04e6b7;
 }
@@ -697,7 +697,7 @@ label input:checked ~ span ion-icon{
     body .container .introduction header > div a{
         width: 46%;
         font-size: 16px;
-        line-height: 24px;
+        line-height: 16px;
         height: 48px;
     }
     body .container .introduction header > div a:last-child{
