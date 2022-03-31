@@ -10,13 +10,24 @@
     flex-direction: column;
 }
 
-.about > h1{
+.about div:first-child{
+    display: flex;
+    align-items: center;
+}
+
+.about div:first-child h1{
     margin-bottom: 5vh;
     font-size: 36px;
     color: #c7d3ff;
     line-height: 40px;
     font-weight: 400;
     font-family: Sora,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about div:first-child div{
+    width: 25vw;
+    height: 2px;
+    background: rgba(255,255,255,0.3);
 }
 
 .about-container{

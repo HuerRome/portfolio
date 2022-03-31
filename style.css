@@ -655,7 +655,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header small{
-        margin-top: 4vh;
+        margin-top: 4.5vh;
         font-size: 20px;
         line-height: 32px;
         font-weight: 400;
@@ -674,7 +674,7 @@ label input:checked ~ span ion-icon{
         font-weight: 400;
     }
     .container .introduction header p span{
-        font-size: 15px;
+        font-size: 16px;
         line-height: 24px;
         font-weight: 400;
     }
@@ -697,7 +697,7 @@ label input:checked ~ span ion-icon{
 
     .container > .introduction header strong{
         font-weight: 800;
-        font-size: 54px;
+        font-size: 56px;
         line-height: 52px;
     }
 }
