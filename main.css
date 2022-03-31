@@ -7,6 +7,7 @@
     width: 100%;
     display: flex;
     background: #11152b;
+    background: #4a00e0;
     flex-direction: column;
 }
 
@@ -104,7 +105,7 @@ body::-webkit-scrollbar-thumb {
         font-family: Sora,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .about-container{
-        width: 80%;
+        width: 82%;
     }
     .about .about-container > .circle:first-child{
         width: 34vw; 
@@ -117,11 +118,11 @@ body::-webkit-scrollbar-thumb {
     
     .about .about-container .box .circle:first-child{
         margin-left: 15vw;
-        width: 24vw;
-        height: 24vw;
+        width: 26vw;
+        height: 26vw;
     }
     .about .about-container .box{
-        width: 39vw;
+        width: 41vw;
     }
     .about-container{
         height: 41vw;

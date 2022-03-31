@@ -322,10 +322,10 @@ label input:checked ~ span ion-icon{
         font-weight: 400;
     }
     .links-cel{
-        height: 62px;
+        height: 60px;
     }
     .menu{
-        top: 61px;
+        top: 59px;
     }
 }
 
@@ -761,7 +761,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header > div{
-        margin: 6vh 0 8vh 0;
+        margin: 7vh 0 8vh 0;
         width: 100%;
         gap: 5vw;
     }
