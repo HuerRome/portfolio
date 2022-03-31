@@ -656,22 +656,22 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header small{
-        margin-top: 4.6vh;
-        font-size: 22px;
-        line-height: 35px;
+        margin-top: 4.2vh;
+        font-size: 30px;
+        line-height: 36px;
         font-weight: 400;
     }
     body .container > .introduction header .span{
-        margin: 5vh 7vw 1.5vh 0;
+        margin: 5vh 8vw 1.5vh 0;
         font-weight: 400;
-        font-size: 27px;
-        line-height: 28px;
+        font-size: 35px;
+        line-height: 48px;
     }
     
     .container > .introduction header p{
         width: 85%;
         font-size: 16px;
-        line-height: 25px;
+        line-height: 24px;
         font-weight: 400;
     }
     .container .introduction header p span{
@@ -681,20 +681,22 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header > div{
-        margin: 8vh 0 8vh 0;
+        margin: 7vh 0 7vh 0;
         width: 100%;
         gap: 8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     body .container .introduction header > div a{
         width: 46%;
         font-size: 16px;
-        height: 45px;
+        line-height: 24px;
+        height: 48px;
     }
     body .container .introduction header > div a:last-child{
-        width: 46%;
-        padding: 2vw;
-        font-size: 16px;
-        height: 45px;
+        padding: 0 1vw 0 2vw;
+        width: auto;
     }
 
     .container .introduction header div a:last-child ion-icon{
@@ -704,8 +706,8 @@ label input:checked ~ span ion-icon{
 
     .container > .introduction header strong{
         font-weight: 800;
-        font-size: 56px;
-        line-height: 55px;
+        font-size: 58px;
+        line-height: 58px;
     }
 }
 
