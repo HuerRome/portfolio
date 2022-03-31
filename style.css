@@ -535,7 +535,7 @@ label input:checked ~ span ion-icon{
         margin-top: 8vh;
     }
     body .container > .introduction header .span{
-        margin: 4vh 0 1vh 0;
+        margin: 5vh 0 1.5vh 0;
     }
     
     .container > .introduction header p{
@@ -543,7 +543,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header > div{
-        margin: 7vh 0 10vh 0;
+        margin: 8vh 0 10vh 0;
     }
     .container .introduction header div a{
         font-size: 16px;
@@ -573,7 +573,7 @@ label input:checked ~ span ion-icon{
         font-weight: 400;
     }
     body .container > .introduction header .span{
-        margin: 3vh 0 1vh 0;
+        margin: 4vh 0 1vh 0;
         font-weight: 400;
         font-size: 48px;
         line-height: 48px;
@@ -611,13 +611,13 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header small{
-        margin-top: 4vh;
+        margin-top: 4.2vh;
         font-size: 25px;
         line-height: 36px;
         font-weight: 400;
     }
     body .container > .introduction header .span{
-        margin: 2.6vh 0 1vh 0;
+        margin: 3.5vh 0 1.5vh 0;
         font-weight: 400;
         font-size: 36px;
         line-height: 42px;
@@ -631,7 +631,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header > div{
-        margin: 4vh 0 6vh 0;
+        margin: 5.5vh 0 6vh 0;
     }
 
     .container > .introduction header strong{
@@ -655,13 +655,13 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header small{
-        margin-top: 3vh;
+        margin-top: 3.5vh;
         font-size: 20px;
         line-height: 32px;
         font-weight: 400;
     }
     body .container > .introduction header .span{
-        margin: 4vh 0 1vh 0;
+        margin: 4vh 0 1.5vh 0;
         font-weight: 400;
         font-size: 26px;
         line-height: 32px;
