@@ -993,6 +993,16 @@ label input:checked ~ span ion-icon{
         bottom: 5vh;
     }
 }
+@media (max-width: 480px) and (min-width: 370px){
+    #gotop{
+        width: 46px;
+        height: 46px;
+        font-size: 25px;
+        bottom: 5vh;
+        border: 2px solid #62edd1;
+    }
+
+}
 
 @media only screen and (max-width: 320px){
     #gotop{
