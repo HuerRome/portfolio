@@ -223,7 +223,7 @@ label input:checked ~ span ion-icon{
 
     .menu{
         position: absolute;
-        top: 67px;
+        top: 66px;
         right: 0;
         left: -61%;
         bottom: 0;
@@ -643,6 +643,12 @@ label input:checked ~ span ion-icon{
 }
 
 @media (max-width: 480px) and (min-width: 370px){
+    .links-cel{
+        height: 65px;
+    }
+    .menu{
+        top: 64px;
+    }
 
     .container .introduction .code{
         display: none;
@@ -656,16 +662,16 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header small{
-        margin-top: 4.2vh;
-        font-size: 30px;
-        line-height: 36px;
+        margin-top: 4.4vh;
+        font-size: 23px;
+        line-height: 35px;
         font-weight: 400;
     }
     body .container > .introduction header .span{
         margin: 5vh 8vw 1.5vh 0;
         font-weight: 400;
-        font-size: 35px;
-        line-height: 48px;
+        font-size: 27px;
+        line-height: 27px;
     }
     
     .container > .introduction header p{
@@ -695,8 +701,12 @@ label input:checked ~ span ion-icon{
         height: 48px;
     }
     body .container .introduction header > div a:last-child{
+        display: flex;
+        flex-direction: row;
         padding: 0 1vw 0 2vw;
         width: auto;
+        background: #075da8;
+        text-align: center;
     }
 
     .container .introduction header div a:last-child ion-icon{
