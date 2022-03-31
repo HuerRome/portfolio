@@ -661,16 +661,16 @@ label input:checked ~ span ion-icon{
         font-weight: 400;
     }
     body .container > .introduction header .span{
-        margin: 4vh 0 1.5vh 0;
+        margin: 5vh 0 1.5vh 0;
         font-weight: 400;
-        font-size: 26px;
-        line-height: 32px;
+        font-size: 25px;
+        line-height: 28px;
     }
     
     .container > .introduction header p{
         width: 85%;
         font-size: 15px;
-        line-height: 22px;
+        line-height: 21px;
         font-weight: 400;
     }
     .container .introduction header p span{
@@ -697,8 +697,8 @@ label input:checked ~ span ion-icon{
 
     .container > .introduction header strong{
         font-weight: 800;
-        font-size: 56px;
-        line-height: 52px;
+        font-size: 54px;
+        line-height: 50px;
     }
 }
 
