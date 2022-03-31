@@ -648,14 +648,14 @@ label input:checked ~ span ion-icon{
     }
     .container .introduction header{
         width: 100%;
-        margin: 0 7vw 0 8vw;      
+        margin: 0 7vw 0 7vw;      
     }
     .container .introduction{
         align-items: flex-start;
     }
 
     body .container .introduction header small{
-        margin-top: 3.5vh;
+        margin-top: 4vh;
         font-size: 20px;
         line-height: 32px;
         font-weight: 400;
@@ -680,7 +680,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header > div{
-        margin: 7vh 0 7vh 0;
+        margin: 8vh 0 7vh 0;
         width: 100%;
         gap: 5vw;
     }
