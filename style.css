@@ -718,7 +718,7 @@ label input:checked ~ span ion-icon{
 
     .container > .introduction header strong{
         font-weight: 800;
-        font-size: 54px;
+        font-size: 53px;
         line-height: 50px;
     }
 }
@@ -756,8 +756,8 @@ label input:checked ~ span ion-icon{
     }
     .container .introduction header p span{
         font-size: 15px;
-        line-height: 24px;
-        font-weight: 400;
+        line-height: 20px;
+        font-weight: lighter;
     }
 
     body .container .introduction header > div{
@@ -777,8 +777,8 @@ label input:checked ~ span ion-icon{
 
     .container > .introduction header strong{
         font-weight: 800;
-        font-size: 55px;
-        line-height: 53px;
+        font-size: 52px;
+        line-height: 52px;
     }
 }
 
@@ -810,14 +810,14 @@ label input:checked ~ span ion-icon{
     .container > .introduction header p{
         width: 85%;
         font-size: 12px;
-        line-height: 22px;
+        line-height: 20px;
         font-weight: 400;
     }
 
     .container .introduction header p span{
-        font-size: 15px;
-        line-height: 22px;
-        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: lighter;
     }
 
     body .container .introduction header > div{
