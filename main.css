@@ -31,6 +31,7 @@
 }
 
 .about-container{
+    background: #ca3dc3;
     top: 0;
     left: 0;
     right: 0;
@@ -52,13 +53,14 @@
     height: 30vw;
 }
 .about .about-container .box{
-    width: 29vw;
+    width: 31vw;
     position: absolute;
     margin: auto;
     top: 0;
     left: auto;
     right: 0;
     bottom: 0;
+    background: #5dbeff;
 }
 
 .about .about-container .box .circle{
@@ -67,7 +69,7 @@
 }
 
 .about .about-container .box .circle:first-child{
-    margin-left: 10vw;
+    margin-left: 12vw;
     width: 19vw;
     height: 19vw;
 }
@@ -93,5 +95,35 @@ body::-webkit-scrollbar-thumb {
 
 
 @media (max-width: 480px) and (min-width: 320px){
-
+    .about div:first-child h1{
+        margin-bottom: 5vh;
+        font-size: 18px;
+        color: #c7d3ff;
+        line-height: 40px;
+        font-weight: 400;
+        font-family: Sora,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .about-container{
+        width: 80%;
+    }
+    .about .about-container > .circle:first-child{
+        width: 34vw; 
+        height: 34vw;
+    }
+    .about .about-container .box .circle{
+        width: 20vw;
+        height: 20vw;
+    }
+    
+    .about .about-container .box .circle:first-child{
+        margin-left: 15vw;
+        width: 24vw;
+        height: 24vw;
+    }
+    .about .about-container .box{
+        width: 39vw;
+    }
+    .about-container{
+        height: 41vw;
+    }
 }
