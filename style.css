@@ -644,7 +644,7 @@ label input:checked ~ span ion-icon{
 
 @media (max-width: 480px) and (min-width: 370px){
     label{
-        width: 85px;
+        width: 83px;
         height: 44px;
         border-radius: 9px;
     }
@@ -657,11 +657,11 @@ label input:checked ~ span ion-icon{
     }
     
     label input:checked ~ span{
-        left: 41px; 
+        left: 39px; 
     }
     
     label span ion-icon{
-        font-size: 1.38em;
+        font-size: 1.4em;
     }
 
     .container .introduction .code{
@@ -682,8 +682,8 @@ label input:checked ~ span ion-icon{
         font-weight: 400;
     }
     body .container > .introduction header .span{
-        margin: 5vh 5vw 1.5vh 0;
-        font-weight: 400;
+        margin: 5vh 7vw 1.5vh 0;
+        font-weight: lighter;
         font-size: 26px;
         line-height: 28px;
     }
@@ -733,6 +733,7 @@ label input:checked ~ span ion-icon{
     }
     .container .introduction{
         align-items: flex-start;
+        background: #075da8;
     }
 
     body .container .introduction header small{
@@ -743,7 +744,7 @@ label input:checked ~ span ion-icon{
     }
     body .container > .introduction header .span{
         margin: 4vh 0 1.5vh 0;
-        font-weight: 400;
+        font-weight: lighter;
         font-size: 25px;
         line-height: 30px;
     }
