@@ -316,7 +316,7 @@ label input:checked ~ span ion-icon{
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 370px){
     .menu div:first-child a{
         font-size: 14px;
         font-weight: 400;
@@ -643,26 +643,6 @@ label input:checked ~ span ion-icon{
 }
 
 @media (max-width: 480px) and (min-width: 370px){
-    label{
-        width: 83px;
-        height: 44px;
-        border-radius: 9px;
-    }
-    
-    label span{
-        width: 44px; 
-        height: 44px; 
-        border: 5px solid #1a274b;
-        border-radius: 12px;
-    }
-    
-    label input:checked ~ span{
-        left: 39px; 
-    }
-    
-    label span ion-icon{
-        font-size: 1.4em;
-    }
 
     .container .introduction .code{
         display: none;
@@ -697,33 +677,59 @@ label input:checked ~ span ion-icon{
     .container .introduction header p span{
         font-size: 16px;
         line-height: 25px;
-        font-weight:lighter;
+        font-weight:400;
     }
 
     body .container .introduction header > div{
         margin: 8vh 0 8vh 0;
         width: 100%;
-        gap: 5vw;
+        gap: 8%;
     }
     body .container .introduction header > div a{
-        width: 48%;
+        width: 46%;
+        font-size: 16px;
+        height: 45px;
+    }
+    body .container .introduction header > div a:last-child{
+        width: 46%;
+        padding: 2vw;
         font-size: 16px;
         height: 45px;
     }
 
     .container .introduction header div a:last-child ion-icon{
         margin-left: 4px;
-        font-size: 19px;
+        font-size: 20px;
     }
 
     .container > .introduction header strong{
         font-weight: 800;
-        font-size: 55px;
+        font-size: 56px;
         line-height: 55px;
     }
 }
 
 @media (max-width: 370px){
+    label{
+        width: 83px;
+        height: 44px;
+        border-radius: 9px;
+    }
+    
+    label span{
+        width: 44px; 
+        height: 44px; 
+        border: 5px solid #1a274b;
+        border-radius: 12px;
+    }
+    
+    label input:checked ~ span{
+        left: 39px; 
+    }
+    
+    label span ion-icon{
+        font-size: 1.4em;
+    }
     .container .introduction .code{
         display: none;
     }
