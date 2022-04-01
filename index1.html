@@ -6,39 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{box-sizing: border-box;margin: 0;padding: 0;}
-        #particles-js{
-            background: blue;
-            display: flex;
-            align-items: stretch;   
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        #particles-js div{
-            width: 400px;
-            height: 200vh;
-            background: rgba(0, 0, 0,0.3);
-        }
-        .contai{
-            background: black;
+        body{
             width: 100%;
         }
-        .contai div{
-            width: 900px;
-            background: rgb(255, 255, 255);
-            height: 900px;
+        div{
+            width: 100%;
+            background: blue;
+            height: 200px;
+            border: 3px solid #555; 
+            -webkit-transform: skew(130deg);
+            -moz-transform: skew(20deg);
+            -ms-transform: skew(20deg);
+            -o-transform: skew(20deg);
+            transform: skew(20deg);
+            background-image: url(img/cielo.jpg);
+       
         }
     </style>
 </head>
 <body>
-    <div id="particles-js">
-        <div></div>
-    </div>
-    <div class="contai">
-        <div></div>
-    </div>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="particles.js"></script>
-    <script src="script.js"></script>
-    <script src="app.js"></script>
+    <div></div>
 </body>
 </html>
