@@ -644,7 +644,7 @@ label input:checked ~ span ion-icon{
         height:  auto;
         justify-content: center;
         align-items: center;
-        padding-top: 5vh;
+        padding-top: 4vh;
     }
     body .container .introduction .code{
         margin-bottom: 6vh;
@@ -664,7 +664,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header > div{
-        margin: 11vh 0 14vh 0;
+        margin: 11vh 0 15vh 0;
     }
 }
 
