@@ -39,7 +39,7 @@ body{
     background: -webkit-linear-gradient(to top, #2C5364, #203A43, #11152b);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top,#11152b,#293055e6, #3b4264e6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
     background: #11152b;
-    background-image: url(img/cielo.jpg);
+    background-image: url(img/universo.jpg);
 }
 .loader {
     position: fixed;
@@ -815,7 +815,7 @@ label input:checked ~ span ion-icon{
 }
 
 /*--------------------dispositivos moviles----------------------*/
-@media (max-width: 480px) and (min-width: 370px){
+@media (max-width: 480px){
     .container .introduction header > span,
     .container .introduction header > p,
     .container .introduction header > div{
@@ -865,9 +865,6 @@ label input:checked ~ span ion-icon{
     .code > div:last-child{
         margin-left: 10vw;
     }
-    
-
-
    
     /*-------------------code------------------*/
     .introduction .code div p{
