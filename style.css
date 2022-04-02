@@ -632,13 +632,19 @@ label input:checked ~ span ion-icon{
 }
 
 /*--------------------------media queries del body-------------------------------*/
+@media (max-width: 480px) and (orientation: landscape) {
+    body .container .introduction header > div{
+        margin: 110vh 0 11vh 0;
+    }
+
+}
 
 @media (min-width: 1201px){
     .container .introduction{
-        height: auto;
+        height:  auto;
         justify-content: center;
         align-items: center;
-        padding-top: 6vh;
+        padding-top: 4vh;
     }
     body .container .introduction .code{
         margin-bottom: 6vh;
@@ -649,18 +655,16 @@ label input:checked ~ span ion-icon{
     body .container > .introduction header .span{
         margin: 5.7vh 0 1vh 0;
     }
-
     .container .introduction header {
         width: 80%;
         margin-left: 5vw;
-    }
-    
+    } 
     .container > .introduction header p{
         width: 80%;
     }
 
     body .container .introduction header > div{
-        margin: 11vh 0 14vh 0;
+        margin: 11vh 0 12vh 0;
     }
 }
 
