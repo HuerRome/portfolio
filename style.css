@@ -334,7 +334,6 @@ label input:checked ~ span ion-icon{
     width: 100%;
     display: flex;
 }
-
 .container .introduction header{
     width: calc(100vw - 25vw - 5vw - 5.3vw - 4vw - 4.6vw);
     display: flex;
@@ -347,16 +346,20 @@ label input:checked ~ span ion-icon{
     width: calc(25vw + 30px);
     margin: 0 6vw 0 3.3vw;
 }
-
 .container .introduction header small{
     font-size: 28px;
     line-height: 36px;
     font-family: 'Fira Code','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     color: #04e6b7;
+    transition: all 1s ease-in-out;
+    margin-left: -35vh;
+    opacity: 0;
 }
-
 .container > .introduction header strong{
+    transition: all 1s ease-out;
+    margin-left: -15vh;
+    opacity: 0;
     font-weight: 800;
     font-size: 93px;
     line-height: 93px;
@@ -372,6 +375,13 @@ label input:checked ~ span ion-icon{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.container > .introduction header strong.active,
+.container > .introduction header small.active
+{
+    margin-left: 0vw;
+    opacity: 1;
 }
 
 @keyframes fluido {
@@ -651,6 +661,7 @@ label input:checked ~ span ion-icon{
         width: 80%;
         margin-left: 5vw;
     } 
+
     .container > .introduction header p{
         width: 80%;
     }
@@ -683,7 +694,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header > div{
-        margin: 10vh 0 10vh 0;
+        margin: 10vh 0 14vh 0;
     }
     .container .introduction header div a{
         font-size: 16px;
@@ -725,7 +736,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header > div{
-        margin: 6vh 0 7vh 0;
+        margin: 6vh 0 8vh 0;
     }
 
     .container > .introduction header strong{
@@ -814,12 +825,15 @@ label input:checked ~ span ion-icon{
         font-weight: 400px;
         margin: 5vw 0 5vw 0vw;
         text-align: center;
+        margin-left: -15vh;
     }
     .container .introduction header > strong{
         font-size: 60px;
         font-weight: 700;
         line-height: 60px;
         text-align: center;
+        transition: all 0.5s ease-out;
+        margin-left: -15vw;
     }
     .container .introduction{
         flex-direction: column;
@@ -843,9 +857,17 @@ label input:checked ~ span ion-icon{
         padding: 14px 15px;
     }
     .code > div:first-child{
-        margin-right: 10vw;
+        margin-right: 80vw;
+        transition: all 1s ease-out;
     }
     .code > div:last-child{
+        margin-left: 80vw;
+        transition: all 0.8s ease-out;
+    }
+    .code > div:first-child.active{
+        margin-right: 10vw;
+    }
+    .code > div:last-child.active{
         margin-left: 10vw;
     }
    
@@ -881,6 +903,16 @@ label input:checked ~ span ion-icon{
     }
 }
 
+@media (max-width: 370px){
+    .container .introduction header > small{
+        font-size: 24px;
+    }
+    .container .introduction header > strong{
+        font-size: 60px;
+    }
+
+}
+
 @media (max-width: 320px){
     .code > div{
         width: 75%;
@@ -893,7 +925,6 @@ label input:checked ~ span ion-icon{
     .code > div:last-child{
         margin-left: 10vw;
     }
-
 }
 
 /*@media (max-width: 480px) and (min-width: 370px){

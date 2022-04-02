@@ -13,11 +13,17 @@ button.addEventListener('click',()=>{
 })
 
 //texto efecto
-let tittle=document.querySelector(".container > .introduction > div:first-child");
-//let boton=document.querySelector(".container > .introduction > div:first-child div");
+let tittle=document.querySelector(".container > .introduction header strong");
+let tittle2=document.querySelector(".container > .introduction header small");
+let div=document.querySelector(".code > div:first-child");
+let div2=document.querySelector(".code > div:last-child");
 window.addEventListener("load",()=>{
-    tittle.style.marginTop= "9vh";
     tittle.style.opacity="1";
+    tittle.classList.add('active');
+    tittle2.style.opacity="1";
+    tittle2.classList.add('active');
+    div.classList.add('active');
+    div2.classList.add('active');
 })
 
 //menu scroll
