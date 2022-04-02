@@ -664,7 +664,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header > div{
-        margin: 11vh 0 12vh 0;
+        margin: 11vh 0 14vh 0;
     }
 }
 
