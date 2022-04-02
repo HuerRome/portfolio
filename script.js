@@ -17,11 +17,16 @@ let tittle=document.querySelector(".container > .introduction header strong");
 let tittle2=document.querySelector(".container > .introduction header small");
 let div=document.querySelector(".code > div:first-child");
 let div2=document.querySelector(".code > div:last-child");
+let carta1=document.querySelector(".code > div:first-child");
+let carta2=document.querySelector(".code > div:last-child");
+
 window.addEventListener("load",()=>{
     tittle.classList.add('active');
     tittle2.classList.add('active');
     div.classList.add('active');
     div2.classList.add('active');
+    carta1.classList.add('active');
+    carta2.classList.add('active');
 })
 
 //menu scroll
