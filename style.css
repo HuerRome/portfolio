@@ -284,7 +284,7 @@ label input:checked ~ span ion-icon{
         border: 2px solid #62edd1;   
     }
     .links-cel{
-        width: 100%;
+        width: 100vw;
         height: 67px;
         display: flex;
         position: fixed;
@@ -859,16 +859,20 @@ label input:checked ~ span ion-icon{
     .code > div:first-child{
         margin-right: 80vw;
         transition: all 1s ease-out;
+        opacity: 0;
     }
     .code > div:last-child{
         margin-left: 80vw;
-        transition: all 0.8s ease-out;
+        transition: all 1s ease-out;
+        opacity: 0;
     }
     .code > div:first-child.active{
         margin-right: 10vw;
+        opacity: 1;
     }
     .code > div:last-child.active{
         margin-left: 10vw;
+        opacity: 1;
     }
    
     /*-------------------code------------------*/
@@ -901,6 +905,8 @@ label input:checked ~ span ion-icon{
         font-family: Barlow,Verdana, Geneva, Tahoma, sans-serif;
         margin-left: 5px;
     }
+    /*--------------day-night button--------------*/
+
 }
 
 @media (max-width: 370px){
