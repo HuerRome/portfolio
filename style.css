@@ -39,7 +39,6 @@ body{
     background: -webkit-linear-gradient(to top, #2C5364, #203A43, #11152b);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top,#11152b,#293055e6, #3b4264e6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
     background: #11152b;
-    background-image: url(img/universo.jpg);
 }
 .loader {
     position: fixed;
@@ -50,7 +49,6 @@ body{
     z-index: 9999;
     background: url('img/loader4.gif') 50% 50% no-repeat rgb(0,0,0);
 }
-
 
 /*-----------------------------------------------------menu responsive----------------------------------------------------------*/
 .links{
@@ -637,9 +635,10 @@ label input:checked ~ span ion-icon{
 
 @media (min-width: 1201px){
     .container .introduction{
-        height: calc(99vh - 79px);
+        height: auto;
         justify-content: center;
         align-items: center;
+        padding-top: 6vh;
     }
     body .container .introduction .code{
         margin-bottom: 6vh;
@@ -661,7 +660,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header > div{
-        margin: 11vh 0 10vh 0;
+        margin: 11vh 0 14vh 0;
     }
 }
 
@@ -678,7 +677,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header small{
-        margin-top: 6vh;
+        margin-top: 8vh;
     }
     body .container > .introduction header .span{
         margin: 4vh 0 1.5vh 0;
@@ -689,7 +688,7 @@ label input:checked ~ span ion-icon{
     }
 
     body .container .introduction header > div{
-        margin: 6vh 0 6vh 0;
+        margin: 10vh 0 10vh 0;
     }
     .container .introduction header div a{
         font-size: 16px;
@@ -765,7 +764,6 @@ label input:checked ~ span ion-icon{
     .code > div:last-child{
         margin-left: 62vw;
     }
-
     .introduction .code div div p span{
         font-size: 16px;
         font-weight: 400;
@@ -773,7 +771,6 @@ label input:checked ~ span ion-icon{
         text-decoration: none;
         margin-left: 5px;
     }
-
     .container .introduction header{
         width: 100%;
         margin: 0 7vw 0 8vw;      
@@ -781,7 +778,6 @@ label input:checked ~ span ion-icon{
     .container .introduction{
         align-items: flex-start;
     }
-
     body .container .introduction header small{
         margin-top: 4.2vh;
         font-size: 25px;
@@ -789,21 +785,19 @@ label input:checked ~ span ion-icon{
         font-weight: 400;
     }
     body .container > .introduction header .span{
-        margin: 5vh 20vw 1.5vh 0;
+        margin: 4vh 20vw 1.5vh 0;
         font-weight: 400;
         font-size: 38px;
         line-height: 42px;
-    }
-    
+    } 
     .container > .introduction header p{
         width: 65%;
         font-size: 15px;
         line-height: 24px;
         font-weight: 400;
     }
-
     body .container .introduction header > div{
-        margin: 8vh 0 8vh 0;
+        margin: 6vh 0 6vh 0;
     }
 
     .container > .introduction header strong{
@@ -821,7 +815,6 @@ label input:checked ~ span ion-icon{
     .container .introduction header > div{
         display: none;
     }
-
     .container .introduction header > small{
         font-size: 25px;
         line-height: 25px;
@@ -829,14 +822,12 @@ label input:checked ~ span ion-icon{
         margin: 5vw 0 5vw 0vw;
         text-align: center;
     }
-
     .container .introduction header > strong{
         font-size: 60px;
         font-weight: 700;
         line-height: 60px;
         text-align: center;
     }
-
     .container .introduction{
         flex-direction: column;
     }
@@ -849,13 +840,12 @@ label input:checked ~ span ion-icon{
     }
     .container > .introduction > .code{
         width: 100%;
-        margin: 10vw 0;
+        margin: 10vw 0 15vw 0;
         gap: 15px;
-        background: rgba(0,0,0,0);
         align-items: center;
     }
     .code > div{
-        width: 70%;
+        width: 65%;
         height: auto;
         padding: 14px 15px;
     }
