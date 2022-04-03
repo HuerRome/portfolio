@@ -6,9 +6,9 @@
 .about{
     width: 100%;
     display: flex;
-    background: #11152b;
-    background: #4a00e0;
     flex-direction: column;
+    border-top: 3px solid #4a00e0;
+    border-bottom: 3px solid #4a00e0;
 }
 
 .about div:first-child{
@@ -17,22 +17,18 @@
 }
 
 .about div:first-child h1{
-    margin-bottom: 5vh;
+    width: 100%;
     font-size: 36px;
+    font-weight: 400;
+    padding-top: 10vh;
     color: #c7d3ff;
     line-height: 40px;
-    font-weight: 400;
+    text-align: center;
+    padding-bottom: 2vh;
     font-family: Sora,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-.about div:first-child div{
-    width: 25vw;
-    height: 2px;
-    background: rgba(255,255,255,0.3);
-}
-
 .about-container{
-    background: #ca3dc3;
+    border: 1px solid #e000bb;
     top: 0;
     left: 0;
     right: 0;
@@ -41,6 +37,7 @@
     height: 35vw;
     margin: auto;
     position: relative;
+    margin-bottom: 10vh;
 }
 .about .about-container .circle{
     border-radius: 50%;
@@ -61,7 +58,7 @@
     left: auto;
     right: 0;
     bottom: 0;
-    background: #5dbeff;
+    border-left: 1px solid #e05a00;
 }
 
 .about .about-container .box .circle{
@@ -75,8 +72,30 @@
     height: 19vw;
 }
 
+.about-container .card{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    z-index: 999;
+    display: flex;
+    padding: 10vw;
+    position: absolute;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,0.4);
+    backdrop-filter: blur(20px);
+    background: rgba(0,0,0,0.5);
+}
 
-
+.about-container .card p{
+    font-size: 20px;
+    color: rgba(255,255,255,0.8);
+}
 /*-----------------------scroll effect-------------------------*/
 body::-webkit-scrollbar {
     width: 12px;             
@@ -89,23 +108,23 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #3B4264;  
   background-image: linear-gradient(to top,#8e6de7,#d56de7,#5dbeff);
-  /*background-image: linear-gradient(to top,#56ccf2, #2f80ed);*/
   border-radius: 20px;       
   border: 3px solid #262c4e;  
 }
 
-
 @media (max-width: 480px) and (min-width: 320px){
     .about div:first-child h1{
-        margin-bottom: 5vh;
         font-size: 18px;
         color: #c7d3ff;
         line-height: 40px;
         font-weight: 400;
+        padding: 2vh 0 2vh 0;
         font-family: Sora,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .about-container{
         width: 82%;
+        height: 46vw;
+        margin-bottom: 5vh;
     }
     .about .about-container > .circle:first-child{
         width: 34vw; 
@@ -116,16 +135,24 @@ body::-webkit-scrollbar-thumb {
         height: 20vw;
     }
     
-    .about .about-container .box .circle:first-child{
-        margin-left: 15vw;
+    .about .about-container .box .circle:first-child{  
         width: 26vw;
         height: 26vw;
+        margin-left: 12vw;
     }
     .about .about-container .box{
-        width: 41vw;
+        width: 38vw;
+        
     }
-    .about-container{
-        height: 41vw;
+
+    /*--------------card-------------*/
+    .about-container .card{
+        padding: 5vw;
+        border-radius: 10px;
+    }
+    .about-container .card p{
+        font-size: 11px;
+        font-weight: lighter;
     }
 }
 
@@ -143,9 +170,7 @@ body::-webkit-scrollbar-thumb {
 
 
 
-.introduction > div:first-child{
-position: relative;
-}
+
 
 
 
