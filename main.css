@@ -28,7 +28,7 @@
     font-family: Sora,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .about-container{
-    border: 1px solid #e000bb;
+    border: 1px solid rgba(0,0,0,0);
     top: 0;
     left: 0;
     right: 0;
@@ -58,7 +58,6 @@
     left: auto;
     right: 0;
     bottom: 0;
-    border-left: 1px solid #e05a00;
 }
 
 .about .about-container .box .circle{
