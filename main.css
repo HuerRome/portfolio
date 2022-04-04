@@ -87,7 +87,7 @@
     border-radius: 30px;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 1px solid #ffffff66;
     backdrop-filter: blur(20px);
     background: rgba(0,0,0,0.5);
 }
@@ -122,27 +122,26 @@ body::-webkit-scrollbar-thumb {
         font-family: Sora,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .about-container{
-        width: 82%;
-        height: 46vw;
+        width: 90%;
+        height: 54vw;
         margin-bottom: 5vh;
     }
     .about .about-container > .circle:first-child{
-        width: 34vw; 
-        height: 34vw;
+        width: 44vw; 
+        height: 44vw;
     }
     .about .about-container .box .circle{
-        width: 20vw;
-        height: 20vw;
+        width: 24vw;
+        height: 24vw;
     }
     
     .about .about-container .box .circle:first-child{  
-        width: 26vw;
-        height: 26vw;
-        margin-left: 12vw;
+        width: 30vw;
+        height: 30vw;
+        margin-left: 15vw;
     }
     .about .about-container .box{
-        width: 38vw;
-        
+        width: 45vw; 
     }
 
     /*--------------card-------------*/
