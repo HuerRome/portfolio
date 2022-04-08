@@ -31,6 +31,10 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    background-image:url('img/cielo.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 .about-container .circles{
     width: 92%;
@@ -122,7 +126,6 @@ body::-webkit-scrollbar-thumb {
 @media (min-width: 1201px){
     .about-container{
         width: 100%;
-        background: #2de28d;
     }
     .about-container .circles{
         width: 75%;
@@ -171,47 +174,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 320px){
-    .about div:first-child h1{
-        font-size: 18px;
-        color: #c7d3ff;
-        line-height: 40px;
-        font-weight: 400;
-        padding: 2vh 0 2vh 0;
-        font-family: Sora,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    .about-container{
-        width: 98%;
-        height: 54vw;
-        margin-bottom: 5vh;
-        
-    }
-    .about .about-container > .circle:first-child{
-        width: 44vw; 
-        height: 44vw;
-    }
-    .about .about-container .box .circle{
-        width: 24vw;
-        height: 24vw;
-    }
-    
-    .about .about-container .box .circle:first-child{  
-        width: 30vw;
-        height: 30vw;
-        margin-left: 15vw;
-    }
-    .about .about-container .box{
-        width: 45vw; 
-    }
-
-    /*--------------card-------------*/
-    .about-container .card{
-        padding: 5vw;
-        border-radius: 10px;
-        height: auto;
-    }
-    .about-container .card p{
-        font-size: 11px;
-        font-weight: lighter;
-    }
+ 
 }
 
