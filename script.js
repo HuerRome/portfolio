@@ -63,6 +63,14 @@ function topFunction() {
 
 mybutton.addEventListener("click",topFunction)
 
+/*-----------------------------about-------------------------------- */
+VanillaTilt.init(document.querySelectorAll('.card'),{
+  glare: true,
+  reverse: true,
+  "max-glare": 0.5
+})
+
+
 /*--------------------*/
 console.log(window.innerWidth);
 console.log(window.innerHeight)

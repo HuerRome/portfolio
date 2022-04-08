@@ -3,91 +3,106 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fira+Code&family=Inspiration&family=Inter:wght@300&family=Montserrat:wght@700&family=PT+Mono&family=Roboto:wght@300&family=Shadows+Into+Light&family=Sora:wght@300;400;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fira+Code&family=Inspiration&family=Inter:wght@300&family=Montserrat:wght@700&family=PT+Mono&family=Roboto:wght@300&family=Shadows+Into+Light&family=Sora:wght@300;400;600;800&display=swap');
+
 .about{
     width: 100%;
     display: flex;
     flex-direction: column;
-    border-top: 3px solid #4a00e0;
-    border-bottom: 3px solid #4a00e0;
-    background: #040108;
-}
-
-.about div:first-child{
-    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.about div:first-child h1{
+.about h1{
     width: 100%;
-    font-size: 36px;
+    font-size: 30px;
+    line-height: 36px;
     font-weight: 400;
     color: #c7d3ff;
-    padding-top: 10vh;
     line-height: 40px;
     text-align: center;
-    padding-bottom: 2vh;
-    background: #e0000b;
-    position: relative;
+    font-family: Sora, sans-serif;
+    border: 1px solid green;
+
     font-family: Sora,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .about-container{
     width: 100%;
     display: flex;
-    margin-bottom: 10vh;
     justify-content: center;
-    border: 1px solid rgba(0,134,0,0.9);
-    background: #8e2de2;
+    align-items: center;
+    position: relative;
 }
-.about .about-container .circle{
+.about-container .circles{
+    width: 92%;
+    display: flex;
+    position: absolute;
+}
+
+.about-container .circles .circle{
     border-radius: 50%;
     background: #8e2de2; 
     background: -webkit-linear-gradient(to top, #8e2de2, #4a00e0); 
     background: linear-gradient(to top, #8e2de2, #4a00e0);
 }
-.about .about-container > .circle:first-child{  
-    width: 35vw; 
-    height: 35vw;
-    margin-right: 3vw;
-    position: absolute;
-}
-.about .about-container .box{
-    width: 38vw;
-    border: 1px solid pink;
-    position: absolute;
+.about-container .circle1{  
+    width: 49vw; 
+    height: 49vw;
 }
 
-.about .about-container .box .circle{
-    width: 18vw;
-    height: 18vw;
-}
-
-.about .about-container .box .circle:first-child{
-    margin-left: 14vw;
-    width: 24vw;
-    height: 24vw;
-}
-
-.about .card{
-    height: 300vh;
-    width: 80%;
-    z-index: 999;
+.box{
     display: flex;
-    padding: 5vw;  
-    position: absolute;
-    border-radius: 20px;
+    flex-direction: column;
+}
+
+.about-container .circle2{  
+    width: 36vw; 
+    height: 36vw;
+    margin-left: 6vw;
+}
+
+.about-container .circle3{  
+    width: 25vw; 
+    height: 25vw;
+    margin-top: 2vh;
+    margin-left: -2vw;
+}
+.text{
+    width: 75%;
+    min-height: 69vw;
+    display: flex;
+    flex-direction: column;  
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(5px);
-    background: rgba(255,255,255,0.1);
-    border-top: 1px solid rgba(255,255,255,0.1);
-    border-left: 1px solid rgba(255,255,255,0.1);
+    z-index: 2;
 }
 
-.about .card p{
-    display: none;
-    font-size: 20px;
+.text p{
+    width: 100%;
+    font-size: 12px;
+    padding: 3vh 5vw;
+    border-radius: 10px;
     color: rgba(255,255,255,0.8);
+    border: 1px solid rgba(255,255,255,0.4);
+    backdrop-filter: blur(15px);
 }
+
+.text div{
+    display: flex;
+    gap: 4vw;
+    padding: 0 4vw;
+    margin-bottom: 5vh;
+}
+
+.text div a{
+    background: #4a00e0;
+    padding: 10px 4vw;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+/*------------------------wavw effect--------------------------*/
+
+
 /*-----------------------scroll effect-------------------------*/
 body::-webkit-scrollbar {
     width: 12px;             
@@ -104,48 +119,55 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid #262c4e;  
 }
 
-@media (max-width: 480px) and (min-width: 320px){
-    .about div:first-child h1{
-        font-size: 18px;
-        color: #c7d3ff;
-        line-height: 40px;
-        font-weight: 400;
-        padding: 2vh 0 2vh 0;
-        font-family: Sora,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
+@media (min-width: 1201px){
     .about-container{
-        width: 90%;  
-        margin-bottom: 5vh;
+        width: 100%;
+        background: #2de28d;
     }
-    .about .about-container > .circle:first-child{
-        width: 44vw; 
-        height: 44vw;
-    }
-    .about .about-container .box .circle{
-        width: 24vw;
-        height: 24vw;
-    }
-    
-    .about .about-container .box .circle:first-child{  
-        width: 30vw;
-        height: 30vw;
-        margin-left: 15vw;
-    }
-    .about .about-container .box{
-        width: 45vw; 
+    .about-container .circles{
+        width: 75%;
     }
 
-    /*--------------card-------------*/
-    .about-container .card{
-        width: 75%;
-        padding: 5vw;
-        border-radius: 10px;
-        margin-top: 0;
+    .about-container .circle1{  
+        width: 38vw; 
+        height: 38vw;
     }
-    .about-container .card p{
-        font-size: px;
-        font-weight: lighter;
+    
+    .box{
+        display: flex;
+        flex-direction: column;
     }
+    
+    .about-container .circle2{  
+        width: 27vw; 
+        height: 27vw;
+        margin-left: 10vw;
+    }
+    
+    .about-container .circle3{  
+        width: 15vw; 
+        height: 15vw;
+        margin-top: 2vh;
+        margin-left: -2vw;
+    }
+    .text{
+        width: 60%;
+        min-height: 43vw;
+        background: transparent;
+    }
+    
+    .text p{
+        width: 100%;
+        padding: 5vh 6vw;
+        font-size: 24px;
+        backdrop-filter: blur(15px);
+    }
+
+}
+
+@media (max-width: 480px) and (min-width: 320px){
+
+   
 }
 
 @media (max-width: 320px){
@@ -192,25 +214,4 @@ body::-webkit-scrollbar-thumb {
         font-weight: lighter;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

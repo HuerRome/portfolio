@@ -5,31 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            width: 100%;
-        }
-        div{
-            width: 100%;
-            background: blue;
-            height: 200px;
-            border: 3px solid #555; 
-            -webkit-transform: skew(130deg);
-            -moz-transform: skew(20deg);
-            -ms-transform: skew(20deg);
-            -o-transform: skew(20deg);
-            transform: skew(20deg);
-            background-image: url(img/cielo.jpg);
-       
-        }
-    </style>
 </head>
 <body>
-    <div></div>
+    <div class="my-element">Vanilla<br> Tilt JS</div>
+    <script src="vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".my-element"),{
+            max: 15,
+            speed: 400
+        })
+        
+    </script>
 </body>
 </html>
