@@ -838,7 +838,7 @@ label input:checked ~ span ion-icon{
         margin-left: -15vh;
     }
     .container .introduction header > strong{
-        font-size: 62px;
+        font-size: 64px;
         font-weight: 700;
         line-height: 60px;
         text-align: center;
@@ -877,11 +877,11 @@ label input:checked ~ span ion-icon{
         opacity: 0;
     }
     .code > div:first-child.active{
-        margin-right: 10vw;
+        margin-right: 15vw;
         opacity: 1;
     }
     .code > div:last-child.active{
-        margin-left: 10vw;
+        margin-left: 15vw;
         opacity: 1;
     }
    
