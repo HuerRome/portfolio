@@ -180,10 +180,10 @@ body::-webkit-scrollbar-thumb {
         display: none;
     }
     .about .about-container .text{
-        width: 80%;
-        margin: 4vw 10%; 
+        width: 84%;
+        margin: 4vw 8%; 
         padding: 4vh 5vw;
-        backdrop-filter: blur(0px);
+        backdrop-filter: blur(10px);
     }
 
     .about .about-container .text p{
@@ -192,12 +192,11 @@ body::-webkit-scrollbar-thumb {
     }
 
     .circle{
-        width: 45vw;
-        height: 45vw;
-        backdrop-filter: blur(0px);
+        width: 46vw;
+        height: 46vw;
     }
     .circle1{
-        margin-left: 4vw;
+        margin-left: 3vw;
     }
     .circles{
         display: flex;
@@ -205,8 +204,8 @@ body::-webkit-scrollbar-thumb {
         flex-direction: column;
     }
     .circle2{
-        width: 37vw;
-        height: 37vw;
+        width: 38vw;
+        height: 38vw;
         margin-left: 10vw;
     }
     .circle3{
