@@ -58,7 +58,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background: rgba(17, 21, 43,0.8);
+    background: rgba(17, 21, 43,0.9);
 }
 
 .about .about-container .img{
@@ -181,7 +181,7 @@ body::-webkit-scrollbar-thumb {
     }
     .about .about-container .text{
         width: 84%;
-        margin: 4vw 8%; 
+        margin: 8vw 8%; 
         padding: 4vh 5vw;
         backdrop-filter: blur(10px);
     }
@@ -189,6 +189,21 @@ body::-webkit-scrollbar-thumb {
     .about .about-container .text p{
         font-size: 14px;
         margin: 4vh 0;
+    }
+
+    .about .about-container .text a{
+        /*border: 1px solid hsl(185, 100%, 63%);
+        color: #51f1ff;
+        box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+        transition: all 0.2s ease;
+        background: transparent;
+        backdrop-filter: blur(3px);*/
+        color: #11152b;
+        background: #d9a7c7;  
+        background: -webkit-linear-gradient(to bottom, #ffffff, #f0dbff);  
+        background: linear-gradient(to bottom, #ffffff, #f0dbff); 
+        border: 1px solid rgba(167, 168, 217, 0.02);
+        box-shadow: 0 0 50px #212121;
     }
 
     .circle{
@@ -218,6 +233,7 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 370px){
     .about .about-container .text{
         padding: 4vh 6vw;
+        border-radius: 8px;
     }
     .about .about-container .text p{
         font-size: 12px;
@@ -232,12 +248,6 @@ body::-webkit-scrollbar-thumb {
         text-align: center;
         border-radius: 8px;
         font-size: 14px;
-        border: 1px solid hsl(185, 100%, 63%);
-        color: #51f1ff;
-        box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
-        transition: all 0.2s ease;
-        background: transparent;
-        backdrop-filter: blur(3px);
     }
 }
 
