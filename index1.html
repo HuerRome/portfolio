@@ -5,16 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{box-sizing: border-box;margin: 0;padding: 0;}
+        body{background: #212121;}
+        div{
+            width: 40%;height: 400px;    
+            background: #4e54c8; 
+            background: -webkit-linear-gradient(to top, #4e54c8, #8f94fb); 
+            background: linear-gradient(to top, #4e54c8, #8f94fb);
+            margin: 0 auto;
+        }
+        h1{text-align: center;}
+    </style>
 </head>
-<body>
-    <div class="my-element">Vanilla<br> Tilt JS</div>
-    <script src="vanilla-tilt.min.js"></script>
-    <script>
-        VanillaTilt.init(document.querySelector(".my-element"),{
-            max: 15,
-            speed: 400
-        })
-        
-    </script>
+    <div class="your-element" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
+        <h1>Title</h1>
+    </div>
+    
+    <!-- at the end of the body -->
+    <script src="vanilla-tilt.js"></script>
+
 </body>
 </html>

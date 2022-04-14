@@ -87,7 +87,26 @@ setInterval(() => {
   }
 }, 3000);
 
+/*---------------------------div scroll effect---------------------------- */
+const boxes = document.querySelector(".text");
 
+window.addEventListener("scroll", checkBoxes);
+
+checkBoxes();
+
+function checkBoxes() {
+  const triggerBottom = (window.innerHeight / 5) * 4;
+
+
+    const boxTop = boxes.getBoundingClientRect().top;
+
+    if (boxTop < triggerBottom) {
+      boxes.classList.add("show");
+    } else {
+      boxes.classList.remove("show");
+    }
+
+}
 
 
 /*--------------------*/

@@ -24,30 +24,27 @@
     height: 35vw;
     border-radius: 50%;
     backdrop-filter: blur(5px);
-
-    background: #4e54c8; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #4e54c8, #8f94fb); /* Chrome 10-25, Safari 5.1-6 */
+    background: #4e54c8; 
+    background: -webkit-linear-gradient(to top, #4e54c8, #8f94fb); 
     background: linear-gradient(to top, #4e54c8, #8f94fb);
-
-    
-    
 }
 .circle1{
-    margin-left: 10vw;
+    margin-left: 14vw;
 }
 .circles{
     display: flex;
-    margin-left: 55vw;
+    margin-left: 50vw;
     flex-direction: column;
 }
 .circle2{
-    width: 22vw;
-    height: 22vw;
-    margin-left: 13vw;
+    width: 23vw;
+    height: 23vw;
+    margin-left: 9vw;
 }
 .circle3{
-    width: 15vw;
-    height: 15vw;
+    width: 17vw;
+    height: 17vw;
+    margin-top: -4vh;
 }
 
 /*---------------------------about----------------------------*/
@@ -82,16 +79,25 @@
 .about .about-container .text{
     width: 55%;
     display: flex;
+    opacity: 0;
     padding: 5vh 5vw;
+    border-radius: 14px;
     margin: 4vw 0 4vw 6%;
     flex-direction: column;
     justify-content: center;
     backdrop-filter: blur(15px);
+    transform: translatey(25vh);
     background: rgba(0,0,0,0.2);
-    border-radius: 14px;
+    transition: all 0.6s ease-out;
     border: 1px solid rgba(255,255,255,0.1);
     box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
 }
+
+
+.about .about-container .text.show, .about .about-container .text.show a{
+    opacity: 1;
+    transform: translatey(0);
+  }
 
 .about .about-container .text h1{
     color: #c7d3ff;
@@ -108,11 +114,14 @@
 }
 
 .about .about-container .text a{
+    opacity: 0;
+    color: #ffff;
     padding: 12px 5vw;
     text-align: center;
-    border-radius: 10px;
-    border: 2px solid #b930b9;
-    background: rgba(185, 48, 185, 1);
+    border-radius: 25px;
+    border: 2px solid #ffff;
+    transform: translatey(5vh);
+    transition: all 1s ease-out;
     box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.18);
 }
 
@@ -180,15 +189,21 @@ body::-webkit-scrollbar-thumb {
         display: none;
     }
     .about .about-container .text{
-        width: 84%;
-        margin: 8vw 8%; 
-        padding: 4vh 5vw;
+        width: 86%;
+        margin: 8vw 7%; 
+        padding: 4vh 7vw;
         backdrop-filter: blur(10px);
     }
 
     .about .about-container .text p{
         font-size: 14px;
         margin: 4vh 0;
+    }
+
+    .about .about-container .text div{
+        display: flex;
+        padding: 0 2vw;
+        justify-content:space-between;
     }
 
     .about .about-container .text a{
@@ -226,6 +241,7 @@ body::-webkit-scrollbar-thumb {
     .circle3{
         width: 25vw;
         height: 25vw;
+        margin-top: 0vh;
     }
 
 }
@@ -244,7 +260,7 @@ body::-webkit-scrollbar-thumb {
         font-size: 22px;
     }
     .about .about-container .text a{
-        padding: 10px 5vw;
+        padding: 10px 6vw;
         text-align: center;
         border-radius: 8px;
         font-size: 14px;

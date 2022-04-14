@@ -518,6 +518,12 @@ label input:checked ~ span ion-icon{
     z-index: 10;
     opacity: 0;
 }
+.introduction .code > div:first-child:hover{
+    margin-left: 20px;
+}
+.introduction .code > div:last-child:hover{
+    margin-right: 20px;
+}
 .introduction .code div p{
     font-family: Barlow,Verdana, Geneva, Tahoma, sans-serif;
     color: #fff;
