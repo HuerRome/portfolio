@@ -7,23 +7,34 @@
     <title>Document</title>
     <style>
         *{box-sizing: border-box;margin: 0;padding: 0;}
-        body{background: #212121;}
+        body{background: #212121;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         div{
             width: 40%;height: 400px;    
             background: #4e54c8; 
             background: -webkit-linear-gradient(to top, #4e54c8, #8f94fb); 
             background: linear-gradient(to top, #4e54c8, #8f94fb);
-            margin: 0 auto;
+            border-radius: 14px;
+            z-index: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            perspective: 1000px;
         }
-        h1{text-align: center;}
+        .js-tilt-glare{border-radius: 14px;}
+        a{color: #212121; background: #fff;z-index: 1; transform: translateZ(30px);}
     </style>
 </head>
-    <div class="your-element" data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500">
-        <h1>Title</h1>
+<body>
+    <div class="your-element" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <a href="">Link de ingreso</a>
     </div>
     
     <!-- at the end of the body -->
     <script src="vanilla-tilt.js"></script>
-
 </body>
 </html>

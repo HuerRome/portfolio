@@ -6,11 +6,12 @@
 
 .about{
     width: 100%;
-    background-image:url('img/hacking-etico.jpg');
+    /*background-image:url('img/hacking-etico.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: center center;*/
+    border: 1px solid red;
     position: relative;
     display: flex;
     align-items: center;
@@ -64,16 +65,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 21vh 0;
+    
 }
 
 .about .about-container img{
-    width:20vw;
-    height: 20vw;
-    border-radius: 50%;
+    width:22vw;
     z-index: 999;
-    border: 5px solid #ffff;
-    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.28);
 }
 
 .about .about-container .text{
@@ -82,7 +79,7 @@
     opacity: 0;
     padding: 5vh 5vw;
     border-radius: 14px;
-    margin: 4vw 0 4vw 6%;
+    margin: 8vw 0 8vw 6%;
     flex-direction: column;
     justify-content: center;
     backdrop-filter: blur(15px);
@@ -104,7 +101,7 @@
 }
 
 .about .about-container .text p{
-    margin: 5vh 0;
+    margin: 4vh 0 6vh 0;
     color: rgba(214, 223, 255, 0.9);
 }
 
@@ -123,6 +120,7 @@
     transform: translatey(5vh);
     transition: all 1s ease-out;
     box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.18);
+    margin-bottom: 1vh;
 }
 
 /*---------------------------slider---------------------------*/
@@ -142,7 +140,6 @@
 .slider .technologies{
     width: 85%;
     display: flex;
-    
     margin: 0 auto;
     overflow: hidden;
 }
@@ -207,12 +204,6 @@ body::-webkit-scrollbar-thumb {
     }
 
     .about .about-container .text a{
-        /*border: 1px solid hsl(185, 100%, 63%);
-        color: #51f1ff;
-        box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
-        transition: all 0.2s ease;
-        background: transparent;
-        backdrop-filter: blur(3px);*/
         color: #11152b;
         background: #d9a7c7;  
         background: -webkit-linear-gradient(to bottom, #ffffff, #f0dbff);  
@@ -266,6 +257,7 @@ body::-webkit-scrollbar-thumb {
         font-size: 14px;
     }
 }
+
 
 
 
