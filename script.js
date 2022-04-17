@@ -109,7 +109,6 @@ function checkBoxes() {
       text.classList.remove("show");
       imgClass.classList.remove("show");
     }
-
 }
 
 
