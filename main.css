@@ -5,13 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fira+Code&family=Inspiration&family=Inter:wght@300&family=Montserrat:wght@700&family=PT+Mono&family=Roboto:wght@300&family=Shadows+Into+Light&family=Sora:wght@300;400;600;800&display=swap');
 
 .about{
-    width: 100%;
-    /*background-image:url('img/hacking-etico.jpg');
+    /*width: 100%;
+    background-image:url('img/hacking-etico.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;*/
-    border: 1px solid red;
     position: relative;
     display: flex;
     align-items: center;
@@ -65,12 +64,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .about .about-container img{
     width:22vw;
     z-index: 999;
+    transition: all 0.8s ease;
+    transform: translateX(15vw); 
 }
 
 .about .about-container .text{
@@ -82,26 +82,41 @@
     margin: 8vw 0 8vw 6%;
     flex-direction: column;
     justify-content: center;
+    transition: all 0.8s ease;
     backdrop-filter: blur(15px);
-    transform: translatey(25vh);
+    transform: translateX(-15vw);
     background: rgba(0,0,0,0.2);
-    transition: all 0.6s ease-out;
     border: 1px solid rgba(255,255,255,0.1);
     box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
 }
 
 
-.about .about-container .text.show, .about .about-container .text.show a{
+.about .about-container .text.show, 
+.about .about-container .text.show h1, 
+.about .about-container .text.show p, 
+.about .about-container .text.show a,
+.about .about-container .img img.show{
     opacity: 1;
-    transform: translatey(0);
+    transform: translateX(0);
   }
 
 .about .about-container .text h1{
+    opacity: 0;
     color: #c7d3ff;
+    transition: all 1s ease;
+    transform: translateX(-25vw);
+}
+
+.about .about-container .text h1 span{
+    color: #52dee5;
+    margin-right: 10px;
 }
 
 .about .about-container .text p{
+    opacity: 0;
     margin: 4vh 0 6vh 0;
+    transition: all 1s ease;
+    transform: translateX(-25vw);
     color: rgba(214, 223, 255, 0.9);
 }
 
@@ -117,8 +132,8 @@
     text-align: center;
     border-radius: 25px;
     border: 2px solid #ffff;
-    transform: translatey(5vh);
-    transition: all 1s ease-out;
+    transform: translateX(-5vw);
+    transition: all 1.2s ease-out;
     box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.18);
     margin-bottom: 1vh;
 }
@@ -154,6 +169,59 @@
     transition: all 0.5s ease-in-out;
 }
 
+/*------------------------------projects-----------------------------------*/
+.projects{
+    width: 100%;
+    display: flex;
+    gap: 5vw;
+    flex-wrap: wrap;
+    padding: 5vh 5vw;
+    background: lightblue;
+}
+
+.projects > div{
+    width: 22vw;
+    display: flex;
+    overflow: hidden;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.projects > h1{
+    width: 100%;
+    background: #5dbeff;
+}
+
+.projects > div img{
+    width: 100%;
+   
+}
+.projects .card{            
+    transform-style: preserve-3d;
+    perspective: 1000px;}
+.projects .card div{
+    width: 100%;
+    padding: 0 8%;
+    background: #ffff;
+}
+
+.projects .card > h1{transform: translateZ(30px);}
+
+.projects .card div h1{
+    margin: 5vh 0 3vh 0;
+    text-align: center;
+}
+.projects .card div p{margin: 2vh 0 5vh 0;text-align: center;}
+.projects .card a{ 
+    background: rgb(252, 35, 227); 
+    padding: 4vh 0; width: 100%;
+    text-align: center;
+    transform: translateZ(30px);
+}
+
+
 /*-----------------------scroll effect-------------------------*/
 body::-webkit-scrollbar {
     width: 12px;             
@@ -173,11 +241,7 @@ body::-webkit-scrollbar-thumb {
 /*----------------------media querias--------------------------*/
 @media (min-width: 1201px){
     .about{
-        margin: 10vh 0;
-    }
-
-    .introduction{
-        border: 2px solid transparent;
+        margin: 0vh 0;
     }
 }
 

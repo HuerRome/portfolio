@@ -88,7 +88,8 @@ setInterval(() => {
 }, 3000);
 
 /*---------------------------div scroll effect---------------------------- */
-const boxes = document.querySelector(".text");
+const text = document.querySelector(".text");
+const imgClass = document.querySelector(".img img");
 
 window.addEventListener("scroll", checkBoxes);
 
@@ -98,12 +99,15 @@ function checkBoxes() {
   const triggerBottom = (window.innerHeight / 5) * 4;
 
 
-    const boxTop = boxes.getBoundingClientRect().top;
+    const boxTop = text.getBoundingClientRect().top;
+    const imgTop = imgClass.getBoundingClientRect().top;
 
     if (boxTop < triggerBottom) {
-      boxes.classList.add("show");
+      text.classList.add("show");
+      imgClass.classList.add("show");
     } else {
-      boxes.classList.remove("show");
+      text.classList.remove("show");
+      imgClass.classList.remove("show");
     }
 
 }

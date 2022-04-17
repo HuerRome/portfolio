@@ -437,7 +437,6 @@ label input:checked ~ span ion-icon{
     box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
     transition: all 0.2s ease;
     background: transparent;
-    backdrop-filter: blur(3px);
 }
 
 .container .introduction header div a:first-child:hover{
@@ -474,7 +473,6 @@ label input:checked ~ span ion-icon{
     box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
     transition: all 0.2s ease;
     background: transparent;
-    backdrop-filter: blur(3px);
 }
 
 .container > .introduction header div a:last-child:hover ion-icon{
