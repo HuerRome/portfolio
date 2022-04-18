@@ -307,6 +307,10 @@ body::-webkit-scrollbar-thumb {
         box-shadow: 0 0 50px #212121;
     }
 
+    .about .about-container .text h1{
+        font-size: 31px;
+    }
+
     .circle{
         width: 46vw;
         height: 46vw;
@@ -344,12 +348,12 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 370px){
     .about .about-container .text{
-        padding: 4vh 6vw;
+        padding: 5vh 6vw;
         border-radius: 8px;
     }
     .about .about-container .text p{
         font-size: 12px;
-        margin: 2vh 0 5vh 0;
+        margin: 3vh 0 5vh 0;
     }
 
     .about .about-container .text h1{
