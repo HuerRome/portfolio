@@ -353,12 +353,12 @@ label input:checked ~ span ion-icon{
     font-family: 'Fira Code','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     color: #04e6b7;
-    transition: all 1s ease-in-out;
+    transition: all 1.2s ease-in-out;
     margin-left: -35vh;
     opacity: 0;
 }
 .container > .introduction header strong{
-    transition: all 1s ease-out;
+    transition: all 1.2s ease-out;
     margin-left: -15vh;
     opacity: 0;
     font-weight: 800;
@@ -370,7 +370,7 @@ label input:checked ~ span ion-icon{
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: fluido 11s ease-in-out infinite;
+    animation: fluido 10s ease-in-out infinite;
     background: linear-gradient(-45deg,#ee7752,#8e6de7, #23a6d5, #23d5ab);
     background-size: 300%;
     -webkit-background-clip: text;
@@ -489,11 +489,11 @@ label input:checked ~ span ion-icon{
 }
 .code > div:last-child{
     margin-left: 14.6vw;
-    transition: all 1s ease-in-out;
+    transition: all 1.2s ease-in-out;
 }
 .code > div:first-child{
     margin-left: -10vw;
-    transition: all 1s ease-in-out;
+    transition: all 1.2s ease-in-out;
 }
 .code > div:last-child.active{
     margin-left: 4.6vw;
@@ -663,7 +663,7 @@ label input:checked ~ span ion-icon{
         width: 80%;
     } 
     body .container .introduction header > div{
-        margin: 11vh 0 15vh 0;
+        margin: 11vh 0 18vh 0; /*Aqui hice un cambio*/
     }
 }
 @media (max-width: 1200px) and (min-width: 900px){
@@ -928,7 +928,7 @@ label input:checked ~ span ion-icon{
 
 @media (max-width: 320px){
     .code > div{
-        width: 75%;
+        width: 70%;
         height: auto;
         padding: 14px 15px;
     }
@@ -937,5 +937,8 @@ label input:checked ~ span ion-icon{
     }
     .code > div:last-child{
         margin-left: 10vw;
+    }
+    .container .introduction header > strong{
+        font-size: 50px;
     }
 }
