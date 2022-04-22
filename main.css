@@ -85,7 +85,7 @@
     background: #171c3c;
     flex-direction: column;
     justify-content: center;
-    transition: all 1s ease;
+    transition: all 1.5s ease;
     transform: translateX(-15vw);
     box-shadow: 0 10px 20px 5px rgba(23, 28, 60, 0.5);
 }
@@ -150,7 +150,7 @@
     display: flex;
     justify-content:space-around;
     transform: translateX(-5vw);
-    transition: all 2s ease-in;
+    transition: all 1.2s ease-in-out;
 }
 
 
@@ -184,8 +184,6 @@
     z-index: 10;
 
 }*/
-
-
 
 /*---------------------------slider---------------------------*/
 .slider{
@@ -303,6 +301,7 @@ body::-webkit-scrollbar-thumb {
         width: 86%;
         margin: 8vw 7%; 
         padding: 4.5vh 7vw;
+        transform: translateX(-80vw);
         backdrop-filter: blur(10px);
     }
 
@@ -354,7 +353,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .about .about-container .text .reflection{
-        width: 15vw;
+        width: 18vw;
         transition: all 1.5s ease-in-out;
     }
     /*----------------Slider----------------*/
@@ -363,14 +362,11 @@ body::-webkit-scrollbar-thumb {
     }
 
     .about{
-        background-image:url('img/hacking-etico.jpg');
+        /*background-image:url('img/hacking-etico.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
-        background-position: center center;
-    }
-    .about-container{
-        background: rgba(17, 21, 43,0);
+        background-position: center center;*/
     }
 }
 
