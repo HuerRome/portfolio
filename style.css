@@ -664,7 +664,6 @@ label input:checked ~ span ion-icon{
     } 
     body .container .introduction header > div{
         margin: 11vh 0 18vh 0; /*Aqui hice un cambio*/
-        background: #8e6de7;
     }
 }
 @media (max-width: 1200px) and (min-width: 900px){
@@ -753,7 +752,6 @@ label input:checked ~ span ion-icon{
         align-items: center;
         width: 100%;
         padding-bottom: 8vw;
-        background: #ee7752;
         margin-left: 0vw;
     }
     .code > div{
@@ -818,7 +816,7 @@ label input:checked ~ span ion-icon{
         font-weight: 400;
     }
     body .container .introduction header > div{
-        margin: 6vh 0 8vh 0;
+        margin: 8vh 0 11vh 0;
     }
 }
 

@@ -7,31 +7,39 @@
     <title>Document</title>
     <style>
         *{box-sizing: border-box;margin: 0;padding: 0;}
-        body{background: #212121;
+        body{background: #000;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        div{
+        .clase{
             width: 40%;height: 400px;    
-            background: #4e54c8; 
-            background: -webkit-linear-gradient(to top, #4e54c8, #8f94fb); 
-            background: linear-gradient(to top, #4e54c8, #8f94fb);
+            background: #212121; 
             border-radius: 14px;
             z-index: 0;
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             transform-style: preserve-3d;
             perspective: 1000px;
+            padding: 50px;
         }
         .js-tilt-glare{border-radius: 14px;}
-        a{color: #212121; background: #fff;z-index: 1; transform: translateZ(30px);}
+        .a1{color: #ffff; z-index: 1; transform: translateZ(50px);}
+        h1{color: #ffff; z-index: 2; transform: translateZ(40px);}
+        .a2{
+            background: coral; z-index: 3; transform: translateZ(30px);width: 100px; 
+            height: 100px;border-radius: 50%;
+            transition: all 0.5s ease-in-out;
+        }
     </style>
 </head>
 <body>
-    <div class="your-element" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
-        <a href="">Link de ingreso</a>
+    <div class="your-element clase" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+        <a class="a1" href="">Link de ingreso</a>
+        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+        <a href="" class="a2"></a>
     </div>
     
     <!-- at the end of the body -->
