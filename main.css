@@ -270,15 +270,19 @@
 }*/
 .projects{
     width: 100%;
-    background: pink;
+    background: #11152b;
+    background: #1a224d;
     display: flex;
     justify-content: center;
     align-items: center;  
-    min-height: 100vh;
+    padding: 10vh 0;
+    position: relative;
 }
 .container1{
     width: 90%;
-    padding: 10px 40px;
+    padding: 10px 40px; /*cambio 10px 40px*/
+    background: #1d6ce2;
+    overflow: hidden;
 }
 .container1 .swiper-container{
     width: 100%;
@@ -318,10 +322,19 @@
     color: #1d6ce2;
 }
 .swiper-button-next{
-    right: 26px !important;
+    right: 26px;
+    position: absolute;
 }
 .swiper-button-prev{
-    left: 26px !important;
+    left: 26px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: pink;
+    color: black;
 }
 
 
