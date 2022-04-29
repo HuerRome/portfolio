@@ -30,18 +30,17 @@ body{
     width: 100%;
     height: auto;
     background: #11152b;
-    background-image:url('img/cubos.png');
+    /*background-image:url('img/cubos.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: center center;*/
 }
 
 .container{
     width: 100%;
     padding-top: 78px;
     overflow: hidden;
-    background: rgba(0,0,0,0.5);
 }
 .loader {
     position: fixed;
