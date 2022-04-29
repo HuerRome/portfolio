@@ -48,6 +48,7 @@
 }
 
 /*---------------------------about----------------------------*/
+.delete2{display: none;}
 .about-container{
     width: 100%;
     height: 100%;
@@ -87,7 +88,7 @@
     justify-content: center;
     transition: all 1.5s ease;
     transform: translateX(-15vw);
-    box-shadow: 0 10px 20px 5px rgba(23, 28, 60, 0.5);
+    box-shadow: 0 10px 20px 5px rgba(23, 28, 60, 0.7);
 }
 
 .about .about-container .text .reflection{
@@ -170,7 +171,7 @@
     margin-bottom: 20vh;
 }
 
-.slider h1{
+.slider .delete1{
     width: 92%;
     margin: 0 0 5vh 8%;
     display: flex;
@@ -181,7 +182,7 @@
     gap: 1vw;
 }
 
-.slider > h1 span{
+.slider .delete1 span{
     color: #52dee5;
     font-weight: 700;
 }
@@ -203,74 +204,17 @@
     transition: all 0.5s ease-in-out;
 }
 
-/*------------------------------projects-----------------------------------
-.projects{
-    gap: 5vw;
-    width: 100%;
-    margin-top: 10vh;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5vh 5vw;
-    background: lightblue;
-}
-
-.projects > div{
-    width: 22vw;
-    display: flex;
-    overflow: hidden;
-    border-radius: 15px;
-    flex-direction: column;
-    justify-content: center;align-items: center;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-}
-
-.projects > h1{
-    width: 100%;
-    background: #5dbeff;
-}
-
-.projects > div img{
-    width: 100%;
-   
-}
-.projects .card{            
-    transform-style: preserve-3d;
-    perspective: 1000px;}
-.projects .card div{
-    width: 100%;
-    padding: 0 8%;
-    background: #ffff;
-}
-
-.projects .card > h1{transform: translateZ(30px);}
-
-.projects .card div h1{
-    margin: 5vh 0 3vh 0;
-    text-align: center;
-}
-.projects .card div p{margin: 2vh 0 5vh 0;text-align: center;}
-.projects .card a{ 
-    background: rgb(252, 35, 227); 
-    padding: 4vh 0; width: 100%;
-    text-align: center;
-    transform: translateZ(30px);
-}*/
+/*------------------------------projects-----------------------------------*/
 .projects{
     width: 100%;
-    background: #11152b;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;  
     padding: 15vh 0;
     position: relative;
-    /*background-image:url('img/hacking-etico.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;*/
 }
-.projects > h1{
+.projects .delete1{
     width: 100%;
     display: flex;
     color: #c7d3ff;  
@@ -281,7 +225,7 @@
     font-size: 36px;
     gap: 1vw;
 }
-.projects > h1 span{
+.projects .delete1 span{
     color: #52dee5;
     font-weight: 700;
 }
@@ -397,8 +341,17 @@
 /*-------------------------contact------------------------------*/
 .contact{
     width: 100%;
-    height: 70vh;
-    background: #23a6d5;
+    height: 80vh;
+    border-top: 1px solid lightblue;
+    position: relative;
+}
+.contact .wave{
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
 }
 
 /*-----------------------scroll effect-------------------------*/
@@ -486,6 +439,44 @@ body::-webkit-scrollbar-thumb {
     .about .about-container .text .reflection{
         width: 18vw;
         transition: all 1.5s ease-in-out;
+    }
+}
+
+@media (max-width: 480px){
+    .slider .delete1, .projects .delete1{display: none;}
+    /*------------projects-------------*/
+    .projects{ 
+        padding: 10vh 0;
+    }
+    .projects .delete2{
+        width: 100%;
+        display: flex;
+        color: #c7d3ff;  
+        margin: 0 0 5vh 0;
+        padding-left: 10%;
+        align-items: center;
+        font-weight: 400;
+        font-size: 30px;
+        gap: 3vw;
+    }
+    .projects .delete2 span{
+        color: #52dee5;
+        font-weight: 700;
+    }
+    /*--------------slider-------------*/
+    .slider .delete2{
+        width: 92%;
+        margin: 0 0 5vh 10%;
+        display: flex;
+        color: #c7d3ff;  
+        align-items: center;
+        font-weight: 400;
+        font-size: 30px;
+        gap: 3vw;
+    }  
+    .slider .delete2 span{
+        color: #52dee5;
+        font-weight: 700;
     }
 }
 
