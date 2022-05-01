@@ -66,7 +66,7 @@ mybutton.addEventListener("click",topFunction)
 /*-----------------------------slider-------------------------------- */
 //I iterate the array according to the number of sections of the slider
 //let array=['0','-156px','-312px','-468px','-624px','-780px','-936px','-1092px','-1248px','-1404px','-1560px','-1716px','-1872px'];
-let array=['0','-156px','-312px','-468px','-624px','-780px'];
+/*let array=['0','-156px','-312px','-468px','-624px','-780px'];
 
 if (window.innerWidth < '600'){
   let array=['0','-156px','-312px','-468px','-624px','-780px','-936px','-1092px','-1248px','-1404px','-1560px','-1716px','-1872px'];
@@ -85,7 +85,7 @@ setInterval(() => {
     Contador=0;
     img.style.marginLeft=`${array[Contador]}`;
   }
-}, 3000);
+}, 3000);*/
 
 /*---------------------------div scroll effect---------------------------- */
 const text = document.querySelector(".text");

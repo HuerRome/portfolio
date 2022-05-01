@@ -192,8 +192,8 @@
     display: flex;
     margin: 0 auto;
     overflow: hidden;
+    align-items: center;
 }
-
 .slider .technologies .set{
     gap: 60px;
     width: auto;
@@ -208,11 +208,11 @@
 }
   
 .set::-webkit-scrollbar-track {
-  background: #11152b;        
+  background: #11152b;
+  border-radius: 20px;      
 }
 
 .set::-webkit-scrollbar-thumb {
-  background-color: #3B4264;  
   background: #55cde8;
   border-radius: 20px;       
   border: 3px solid #11152b;  
@@ -371,15 +371,6 @@
     border-top: 1px solid lightblue;
     position: relative;
 }
-.contact img{
-    width: 50%;
-    top: 0;
-    left: auto;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    position: absolute;
-}
 .contact .wave{
     top: auto;
     left: 0;
@@ -520,7 +511,7 @@ body::-webkit-scrollbar-thumb {
     }
     
     .slider .technologies{
-        width: 88%;
+        width: 86%;
     }
     
     .slider .technologies .set{
@@ -542,7 +533,22 @@ body::-webkit-scrollbar-thumb {
         width: 60px;
     }
     .slider .technologies .set > div span{
-        padding: 3vh 0 4vh 0;
+        padding: 2vh 0 4vh 0;
+    }
+
+    .set::-webkit-scrollbar {
+        width: 12px;             
+    }
+      
+    .set::-webkit-scrollbar-track {
+      border-radius: 20px;  
+      background: #0c0f1f;    
+    }
+    
+    .set::-webkit-scrollbar-thumb {
+      background: #55cde8;
+      border-radius: 20px;       
+      border: 3px solid #0c0f1f;   
     }
 }
 
