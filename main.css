@@ -159,7 +159,7 @@
     color: #ffff;
     padding: 12px 5vw;
     border-radius: 20px;
-    background: linear-gradient(-45deg,#ee7752,#8e6de7, #23a6d5, #23d5ab);
+    background: linear-gradient(to right,#8e6de7, #23a6d5, #23d5ab);
     transition: all 0.1s ease-in-out;
     box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.18);
 }
@@ -207,14 +207,14 @@
 }
   
 .set::-webkit-scrollbar-track {
-  background: #11152b;
+  background: #151934;
   border-radius: 20px;      
 }
 
 .set::-webkit-scrollbar-thumb {
   background: #55cde8;
   border-radius: 20px;       
-  border: 3px solid #11152b;  
+  border: 3px solid #151934;  
 }
 .slider .technologies .set > div{
     display: flex;
@@ -275,6 +275,7 @@
   transform-style: preserve-3d;
   perspective: 1000px;
 }
+.container1 .swiper-slide:hover {box-shadow: 0 10px 20px 5px rgba(0,0,0, 0.9);}
 .js-tilt-glare{border-radius: 15px;}
 .container1 .swiper-slide img{
    display: block;
@@ -289,7 +290,7 @@
 }
 
 .container1 .swiper-slide .card-description .card-text{
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.7);
     font-size: 14px;
     padding: 0 8%;
 }
@@ -624,14 +625,13 @@ body::-webkit-scrollbar-thumb {
       
     .set::-webkit-scrollbar-track {
       border-radius: 20px;  
-      background: #0c0f1f;   
-      background: #212121; 
+      background: #8c9ae8;
     }
     
     .set::-webkit-scrollbar-thumb {
-      background: #55cde8;
+      background: #11152b;
       border-radius: 20px;       
-      border: 3px solid #0c0f1f;   
+      border: 3px solid #8c9ae8; 
     }
     /*-------------contact--------------*/
     .contact{

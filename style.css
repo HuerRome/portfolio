@@ -517,7 +517,7 @@ label input:checked ~ span ion-icon{
     z-index: 10;
     opacity: 0;
 }
-
+.code > div:hover{box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.3);}
 .introduction .code div p{
     font-family: Barlow,Verdana, Geneva, Tahoma, sans-serif;
     color: #fff;
