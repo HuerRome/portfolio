@@ -644,9 +644,9 @@ body::-webkit-scrollbar-thumb {
     }
     
     .set::-webkit-scrollbar-thumb {
-      background: #11152b;
+      background: #101328;
       border-radius: 20px;       
-      border: 3px solid #8c9ae8; 
+      border: 3px solid #101328; 
     }
     /*-------------contact--------------*/
     .contact{
@@ -721,15 +721,13 @@ body::-webkit-scrollbar-thumb {
     /*-------------footer--------------*/
     .contact .footer{
         width: 100%;
-        margin-top: 8vh;
-        border-top: 1px solid rgba(176, 200, 221,0.5);
         color: #b0c8dd;
     }
     .contact .footer h1{
         font-weight: 500;
         font-size: 14px;
-        margin: 3vh 0;
         text-align: center;
+        padding: 2vh 0 3vh 0;
     }
 }
 
