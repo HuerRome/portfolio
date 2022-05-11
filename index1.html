@@ -6,43 +6,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{box-sizing: border-box;margin: 0;padding: 0;}
-        body{background: #000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+        
+        body,
+        html,
+        h1 {
+          margin: 0;
+          padding: 0;
+          font-family: 'Alata', sans-serif;
         }
-        .clase{
-            width: 40%;height: 400px;    
-            background: #212121; 
-            border-radius: 14px;
-            z-index: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            transform-style: preserve-3d;
-            perspective: 1000px;
-            padding: 50px;
+        
+        section {
+          height: 100vh;
         }
-        .js-tilt-glare{border-radius: 14px;}
-        .a1{color: #ffff; z-index: 1; transform: translateZ(50px);}
-        h1{color: #ffff; z-index: 2; transform: translateZ(40px);}
-        .a2{
-            background: coral; z-index: 3; transform: translateZ(30px);width: 100px; 
-            height: 100px;border-radius: 50%;
-            transition: all 0.5s ease-in-out;
+        
+        h1 {
+          display: block;
+          text-align: center;
+          font-size: 4rem;
+        }
+        
+        h2 {
+          text-align: center;
+        }
+        
+        .content {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          grid-template-rows: repeat(5, 1fr);
+          grid-column-gap: 0px;
+          grid-row-gap: 0px; 
+          opacity: 1;
+          transform: translate(0, 0);
+          transition: all 1s;
+        }
+        
+        .content > div {
+          margin: 0 auto;
+          background-color: #fff;
+          width: 50%;
+          height: 100%;
+          grid-area: 2 / 2 / 5 / 5;
+        }
+        
+        .gray {
+          background-color: #333;
+        }
+        
+        .blue {
+          background-color: #0e1424;
+        }
+        
+        .darkgray {
+          background-color: #333f44;
+        }
+        
+        .fadeTop {
+          opacity: 0; 
+          transform: translate(0, 10vh);
+          transition: all 1s;
+        }
+        
+        .fadeRight {
+          opacity: 0;
+          transform: translate(10vh, 0vh);
+          transition: all 1s;
+        }
+        
+        .fadeLeft {
+          opacity: 0;
+          transform: translate(-10vh, 0vh);
+          transition: all 1s;
+        }
+        
+        .visible {
+          opacity: 1;
+          transform: translate(0, 0);
         }
     </style>
 </head>
 <body>
-    <div class="your-element clase" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
-        <a class="a1" href="">Link de ingreso</a>
-        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-        <a href="" class="a2"></a>
-    </div>
+    <section><h1>Effects in scroll</h1></section>
+    <section class="content gray">
+      <div class="scroll-content fadeTop">
+        <h2>Fade Top</h2>
+      </div>    
+    </section>
+    <section class="content blue">
+      <div class="scroll-content fadeRight">
+        <h2>Fade Right</h2>
+      </div>    
+    </section>
+    <section class="content darkgray">
+       <div class="scroll-content fadeLeft">
+        <h2>Fade Left</h2>
+      </div>   
+    </section>
+<script>
+    window.addEventListener('scroll', function()  {
+      let elements = document.getElementsByClassName('scroll-content');
+      let screenSize = window.innerHeight;
+      
+            for(var i = 0; i < elements.length; i++) {
+            var element = elements[i];
     
-    <!-- at the end of the body -->
-    <script src="vanilla-tilt.js"></script>
+            if(element.getBoundingClientRect().top < screenSize) {
+              element.classList.add('visible');
+            } else {
+              element.classList.remove('visible');
+            }
+    
+          }
+    });
+</script>
 </body>
 </html>

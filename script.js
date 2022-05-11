@@ -90,6 +90,11 @@ setInterval(() => {
 /*---------------------------div scroll effect---------------------------- */
 const text = document.querySelector(".text");
 const imgClass = document.querySelector(".img img");
+const text1 = document.querySelector(".contact > h1:first-child");
+const text2 = document.querySelector(".projects .delete1");
+const text22 = document.querySelector(".projects .delete2");
+const text3 = document.querySelector(".slider .delete1");
+const text32 = document.querySelector(".slider .delete2");
 
 window.addEventListener("scroll", checkBoxes);
 
@@ -101,13 +106,20 @@ function checkBoxes() {
 
     const boxTop = text.getBoundingClientRect().top;
     const imgTop = imgClass.getBoundingClientRect().top;
+    const text1_top = text1.getBoundingClientRect().top;
+    const text2_top = text2.getBoundingClientRect().top;
+    const text22_top = text22.getBoundingClientRect().top;
+    const text3_top = text3.getBoundingClientRect().top;
+    const text32_top = text32.getBoundingClientRect().top;
 
     if (boxTop < triggerBottom) {
       text.classList.add("show");
       imgClass.classList.add("show");
+
     } else {
       text.classList.remove("show");
       imgClass.classList.remove("show");
+
     }
 }
 
