@@ -268,25 +268,30 @@
   text-align: start;
   transform-style: preserve-3d;
   perspective: 1000px;
+  height: 540px;
+ 
 }
 .container1 .swiper-slide:hover {box-shadow: 0 10px 20px 5px rgba(0,0,0, 0.9);}
 .js-tilt-glare{border-radius: 15px;}
 .container1 .swiper-slide img{
    display: block;
     width: 100%;
-    height: 170px;
+    height: 160px;
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 .container1 .swiper-slide .card-description h4{
-    font-size: 25px;
+    font-size: 24px;
+    padding: 6% 0 4% 0;
+    color: rgba(0, 0, 0, 0.9);
 }
 
 .container1 .swiper-slide .card-description .card-text{
     color: rgba(0, 0, 0, 0.7);
     font-size: 14px;
-    padding: 0 8%;
+    margin: 0 2vw 4vw 2vw;
+    
 }
 
 .container1 .swiper-slide .card-description{
@@ -457,7 +462,7 @@
 /*-------------------------footer------------------------------*/
 .contact .footer{
     width: 100%;
-    color: #b0c8dd;
+    color: #c4cdec;
 }
 
 .contact .footer h1{
@@ -470,7 +475,6 @@
     background: -webkit-linear-gradient(to top, #4e54c8, #8f94fb); 
     background: linear-gradient(to top, #484dbe, #7e83ef);
     padding: 3vh 0 4vh 0;
-    color: #ffff;
 }
 
 .contact .footer h1 span{
@@ -572,7 +576,7 @@ body::-webkit-scrollbar-thumb {
     }
     /*------------projects-------------*/
     .projects{ 
-        padding: 6vh 0;
+        padding: 6vh 0 1vh 0;
     }
     .projects .delete2{
         width: 100%;
@@ -582,12 +586,23 @@ body::-webkit-scrollbar-thumb {
         align-items: center;
         margin-bottom: 4vh;
         font-weight: 600;
-        font-size: 30px;
+        font-size: 28px;
         gap: 3vw;
     }
     .projects .delete2 span{
         color: #52dee5;
         font-weight: 700;
+    }
+
+    .container1 .swiper-slide .card-description h4{
+        font-size: 21px;
+    }
+    
+    .container1 .swiper-slide .card-description .card-text{
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 14px;
+        font-weight:0px;
+        padding: 0 8%;
     }
     /*--------------slider-------------*/
     .slider .delete2{
@@ -597,7 +612,7 @@ body::-webkit-scrollbar-thumb {
         color: #c7d3ff;  
         align-items: center;
         font-weight: 600;
-        font-size: 30px;
+        font-size: 28px;
         gap: 3vw;
     }  
     .slider .delete2 span{
@@ -610,7 +625,7 @@ body::-webkit-scrollbar-thumb {
         margin-top: 0;
     }   
     .slider .technologies{
-        width: 86%;
+        width: 85%;
     }
     
     .slider .technologies .set{
@@ -674,8 +689,9 @@ body::-webkit-scrollbar-thumb {
     .contact > h1:first-child{
         margin-bottom: 6vh;
         font-weight: 400;
-        font-size: 30px;
+        font-size: 28px;
         gap: 3vw;
+        padding-left: 10%;
     }  
     .contact > h1:first-child span{
         color: #52dee5;
@@ -739,7 +755,6 @@ body::-webkit-scrollbar-thumb {
     /*-------------footer--------------*/
     .contact .footer{
         width: 100%;
-        color: #b0c8dd;
         top: auto;
         left: 0;
         right: 0;
@@ -749,7 +764,7 @@ body::-webkit-scrollbar-thumb {
     }
     .contact .footer h1{
         font-weight: 500;
-        font-size: 14px;
+        font-size: 13px;
         text-align: center;
         padding: 1vh 0 3vh 0;
     }
@@ -781,9 +796,9 @@ body::-webkit-scrollbar-thumb {
         color: #c7d3ff;  
         padding-left: 10%;
         align-items: center;
-        margin-bottom: 4vh;
+        margin-bottom: 3.5vh;
         font-weight: 600;
-        font-size: 28px;
+        font-size: 25px;
         gap: 3vw;
     }
     .projects .delete2 span{
@@ -793,12 +808,12 @@ body::-webkit-scrollbar-thumb {
 
     .slider .delete2{
         width: 92%;
-        margin: 0 0 5vh 10%;
+        margin: 0 0 4vh 10%;
         display: flex;
         color: #c7d3ff;  
         align-items: center;
         font-weight: 600;
-        font-size: 28px;
+        font-size: 25px;
         gap: 3vw;
     }  
     .slider .delete2 span{
@@ -807,14 +822,44 @@ body::-webkit-scrollbar-thumb {
     }
 
     .contact > h1:first-child{
-        margin-bottom: 6vh;
+        margin-bottom: 4vh;
         font-weight: 400;
-        font-size: 28px;
+        font-size: 25px;
         gap: 3vw;
     }  
     .contact > h1:first-child span{
         color: #52dee5;
         font-weight: 700;
+    }
+
+    .contact .reach div:first-child a{
+        font-size: 15px;
+    }
+    .contact .reach div:first-child a ion-icon{
+        font-size: 20px;
+    }
+    .contact > .four{
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+    .contact > .hi{
+        font-size: 28px;
+        font-weight: 500;
+        color: #04e8b9;
+        line-height: 28px;
+        margin-bottom: 4vh;
+    }
+
+    .contact .reach div:last-child h1{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+    }
+    .contact .reach div:last-child a{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
     }
 }
 
