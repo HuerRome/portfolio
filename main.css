@@ -370,12 +370,14 @@
     right: 0;
     left: auto;
     bottom: auto;
-    height: 450px;
+    width: 26vw;
     margin: 0 auto;
     position: absolute;
     margin-right: 8vw;
-    margin-top: -80px;
-    display: none;
+    margin-top: -40px;
+    z-index: 1;
+    opacity: 1;
+    
 }
 .contact > h1:first-child{
     width: 100%;
@@ -456,12 +458,7 @@
 .contact .footer{
     width: 100%;
     color: #b0c8dd;
-}
-.contact .footer div svg path{
-    background: #4e54c8; 
-    background: -webkit-linear-gradient(to top, #4e54c8, #8f94fb); 
-    background: linear-gradient(to top, #4e54c8, #8f94fb);
-    fill: linear-gradient(to top, #4e54c8, #8f94fb);
+    z-index: 999;
 }
 
 .contact .footer h1{
@@ -475,6 +472,10 @@
     background: linear-gradient(to top, #484dbe, #7e83ef);
     padding: 3vh 0 4vh 0;
     color: #ffff;
+}
+
+.contact .footer h1 span{
+    margin: 0 0.1vw 0 1.2vh;
 }
 
 /*-----------------------scroll effect-------------------------*/
@@ -652,6 +653,21 @@ body::-webkit-scrollbar-thumb {
     .contact{
         display: flex;
         flex-direction: column;
+    }
+    .contact > img{
+        top: 0;
+        right: 0;
+        left: auto;
+        bottom: 0;    
+        margin: 0 auto;
+        width: 50vw;
+        position: absolute;
+        opacity: 0.5;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-bottom: 10vh;
+        
     }
     .contact > h1:first-child{
         margin-bottom: 6vh;
