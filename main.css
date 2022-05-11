@@ -81,7 +81,7 @@
     justify-content: center;
     transition: all 1.5s ease;
     transform: translateX(-15vw);
-    box-shadow: 0 10px 20px 5px rgba(23, 28, 60, 0.7);
+    box-shadow: 0 10px 20px 5px rgba(10, 8, 36, 0.5);
 }
 
 .about .about-container .text .reflection{
@@ -148,7 +148,7 @@
 }
 
 .about .about-container .text a{
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
     text-align: center;
     color: #ffff;
     padding: 12px 5vw;
@@ -161,7 +161,8 @@
 /*---------------------------slider---------------------------*/
 .slider{
     width: 100%;
-    margin-bottom: 20vh;
+    margin-bottom: 27vh;
+    margin-top: 8vh;
 }
 
 .slider .delete1{
@@ -253,7 +254,6 @@
     padding: 10px 40px; /*cambio 10px 40px*/
     overflow: hidden;
 }
-
 .container1 .swiper-container{
     width: 100%;
     height: 100%;
@@ -458,7 +458,6 @@
 .contact .footer{
     width: 100%;
     color: #b0c8dd;
-    z-index: 999;
 }
 
 .contact .footer h1{
@@ -568,18 +567,21 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 480px){
     .slider .delete1, .projects .delete1{display: none;}
+    .about .about-container .text a{
+        margin-bottom: 1vh;
+    }
     /*------------projects-------------*/
     .projects{ 
-        padding: 10vh 0;
+        padding: 6vh 0;
     }
     .projects .delete2{
         width: 100%;
         display: flex;
         color: #c7d3ff;  
-        margin: 0 0 5vh 0;
         padding-left: 10%;
         align-items: center;
-        font-weight: 400;
+        margin-bottom: 4vh;
+        font-weight: 600;
         font-size: 30px;
         gap: 3vw;
     }
@@ -594,7 +596,7 @@ body::-webkit-scrollbar-thumb {
         display: flex;
         color: #c7d3ff;  
         align-items: center;
-        font-weight: 400;
+        font-weight: 600;
         font-size: 30px;
         gap: 3vw;
     }  
@@ -602,12 +604,11 @@ body::-webkit-scrollbar-thumb {
         color: #52dee5;
         font-weight: 700;
     }
-
     .slider{
         width: 100%;
         margin-bottom: 10vh;
-    }
-    
+        margin-top: 0;
+    }   
     .slider .technologies{
         width: 86%;
     }
@@ -653,6 +654,7 @@ body::-webkit-scrollbar-thumb {
     .contact{
         display: flex;
         flex-direction: column;
+        padding-bottom: 20vh;
     }
     .contact > img{
         top: 0;
@@ -738,12 +740,18 @@ body::-webkit-scrollbar-thumb {
     .contact .footer{
         width: 100%;
         color: #b0c8dd;
+        top: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        position: absolute;
     }
     .contact .footer h1{
         font-weight: 500;
         font-size: 14px;
         text-align: center;
-        padding: 2vh 0 3vh 0;
+        padding: 1vh 0 3vh 0;
     }
 }
 
@@ -765,6 +773,48 @@ body::-webkit-scrollbar-thumb {
         text-align: center;
         border-radius: 8px;
         font-size: 14px;
+    }
+
+    .projects .delete2{
+        width: 100%;
+        display: flex;
+        color: #c7d3ff;  
+        padding-left: 10%;
+        align-items: center;
+        margin-bottom: 4vh;
+        font-weight: 600;
+        font-size: 28px;
+        gap: 3vw;
+    }
+    .projects .delete2 span{
+        color: #52dee5;
+        font-weight: 700;
+    }
+
+    .slider .delete2{
+        width: 92%;
+        margin: 0 0 5vh 10%;
+        display: flex;
+        color: #c7d3ff;  
+        align-items: center;
+        font-weight: 600;
+        font-size: 28px;
+        gap: 3vw;
+    }  
+    .slider .delete2 span{
+        color: #52dee5;
+        font-weight: 700;
+    }
+
+    .contact > h1:first-child{
+        margin-bottom: 6vh;
+        font-weight: 400;
+        font-size: 28px;
+        gap: 3vw;
+    }  
+    .contact > h1:first-child span{
+        color: #52dee5;
+        font-weight: 700;
     }
 }
 
