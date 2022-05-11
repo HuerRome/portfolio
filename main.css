@@ -268,8 +268,10 @@
   text-align: start;
   transform-style: preserve-3d;
   perspective: 1000px;
-  height: 540px;
- 
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .container1 .swiper-slide:hover {box-shadow: 0 10px 20px 5px rgba(0,0,0, 0.9);}
 .js-tilt-glare{border-radius: 15px;}
@@ -282,34 +284,29 @@
     border-top-right-radius: 15px;
 }
 .container1 .swiper-slide .card-description h4{
+    width: 100%;
     font-size: 24px;
-    padding: 6% 0 4% 0;
     color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 4vh;
 }
 
 .container1 .swiper-slide .card-description .card-text{
     color: rgba(0, 0, 0, 0.7);
-    font-size: 14px;
-    margin: 0 2vw 4vw 2vw;
-    
+    font-size: 14px; 
 }
 
 .container1 .swiper-slide .card-description{
-    z-index: 1; 
-    padding-top: 5vh;
+    padding: 0 2vw;
     transform: translateZ(50px);
 }
-.card-title{padding: 0 6%;}
+
 .container1 .swiper-slide .card-title,.container1 .swiper-slide .card-text{
-    margin: 0 6% 4vh 6%;
     text-align: center;
-   
 }
 .container1 .swiper-slide .card-link{
    text-align: center;
    border-radius: 0 0 15px 15px;
    padding: 20px 0;
-   margin-top: 6vh;
    background: #f857a6; 
    background: -webkit-linear-gradient(to right, #f857a6, #ff5858);
    background: linear-gradient(to right, #f857a6, #ff5858);  
@@ -576,7 +573,7 @@ body::-webkit-scrollbar-thumb {
     }
     /*------------projects-------------*/
     .projects{ 
-        padding: 6vh 0 1vh 0;
+        padding: 6vh 0 8vh 0;
     }
     .projects .delete2{
         width: 100%;
@@ -593,16 +590,21 @@ body::-webkit-scrollbar-thumb {
         color: #52dee5;
         font-weight: 700;
     }
-
+    .container1 .swiper-slide {
+        height: 485px;
+    }
     .container1 .swiper-slide .card-description h4{
         font-size: 21px;
+        padding: 0 4vw;
+        margin-bottom: 3vh;
     }
     
     .container1 .swiper-slide .card-description .card-text{
         color: rgba(0, 0, 0, 0.7);
         font-size: 14px;
         font-weight:0px;
-        padding: 0 8%;
+        margin: 0 2vw;
+        padding: 0 6vw;
     }
     /*--------------slider-------------*/
     .slider .delete2{
@@ -860,6 +862,23 @@ body::-webkit-scrollbar-thumb {
         font-size: 18px;
         font-weight: 400;
         line-height: 25px;
+    }
+
+    .container1 .swiper-slide {
+        height: 480px;
+    }
+    .container1 .swiper-slide .card-description h4{
+        font-size: 21px;
+        padding: 0 2vw;
+        margin-bottom: 3vh;
+    }
+    
+    .container1 .swiper-slide .card-description .card-text{
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 14px;
+        font-weight:0px;
+        margin: 0 2vw;
+        padding: 0 4vw;
     }
 }
 
