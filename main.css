@@ -663,13 +663,13 @@ body::-webkit-scrollbar-thumb {
       
     .set::-webkit-scrollbar-track {
       border-radius: 20px;  
-      background: #8c9ae8;
+      background: #1c2243;
     }
     
     .set::-webkit-scrollbar-thumb {
-      background: #101328;
+      background: #23d5ab;
       border-radius: 20px;       
-      border: 3px solid #101328; 
+      border: 3px solid #23d5ab; 
     }
     /*-------------contact--------------*/
     .contact{
@@ -745,7 +745,6 @@ body::-webkit-scrollbar-thumb {
     }
     .contact .reach div:first-child a ion-icon{
         font-size: 20px;
-    
     }
     .contact .reach div:last-child{
         width: 100%;
