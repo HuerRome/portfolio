@@ -642,7 +642,7 @@ label input:checked ~ span ion-icon{
         bottom: 5vh;
     }
 }
-@media (max-width: 480px) and (min-width: 370px){
+@media (max-width: 480px){
     #gotop{
         width: 46px;
         height: 46px;
@@ -651,11 +651,11 @@ label input:checked ~ span ion-icon{
         border: 2px solid #62edd1;
     }
     #gotop.show{
-        right: 2vh;
+        right: 2.2vh;
     }
 }
 
-@media only screen and (max-width: 320px){
+@media (max-width: 320px){
     #gotop{
         width: 42px;
         height: 42px;
