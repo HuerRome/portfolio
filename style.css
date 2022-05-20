@@ -648,10 +648,10 @@ label input:checked ~ span ion-icon{
         height: 46px;
         font-size: 25px;
         bottom: 5vh;
-        border: 2px solid #62edd1;
+        border: 1px solid #62edd1;
     }
     #gotop.show{
-        right: 2.2vh;
+        right: 2.1vh;
     }
 }
 
