@@ -65,31 +65,60 @@ resultado = print(Cambio)'''
 ingrese una frase por teclado, indique:
 Se suspende los partidos de fútbol por 10 días, en vez de fútbol haremos gimnacia funcional en casa
 '''
-cadena = 'Se suspende los partidos de fútbol por 10 días, en vez de fútbol haremos gimnacia funcional en casa'
-def principal():
-    #punto 1
-    pedirFrase = input('Por favor ingrese una frase: ')
-    listaDePalabras = pedirFrase.split()
-    contar1 = listaDePalabras.count('fútbol')
-    contar2 = listaDePalabras.count('Fútbol')
+#punto 3
+contraseña = 'soy_la_contraseña'
+contador = 0 
 
-    if contar1 > 1 or contar2 > 1:
-        print('La palabra Fútbol se repite más de 1 vez.')
+while True:
+    pedir = input("Por favor ingrese una contraseña: ")
+    contador+=1
 
-    #punto 2
-    for palabra in listaDePalabras:
-        contador = 0
-        for letra in palabra:
-            contador+=1
-        if contador > 10:
-            print('La palabra',palabra,'SI supero el limite de caracteres')
-            palabraCortada = palabra[0:10]
+    if pedir == contraseña:
+        print("Contraseña correcta :) Bienvenido/a")
+        break
+    elif contador < 4:
+        #No colocamos un break (romper) porque el usuario aun no coloco la contraseña correcta
+        print("Ingreso una contraseña incorrecta. Intente de nuevo (máximo 4 veces)... ")
 
-            print('La palabra',palabra,'cortada hasta el decimo caracter es',palabraCortada)
-            
-principal()
+    else:
+        print("Ingreso la contraseña incorrecta más de 4 veces, Se cerrara el programa\n Cerrando programa...")
+        break
+
+#punto 4
+numero_personas = int(input("\nIngrese el numero de personas a evaluar: "))
+contador = 0
+edades = 0 
+promedio_edad_mujer = 0
+porcentaje_varon= 0
+porcentaje_mujer = 0
+
+while contador < numero_personas:
+    contador+=1
+    sexo = input("Ingrese el sexo de la persona: ")
+    edad = int(input("Ingrese la edad de la persona: "))
+    #Evaluamos numero de varones y mujeres
+    if sexo == "mujer" or sexo == "Mujer":
+        porcentaje_mujer+=1
+        edades+=edad
+        promedio_edad_mujer+=edad
+    else:
+        edades+=edad
+        porcentaje_varon+=1
 
 
+'''Para calcular porcentaje usamos la rregla de tres simple'''
+#promedio edad
+personas = porcentaje_mujer + porcentaje_varon
+promedio_edad_total = edades/personas
+print(f"El promedio de edad es: {promedio_edad_total}")
 
+#promedio edad de mujeres
+promedio_edad_mujeres = promedio_edad_mujer/porcentaje_mujer
+print(f"El promedio de edad de mujeres es: {promedio_edad_mujeres}")
 
+#porcentaje final
+mujer = porcentaje_mujer/personas*100
+print(f"El porcentaje de mujeres es: {mujer}%")
 
+hombre = porcentaje_varon/personas*100
+print(f"El porcentaje de hombres es: {hombre}%")

@@ -67,11 +67,9 @@ body.change{
     z-index: 1000;
 }
 .links.change div a{
-    color: #7d33e7;
-    color: #f8f7fa;
+    color: #ffffff;
 }
 .links.up.change{
-    background: #a770ef;
     background: rgba(161, 112, 239, 0.4);
 }
 .links.up.change div a{
@@ -612,22 +610,22 @@ label input:checked ~ span ion-icon{
     margin: auto;
     position: fixed;
     font-size: 28px;
-    color: rgba(98, 237, 209, 0.9);
+    color: #55cde8;
     display: flex;
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
     cursor: pointer;
     transition: all .15s ease-in-out;
     border-radius: 50%;
-    border: 1px solid #62edd1;
+    border: 2px solid #55cde8;
 }
 
 #gotop:hover{
-    border: 1px solid #51ffe2;
-    color: #51ffe2;
-    box-shadow: 0px 0px 4px 1px #51f1ff;
+    border: 1px solid #55cde8;
+    color: #55cde8;
+    box-shadow: 0px 0px 4px 1px #8ce6fa;
 }
 
 #gotop.show{
@@ -967,3 +965,103 @@ label input:checked ~ span ion-icon{
         font-size: 50px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+.contact{
+    width: 100%;
+    position: relative;
+    padding-bottom: 0vh;
+}
+.contact > h1:first-child{
+    width: 100%;
+    display: flex;
+    color: #c7d3ff;  
+    padding-left: 8%;
+    align-items: center;
+    font-weight: 400;
+    font-size: 36px;
+    gap: 1vw;
+}  
+.contact > h1:first-child span{
+    color: #52dee5;
+    font-weight: 700;
+}
+.contact .text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 6vh 0 14vh 0;
+}
+.contact .text > div:first-child{
+    width: 50%;
+    margin-left: 8%;
+}
+.contact .text > div:last-child{
+    width: 42%;
+}
+.contact .text > div:first-child h1:first-child{
+    font-size: 55px;
+    font-weight: 500;
+    color: #73d9ff;
+    line-height: 70px;
+}
+.contact .text > div:first-child h1:last-child{
+    font-size: 55px;
+    font-weight: 500;
+    color: #04e8b9;
+    line-height: 70px;
+}
+.contact .text > div:last-child h1{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #04e8b9;
+}
+.contact .text > div:last-child a{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #b0c8dd;
+}
+
+.contact .reach{
+    gap: 3vw;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 5vw;
+}
+
+.contact .reach a{
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #71f8ff;
+    display: flex;
+    padding: 8px 22px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #71f8ff;
+}
+.contact .reach a:hover{
+    color: #bafcff;
+    border: 2px solid #bafcff;
+}
+.contact .reach a ion-icon{
+    font-size: 25px;
+}
+
+.contact > img{
+    display: none;
+}
+
