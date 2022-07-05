@@ -20,6 +20,8 @@
     background: #4e54c8; 
     background: -webkit-linear-gradient(to top, #4e54c8, #8f94fb); 
     background: linear-gradient(to top, #4e54c8, #8f94fb);
+    box-shadow: 0 0 40px rgba(143, 148, 251,0.7);
+    
 }
 .circle1{
     margin-left: 14vw;
@@ -365,7 +367,7 @@
 /*-------------------------footer------------------------------*/
 .contact footer{
     width: 100%;
-    margin-top: 12vh;
+    margin-top: 15vh;
     margin-bottom: 4vh;
 }
 
@@ -583,94 +585,8 @@ body::-webkit-scrollbar-thumb {
       border: 3px solid #55cde8; 
     }
     /*-------------contact--------------*/
-    .contact{
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 20vh;
-    }
-    .contact > img{
-        top: 0;
-        right: 0;
-        left: auto;
-        bottom: 0;    
-        margin: 0 auto;
-        width: 50vw;
-        position: absolute;
-        opacity: 0.5;
-        margin-left: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-        padding-bottom: 10vh;
-        
-    }
-    .contact > h1:first-child{
-        margin-bottom: 4vh;
-        font-weight: 500;
-        font-size: 28px;
-        gap: 3vw;
-        padding-left: 10%;
-    } 
-      
-    .contact > h1:first-child span{
-        color: #52dee5;
-        font-weight: 700;
-    }
-    .contact .four, .hi, .reach{
-        margin: 0 8%;
 
-    }
-    .contact > .four{
-        font-size: 30px;
-        font-weight: 500;
-        line-height: 28px;
-    }
-    .contact > .hi{
-        font-size: 30px;
-        font-weight: 500;
-        color: #04e8b9;
-        line-height: 35px;
-        margin-bottom: 4vh;
-    }
 
-    .contact .reach{
-        width: 84%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 3vh;
-        gap: 4vh;
-    }
-    .contact .reach div:first-child{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .contact .reach div:first-child a{
-        gap: 10px;
-        width: 50%;
-        display: flex;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 32px;
-        align-items: center;
-    }
-    .contact .reach div:first-child a ion-icon{
-        font-size: 20px;
-    }
-    .contact .reach div:last-child{
-        width: 100%;
-        display: inline-block;
-    }
-    .contact .reach div:last-child h1{
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 25px;
-    }
-    .contact .reach div:last-child a{
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 25px;
-    }
     /*-------------footer--------------*/
     .contact .footer{
         width: 100%;
@@ -749,12 +665,6 @@ body::-webkit-scrollbar-thumb {
         font-weight: 700;
     }
 
-    .contact .reach div:first-child a{
-        font-size: 15px;
-    }
-    .contact .reach div:first-child a ion-icon{
-        font-size: 20px;
-    }
     .contact > .four{
         font-size: 28px;
         font-weight: 500;
@@ -768,16 +678,6 @@ body::-webkit-scrollbar-thumb {
         margin-bottom: 4vh;
     }
 
-    .contact .reach div:last-child h1{
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 25px;
-    }
-    .contact .reach div:last-child a{
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 25px;
-    }
 
     .container1 .swiper-slide {
         height: 480px;
