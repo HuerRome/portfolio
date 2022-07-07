@@ -451,7 +451,7 @@
 /*-------------------------footer------------------------------*/
 .contact footer{
     width: 100%;
-    margin-top: 15vh;
+    margin-top: 12vh;
     margin-bottom: 4vh;
 }
 
@@ -677,6 +677,7 @@ body::-webkit-scrollbar-thumb {
     }
     .contact .text > div:first-child{
         margin-left: 0%;
+        width: 100%;
     }
     .contact .text > div:first-child h1:first-child, .contact .text > div:first-child h1:last-child{
         font-size: 32px;
@@ -684,6 +685,8 @@ body::-webkit-scrollbar-thumb {
     }
     .contact .text > div:last-child{
         margin-top: 5vh;
+        width: 100%;
+       
     }
     .contact .text > div:last-child h1{
         font-size: 20px;
@@ -694,13 +697,13 @@ body::-webkit-scrollbar-thumb {
     .contact .text > div:last-child > a{
         font-size: 20px;
     }
+
     .contact .reach{
         gap: 5vw;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         padding: 0 5vw;
-        background: #212121;
     }
     
     .contact .reach a{
