@@ -35,9 +35,9 @@ window.addEventListener("scroll",() => {
   menu.classList.toggle("up", window.scrollY>0)
 })
 
-let menu1= document.querySelector(".links-cel");
+let menu1= document.querySelector(".smartphone");
 window.addEventListener("scroll",() => {
-  menu1.classList.toggle("up", window.scrollY>0)
+  menu1.classList.toggle("go-up", window.scrollY>0)
 })
 
 //------------------go top button----------------------
