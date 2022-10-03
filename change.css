@@ -1,0 +1,154 @@
+body.change .links a{
+    color: #000;
+}
+
+body.change #gotop{
+    background: #fff;
+    border: 1px solid #8e6bff;
+    color: #8e6bff;
+}
+
+body.change .container{
+    background: #fff;
+}
+body.change .container .introduction{
+    background: #fff;
+    background: #010030;
+    background: radial-gradient(circle at 100% 0%, rgb(157, 183, 255) 0%, rgb(170, 165, 255) 40%, rgb(255,255,255) 30%);
+}
+/*-----------------------scroll effect-------------------------*/
+body.change::-webkit-scrollbar-track {
+  background: #8e6bff;      
+}
+
+body.change::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to top,#b7a1f4,#bde3fd,#ffbdd1); 
+    border: 3px solid #8e6bff;  
+}
+
+/*----------------------------container-----------------------------*/
+body.change .projects .container1 .swiper-slide{
+    box-shadow: 0 2px 10px 8px rgba(0, 0, 0, 0.1);
+}
+body.change .projects .container1 .swiper-slide:hover{
+    box-shadow: 0 4px 15px 5px rgba(0,0,0, 0.4);
+}
+
+
+body.change .contact footer h1{
+    background: #7f4ec8;
+    background: -webkit-linear-gradient(to right, #8a57d6, #d1a2ff); 
+    background: linear-gradient(to right, #7f4ec8, #b05bff);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0, 0.5);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+}
+
+
+/*------------------------------------ start-----------------------------------------*/
+body.change .container header > small{
+    color: rgb(212, 200, 200);
+    color: #11152b;
+}
+body.change .container header > strong{
+    color: #000;
+}
+body.change .container header > .span{
+    color: #11152b;
+}
+body.change .container header > p{
+    color: #000;
+}
+body.change .container header > p span{
+    color: #3e54fa;
+}
+body.change .container header > div a:first-child{
+    color: #fff;
+    color: #11152b;
+    background: #51f1ff;
+}
+body.change .container header > div a:first-child:hover{
+    color: #11152b;
+    background: #ffff;
+    box-shadow: 0 4px 16px rgba(255,255,255, 0.5);
+}
+body.change .container header > div a:last-child{
+    color: #11152b;
+    background: #ffff;
+    box-shadow: 0 4px 16px rgba(255,255,255, 0.5);
+}
+body.change .container header > div a:last-child:hover{
+    color: #000;
+    background: #51f1ff;
+}
+body.change .container header > div a:last-child:hover ion-icon{
+    color: #11152b;
+}
+
+body.change .introduction .code > div{
+    background: #0F2027;  
+    background: -webkit-linear-gradient(200deg, #3B4264, #262c4e, #11152b);  
+    background: linear-gradient(200deg, rgb(163, 187, 253), rgb(165, 183, 255), rgb(126, 143, 255));
+}
+body.change .introduction .code > div:first-child .comment, body.change .introduction .code > div p{
+    color: #000;
+}
+
+/*-------------------------------about----------------------------------*/
+body.change .about .about-container .text{
+    background: #7a8eff;
+    box-shadow: 0 10px 20px 5px rgba(10, 8, 36, 0.3);
+}
+body.change .about .about-container .text h1{
+    color: #ffff;
+}
+body.change .about .about-container .text p{
+    color: #ffff;
+}
+
+/*--------------------------slider-------------------------------*/
+body.change .projects > div::-webkit-scrollbar-track {
+    background: #c992ff;  
+}
+
+body.change .projects > div::-webkit-scrollbar-thumb {
+  background: #ffffff;    
+  border: 3px solid #c992ff;  
+}
+
+body.change .projects .delete1, body.change.projects .delete2, 
+body.change .slider .delete1, .slider .delete2,body.change .contact > h1:first-child,
+body.change .contact .reach div:first-child a,body.change .contact .reach div:last-child a{
+    color: #000;
+}
+body.change .slider .set div span{
+    color: #000;
+    
+}
+body.change .contact .four,body.change .contact .hi{
+    color: #ffff;
+    color: #290152;
+}
+body.change .projects .delete1 span, body.change.projects .delete2 span, body.change .contact .reach div:last-child h1,
+body.change .slider .delete1 span, .slider .delete2 span,body.change .contact > h1:first-child span{
+    color: #ffff;
+    color: #6758d4;
+}
+
+/*-----------------------------------media queries----------------------------------*/
+
+@media (max-width: 480px){
+    body.change .contact .reach .github ion-icon{color: #000;}
+    
+    body.change .contact .reach .codepen ion-icon{color: #000;}
+
+}
+
+body.change .yourproject > div h1{
+    color: #ffffff;  
+}
+body.change .yourproject > div {
+    background: #9baaff;
+    color: #000000;
+}
+
