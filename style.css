@@ -245,7 +245,6 @@ label input:checked ~ span ion-icon{
 
     .links-cel strong{
         font-family: 'Inspiration','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: #55cde8;
         font-size: 22px; 
         display: flex;
         justify-content: center;
@@ -253,7 +252,7 @@ label input:checked ~ span ion-icon{
         width: 43px;
         height: 43px;
         border-radius: 50%;
-        border: 2px solid #55cde8;   
+        border: 2px solid #52dee5;   
     }
     .links-cel{
         width: 100vw;
@@ -385,7 +384,7 @@ label input:checked ~ span ion-icon{
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    color: rgb(82, 222, 229);
+    color: #52dee5;
 }
 
 .container .introduction header> div{
@@ -408,8 +407,8 @@ label input:checked ~ span ion-icon{
 }
 
 .container .introduction header div a:first-child{
-    border: 2px solid hsl(185, 100%, 63%);
-    color: #51f1ff;
+    border: 2px solid #52dee5;
+    color: #52dee5;
     box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
     transition: all 0.2s ease;
     background: transparent;
@@ -444,8 +443,8 @@ label input:checked ~ span ion-icon{
 }
 
 .container .introduction header div a:last-child:hover{
-    border: 2px solid #21ebff;
-    color: #51f1ff;
+    border: 2px solid #52dee5;
+    color: #52dee5;
     box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
     transition: all 0.2s ease;
     background: transparent;
@@ -511,7 +510,7 @@ label input:checked ~ span ion-icon{
     color: #b1b1b1;
 }
 .introduction .code div div p span{
-    color: #73d9ff;
+    color: #52dee5;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -563,7 +562,7 @@ label input:checked ~ span ion-icon{
     margin: auto;
     position: fixed;
     font-size: 28px;
-    color: rgba(98, 237, 209, 0.9);
+    color: #52dee5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -572,13 +571,13 @@ label input:checked ~ span ion-icon{
     cursor: pointer;
     transition: all .15s ease-in-out;
     border-radius: 50%;
-    border: 1px solid #62edd1;
+    border: 1px solid #52dee5;
 }
 
 #gotop:hover{
-    border: 1px solid #51ffe2;
-    color: #51ffe2;
-    box-shadow: 0px 0px 4px 1px #51f1ff;
+    border: 1px solid #52dee5;
+    color: #52dee5;
+    box-shadow: 0px 0px 4px 1px #52dee5;
 }
 
 #gotop.show{
@@ -599,7 +598,7 @@ label input:checked ~ span ion-icon{
         height: 46px;
         font-size: 25px;
         bottom: 5vh;
-        border: 2px solid #62edd1;
+        border: 2px solid #52dee5;
     }
 }
 
@@ -841,10 +840,9 @@ label input:checked ~ span ion-icon{
       
     }
     .code > div{
-        width: 65%;
+        width: 70%;
         height: auto;
-        padding: 14px 15px;
-        padding: 2.8vh 5.4vw;
+        padding: 2.8vh 4vw 2.8vh 6vw;
     }
     .code > div:first-child{
         margin-right: 80vw;
