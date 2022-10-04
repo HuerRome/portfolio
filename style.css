@@ -31,6 +31,7 @@ body{
     height: auto;
     background: #02021f;
     background: radial-gradient(circle at 100% 0%, rgb(30, 52, 113) 0%, #01012a 25%, #00001b 60%);
+    background: radial-gradient(circle at 100% 0%, rgb(30, 52, 113) 0%, #01012a 25%, #00001b 60%);
 }
 
 .container{
@@ -188,29 +189,24 @@ label input:checked ~ span ion-icon{
     .open .line-menu.end {
         transform: rotate(-90deg) translateX(-1.5px);
     } 
-
     .links{
         display: none;
     } 
-
     label{
         width: 90px;
         height: 45px;
         border-radius: 9px;
         margin-left: 0;
-    }
-    
+    } 
     label span{
         width: 45px; 
         height: 45px; 
         border: 6px solid #162066;
         border-radius: 12px;
     }
-
     label input:checked ~ span{
         left: 45px; 
     }
-
     .menu{
         position: absolute;
         top: 66px;
@@ -244,15 +240,16 @@ label input:checked ~ span ion-icon{
     }
 
     .links-cel strong{
-        font-family: 'Inspiration','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 22px; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 43px;
         height: 43px;
+        display: flex;
+        color: #52dee5;
+        font-size: 22px; 
         border-radius: 50%;
+        align-items: center;
+        justify-content: center;
         border: 2px solid #52dee5;   
+        font-family: 'Inspiration','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     .links-cel{
         width: 100vw;
@@ -799,7 +796,7 @@ label input:checked ~ span ion-icon{
 @media (max-width: 480px){
     body{
         background: #02021f;
-        background: radial-gradient(circle at 100% 0%, rgb(30, 52, 113) 0%, #01012a 15%, #00001b 40%);
+        background: radial-gradient(circle at 100% 0%, rgb(30, 52, 113) 0%, #01012a 15%, #010030 40%);
     }
     .container .introduction header > span,
     .container .introduction header > p,

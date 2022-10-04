@@ -221,12 +221,15 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 480px){
     .about{
-        margin-top: 0vh;
+        margin-top: 5vh;
     }
     .about .about-container .text{
         margin-top: 0;
         border-radius: 14px;
         padding: 25px 5vw 30px 5vw;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
         background: radial-gradient(circle at 100% 0%, rgb(31, 56, 122) 0%, rgb(14, 10, 87) 50%, rgb(6, 5, 66) 70%);
         background: radial-gradient(circle at 0% 100%, rgb(18, 17, 68) 30%,rgb(18, 28, 82) 60%, rgb(46, 59, 135) 100%);
         background: #1c1c5c;
@@ -240,7 +243,7 @@ body::-webkit-scrollbar-thumb {
         
     }
     .about .about-container .text h1{
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 600;
         margin-bottom: 0vh;
     }
@@ -313,6 +316,7 @@ body::-webkit-scrollbar-thumb {
     height: 240px;
     overflow: hidden;
     border-radius: 20px;
+    
 }
 .projects > div:last-child > div div img{
     width: 100%;
@@ -506,13 +510,16 @@ body::-webkit-scrollbar-thumb {
     font-size: 18px;
 }
 
+.contact > a{
+    display: none;
+}
+
 @media (max-width: 480px){
     .projects{
-        padding: 5vh 5vw; 
+        padding: 8vh 5vw; 
     }
     .projects > h1, .technologies h1, .contact > h1{
-        font-size: 24px;
-        
+        font-size: 24px;  
         line-height: 20px;
     }
     .projects .div, .technologies .div, .contact .div{
@@ -551,12 +558,13 @@ body::-webkit-scrollbar-thumb {
         font-size: 14px;
     }
     .projects > div:last-child > div a{
+        width: 80%;
         padding: 1.8vh 0;
         margin: 0 10% 0vh 10%;
     }
     /*-----------------------technologies----------------------*/
     .technologies{
-        margin: 2vh 0 7vh 0;
+        margin: 5vh 0 11vh 0;
     }
 
     .technologies > div:last-child{
@@ -574,6 +582,7 @@ body::-webkit-scrollbar-thumb {
         font-size: 16px;
         font-weight: normal;
         margin-bottom: 5vh;
+        color: var(--p);
     }
     
     .technologies > div:last-child::-webkit-scrollbar-track {
@@ -640,7 +649,7 @@ body::-webkit-scrollbar-thumb {
     .contact .reach .gmail ion-icon{color: #db1212;}*/
     
     .contact .reach a ion-icon{
-        font-size: 25px;
+        font-size: 20px;
         color: var(--p);      
     }
     .contact .reach a span{
@@ -663,4 +672,42 @@ body::-webkit-scrollbar-thumb {
         margin: 0 0.1vw 0 1.2vh;  
     }
 
+    .contact > a{
+        gap: 5px;
+        display: flex;
+        width: 90%;
+        color: var(--p);
+        font-size: 16px;
+        font-weight: 500;
+        padding: 2vh 3vw;
+        border-radius: 18px;
+        margin: 5vh 5% 0 5%;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        background: radial-gradient(circle at 0% 100%, #0e0c49 20%, #0e0d4a 40%, #020139 100%);
+    }
+    .contact > a ion-icon{
+        color: var(--p);
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+}
+
+@media (max-width: 370px){
+    .projects{
+        padding: 8vh 5vw; 
+    }
+    .projects > h1, .technologies h1, .contact > h1{
+        font-size: 20px;  
+        line-height: 20px;
+    }
+    .projects .div, .technologies .div, .contact .div{
+        width: 32px;
+        height: 3px;
+        border-radius: 2px;
+        margin: 1.5vh 0 4vh 0;
+    }
 }
