@@ -246,6 +246,7 @@ body::-webkit-scrollbar-thumb {
         font-size: 24px;
         font-weight: 600;
         margin-bottom: 0vh;
+        text-align: center;
     }
 
 }
@@ -278,7 +279,7 @@ body::-webkit-scrollbar-thumb {
 
 .projects{
     width: 100%;
-    padding: 4vh 5vw;
+    padding: 10vh 5vw;
     
 }
 .projects > h1, .technologies h1, .contact > h1{
@@ -288,7 +289,7 @@ body::-webkit-scrollbar-thumb {
     line-height: 28px;
 }
 .projects .div, .technologies .div, .contact .div{
-    width: 150px;
+    width: 100px;
     height: 5px;
     border-radius: 2px;
     background: var(--border);
@@ -298,6 +299,7 @@ body::-webkit-scrollbar-thumb {
     gap: 2vw;
     width: 100%;
     display: flex;
+    padding: 2vh 0;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
@@ -315,8 +317,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: 240px;
     overflow: hidden;
-    border-radius: 20px;
-    
+    border-radius: 20px;  
 }
 .projects > div:last-child > div div img{
     width: 100%;
@@ -370,7 +371,7 @@ body::-webkit-scrollbar-thumb {
 .technologies{
     width: 100%;
     padding: 2vh 5vw;
-    margin: 6vh 0 12vh 0;
+    margin: 3vh 0 20vh 0;
 }
 
 .technologies > div:last-child{
@@ -378,7 +379,7 @@ body::-webkit-scrollbar-thumb {
     width: 90%;
     display: flex;
     margin: 0 5%;
-    margin-top: 5vh;
+    margin-top: 7vh;
     overflow: hidden;
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -516,24 +517,33 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 480px){
     .projects{
-        padding: 8vh 5vw; 
+        padding: 10vh 5vw; 
     }
     .projects > h1, .technologies h1, .contact > h1{
         font-size: 24px;  
         line-height: 20px;
+
+    }
+    .technologies h1 > span{
+        width: 100%;
+        height: 2px;
+        background: #3B4264;
+        border-radius: 1px;
     }
     .projects .div, .technologies .div, .contact .div{
         width: 32px;
+        width: 40px;
         height: 3px;
         border-radius: 2px;
-        margin: 1.5vh 0 4vh 0;
+        margin: 1.5vh 0 4vh 0;  
     }
     .projects > div:last-child{
         gap: 5vh;
         width: 100%;
+        padding: 2vh 0;
         flex-direction: column;
     }
-    .projects > div:last-child > div:last-child{/*--------------------------------------------*/
+    .projects > div:last-child > div:last-child{
         margin-bottom: 0vh;
     }
     .projects > div:last-child > div{
@@ -564,13 +574,13 @@ body::-webkit-scrollbar-thumb {
     }
     /*-----------------------technologies----------------------*/
     .technologies{
-        margin: 5vh 0 11vh 0;
+        margin: 2vh 0 14vh 0; 
     }
-
     .technologies > div:last-child{
         gap: 10vw;
         width: 88%;
         margin: 0 6%;
+        margin-top: 5vh;
     }
     .technologies > div:last-child div{
         gap: 1.4vh;
@@ -581,15 +591,14 @@ body::-webkit-scrollbar-thumb {
     .technologies > div:last-child div span{
         font-size: 16px;
         font-weight: normal;
-        margin-bottom: 5vh;
+        margin-bottom: 4vh;
         color: var(--p);
     }
-    
     .technologies > div:last-child::-webkit-scrollbar-track {
         margin: 0 2vw;
     }   
-    /*-------------contact--------------*/
 
+    /*-------------contact--------------*/
     .contact .text{
         width: 100%;
         display: flex;
@@ -597,7 +606,6 @@ body::-webkit-scrollbar-thumb {
         align-items:flex-start;
         margin: 2vh 0 2vh 0;
     }
-
     .contact .text > div{
         margin-top: 3vh;
         width: 100%;
@@ -611,14 +619,12 @@ body::-webkit-scrollbar-thumb {
         font-weight: normal;
         margin-bottom: 0.5vh;
     }
-
     .contact .text > div > a{
         width: 100%;
         font-size: 18px;
         font-weight: 500;
         text-align: center;
-    }
-
+    } 
     .contact .reach{
         gap: 5vw;
         width: 100%;
@@ -626,28 +632,11 @@ body::-webkit-scrollbar-thumb {
         flex-wrap: wrap;
         padding: 0 5vw;
     }
-    
-
     .contact .reach a {
         padding: 0em 0em;
         border-radius: 0em;
         border: 2px solid transparent;
     }
-    /*.contact .reach a ion-icon{
-        font-size: 25px;
-        color: #ee56ff;      
-    }
-
-    .contact .reach .twitter ion-icon{color: #23a6d5;}
-
-    .contact .reach .github ion-icon{color: #ffffff;}
-    
-    .contact .reach .linkedin ion-icon{color: #236dd5;}
-
-    .contact .reach .codepen ion-icon{color: #e6eef3;}
-
-    .contact .reach .gmail ion-icon{color: #db1212;}*/
-    
     .contact .reach a ion-icon{
         font-size: 20px;
         color: var(--p);      
@@ -655,7 +644,6 @@ body::-webkit-scrollbar-thumb {
     .contact .reach a span{
         display: none;
     }
-
     /*-------------footer--------------*/
     .contact .footer{
         margin-bottom: 1vh;
@@ -677,7 +665,7 @@ body::-webkit-scrollbar-thumb {
         display: flex;
         width: 90%;
         color: var(--p);
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
         padding: 2vh 3vw;
         border-radius: 18px;
@@ -687,10 +675,12 @@ body::-webkit-scrollbar-thumb {
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         border-left: 1px solid rgba(255, 255, 255, 0.1);
         background: radial-gradient(circle at 0% 100%, #0e0c49 20%, #0e0d4a 40%, #020139 100%);
+        background: #0e0c49;
+        
     }
     .contact > a ion-icon{
         color: var(--p);
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
     }
 
@@ -709,5 +699,30 @@ body::-webkit-scrollbar-thumb {
         height: 3px;
         border-radius: 2px;
         margin: 1.5vh 0 4vh 0;
+    }
+
+    /*---------------Contact-----------------*/
+    .contact > a{
+        gap: 5px;
+        display: flex;
+        width: 90%;
+        color: var(--p);
+        font-size: 14px;
+        font-weight: 500;
+        padding: 2vh 3vw;
+        border-radius: 18px;
+        margin: 5vh 5% 0 5%;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        background: radial-gradient(circle at 0% 100%, #0e0c49 20%, #0e0d4a 40%, #020139 100%);
+        background: #0e0c49;
+        
+    }
+    .contact > a ion-icon{
+        color: var(--p);
+        font-size: 14px;
+        font-weight: 400;
     }
 }
