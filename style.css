@@ -98,9 +98,13 @@ body{
     padding-bottom: 3px 0;
 }
 
-.links div a:hover{
+
+.links .menu-active > a:hover, .links .menu-active > a.active{
     color: #62edd1;   
-    border-bottom: 2px solid #62edd1;
+    border-bottom: 2px solid #62edd1;  
+}
+.links-cel .menu-active1 > a:hover, .links-cel .menu-active1 > a.active1{
+    color: #62edd1;     
 }
 
 /*------------------Boton dia noche------------------*/
@@ -818,7 +822,30 @@ label input:checked ~ span ion-icon{
         text-align: center;
         transition: all 0.5s ease-out;
         margin-left: -15vw;
+        color: #d56de7;     
     }
+    .container > .introduction header strong{
+        transition: all 0.5s ease-out;
+        margin-left: -15vh;
+        opacity: 0;
+        font-weight: 700;
+        font-size: 64px;
+        text-align: center;
+        line-height: 60px;
+        color: #d56de7;
+        background-image: linear-gradient(to right,#8e6de7,#d56de7,#5dbeff,#d56de7);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: fluido 10s ease-in-out infinite;
+        background: linear-gradient(-45deg,#8e6de7, #23a6d5, #23d5ab);
+        background-size: 300%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
     .container .introduction{
         flex-direction: column;
     }

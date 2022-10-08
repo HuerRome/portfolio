@@ -12,6 +12,36 @@ button.addEventListener('click',()=>{
     menudes.classList.toggle("active");
 })
 
+//-----------------Menu-----------------
+// Get the container element
+var btnContainer = document.querySelector(".menu-active");  
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("btn");       
+// Loop through the buttons and add the active class to the current/clicked button
+
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+//-----------------Menu-----------------
+// Get the container element
+var btnContainer = document.querySelector(".menu-active1");  
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("btn1");       
+// Loop through the buttons and add the active class to the current/clicked button
+
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active1");
+    current[0].className = current[0].className.replace(" active1", "");
+    this.className += " active1";
+  });
+}
+
 //texto efecto
 let tittle=document.querySelector(".container > .introduction header strong");
 let tittle2=document.querySelector(".container > .introduction header small");

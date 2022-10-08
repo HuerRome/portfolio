@@ -573,9 +573,11 @@ body::-webkit-scrollbar-thumb {
     }
     .projects > div:last-child > div a{
         width: 80%;
+        border: none;
         padding: 1.8vh 0;
         margin: 0 10% 0vh 10%;
     }
+
     /*-----------------------technologies----------------------*/
     .technologies{
         margin: 2vh 0 14vh 0; 

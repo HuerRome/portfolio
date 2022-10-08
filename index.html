@@ -17,13 +17,12 @@
     <button id="gotop"><ion-icon name="chevron-up-outline"></ion-icon></button>
     <nav class="links">
         <strong>A</strong>
-        <div>
-            <a href="#">Start</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Skills</a>
-            
-            <a href="#">Contact me</a>
+        <div class="menu-active">
+            <a href="#introduction" class="btn active">Start</a>
+            <a href="#about" class="btn">About</a>
+            <a href="#projects" class="btn">Projects</a>
+            <a href="#technologies" class="btn">Skills</a>    
+            <a href="#contact" class="btn">Contact me</a>
             <label class="label">
                 <input type="checkbox" >
                 <span class="day-night-1"><ion-icon name="sunny-outline"></ion-icon></span>
@@ -44,19 +43,18 @@
             <div class="bulb"></div>
         </label>
         <div class="menu">
-            <div>
-                <a href="#">Start</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Projects</a>
-                <a href="#">Experience</a>
-                <a href="#">Contact me</a>
+            <div class="menu-active1">
+                <a href="#introduction" class="btn1 active1">Start</a>
+                <a href="#about" class="btn1">About</a>
+                <a href="#projects" class="btn1">Projects</a>
+                <a href="#technologies" class="btn1">Skills</a>    
+                <a href="#contact" class="btn1">Contact me</a>
             </div>
         </div>
     </nav> 
 
     <div class="container"> 
-        <div class="introduction">
+        <div class="introduction" id="introduction">
             <header>
                 <small translate="no">Hey, my name is</small>
                 <strong translate="no">Romero Anita</strong>
@@ -88,7 +86,7 @@
                 </div>
             </div>
         </div>
-        <div class="about">
+        <div class="about" id="about">
             <div class="circle circle1"></div>
             <div class="circles">
                 <div class="circle circle2"></div>
@@ -108,7 +106,7 @@
                 </div>
             </div>
         </div>
-        <div class="projects">
+        <div class="projects" id="projects">
             <h1>Projects</h1>
             <div class="div"></div>
             <div>
@@ -138,7 +136,7 @@
                 </div>
             </div>
         </div>
-        <div class="technologies">
+        <div class="technologies" id="technologies">
             <h1><span></span>Technologies<span></span></h1>
             <div class="div"></div>
             <div translate="no">
@@ -157,9 +155,8 @@
                 <div><img src="img/mysqlworkbench_93532.svg" alt=""><span>MySQL</span></div>
                 <div><img src="img/postgresql_plain_logo_icon_146389.svg" alt=""><span>PostgreSQL</span></div>
             </div>
-        </div>
-        
-        <div class="contact">
+        </div>  
+        <div class="contact" id="contact">
             <h1>Contact me</h1>
             <div class="div"></div>
             <div class="text">
