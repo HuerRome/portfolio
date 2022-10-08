@@ -6,6 +6,7 @@
 
 :root{
     --p: #b0bcd3;
+    --a: #bdc8db;
     --title: #fafafa;
     --border: #52dee5;
 }
@@ -237,6 +238,7 @@ body::-webkit-scrollbar-thumb {
         background: radial-gradient(circle at 100% 0%, rgb(31, 56, 122) 0%, rgb(14, 10, 87) 50%, rgb(6, 5, 66) 70%);
         background: radial-gradient(circle at 0% 100%, rgb(18, 17, 68) 30%,rgb(18, 28, 82) 60%, rgb(46, 59, 135) 100%);
         background: #1c1c5c;
+        background: #162066;
     }
 
     .about .about-container .text p{
@@ -253,6 +255,29 @@ body::-webkit-scrollbar-thumb {
         text-align: center;
     }
 
+    .about .about-container .text a{
+        gap: 5px;
+        display: flex;
+        width: 90%;
+        color: var(--p);
+        color: var(--a);
+        font-size: 14px;
+        font-weight: 500;
+        padding: 2vh 3vw;
+        border-radius: 18px;
+        margin: 5vh 5% 0 5%;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        background: #0e0c49;  
+    }
+    .about .about-container .text a ion-icon{
+        color: var(--p);
+        color: var(--a);
+        font-size: 14px;
+        font-weight: 400;
+    }
 }
 
 
@@ -351,7 +376,7 @@ body::-webkit-scrollbar-thumb {
     width: 70%;
     margin: 1vh 15% 2vh 15%;
     display: flex;
-    padding: 2vh 0;
+    padding: 2.5vh 0;
     font-size: 15px;
     font-weight: 400;
     line-height: 20px;
@@ -359,23 +384,25 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     transition: all 0.5s;
     justify-content: center;
-    background: #fff6fc;  
-    background: -webkit-linear-gradient(to bottom, #ffffff, #e2d8ea);  
-    background: linear-gradient(to bottom, #ffffff, #e2d8ea); 
-    border: 2px solid rgba(167, 168, 217, 0.02);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    background: radial-gradient(circle at 0% 100%, #0e0c49 20%, #0e0d4a 40%, #020139 100%);
+    background: #162066;
 }
 .projects > div:last-child > div a ion-icon{
     color: #11152b;
+    color: var(--p);
 }
 .projects > div:last-child > div a span{
-    color: #11152b
+    color: #11152b;
+    color: var(--p);
 }
 
 /*-------------------------------technologies--------------------------------*/
 .technologies{
     width: 100%;
     padding: 2vh 5vw;
-    margin: 3vh 0 20vh 0;
+    margin: 2vh 0 18vh 0;
 }
 
 .technologies > div:last-child{
@@ -515,9 +542,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 18px;
 }
 
-.contact > a{
-    display: none;
-}
+
 
 @media (max-width: 480px){
     .projects{
@@ -574,8 +599,9 @@ body::-webkit-scrollbar-thumb {
     .projects > div:last-child > div a{
         width: 80%;
         border: none;
-        padding: 1.8vh 0;
+        padding: 2vh 0;
         margin: 0 10% 0vh 10%;
+
     }
 
     /*-----------------------technologies----------------------*/
@@ -656,8 +682,9 @@ body::-webkit-scrollbar-thumb {
     }
 
     .contact .footer h1{
-        font-size: 10px;
         width: 100%;
+        font-size: 10px;
+        background: #162066;
         padding: 1.5vh 0 1.5vh 0;
     }
     
@@ -666,36 +693,10 @@ body::-webkit-scrollbar-thumb {
         margin: 0 0.1vw 0 1.2vh;  
     }
 
-    .contact > a{
-        gap: 5px;
-        display: flex;
-        width: 90%;
-        color: var(--p);
-        font-size: 14px;
-        font-weight: 500;
-        padding: 2vh 3vw;
-        border-radius: 18px;
-        margin: 5vh 5% 0 5%;
-        align-items: center;
-        justify-content: center;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        border-left: 1px solid rgba(255, 255, 255, 0.1);
-        background: radial-gradient(circle at 0% 100%, #0e0c49 20%, #0e0d4a 40%, #020139 100%);
-        background: #0e0c49;
-        
-    }
-    .contact > a ion-icon{
-        color: var(--p);
-        font-size: 14px;
-        font-weight: 400;
-    }
 
 }
 
 @media (max-width: 370px){
-    /*.projects{
-        padding: 8vh 5vw; 
-    }*/
     .projects > h1, .technologies h1, .contact > h1{
         font-size: 20px;  
         line-height: 20px;
@@ -709,29 +710,14 @@ body::-webkit-scrollbar-thumb {
 
     /*---------------Contact-----------------*/
     .contact > a, .about .about-container .text a{
-        gap: 5px;
-        display: flex;
         width: 90%;
-        color: var(--p);
         font-size: 14px;
         font-weight: 500;
-        padding: 2vh 3vw;
-        border-radius: 18px;
-        margin: 5vh 5% 0 5%;
-        align-items: center;
-        justify-content: center;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        border-left: 1px solid rgba(255, 255, 255, 0.1);
-        background: radial-gradient(circle at 0% 100%, #0e0c49 20%, #0e0d4a 40%, #020139 100%);
-        background: #0e0c49;
         
     }
-    .contact > a ion-icon, .about .about-container .text a ion-icon{
-        color: var(--p);
+    .about .about-container .text a ion-icon{
         font-size: 14px;
         font-weight: 400;
     }
-    .contact > a{
-        display: none;
-    }
+
 }
