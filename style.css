@@ -99,7 +99,7 @@ body{
 }
 
 
-.links .menu-active > a:hover, .links .menu-active > a.active{
+.links .menu-active > a:hover, .links .menu-active > a.active, .links .menu-active > a.activee{
     color: #62edd1;   
     border-bottom: 2px solid #62edd1;  
 }
@@ -487,7 +487,7 @@ label input:checked ~ span ion-icon{
     padding: 4.2vh 0 4.2vh 2.5vw;
     box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.18);
     background: rgb(18,28,82); 
-    background: radial-gradient(circle at 0% 100%, rgb(18, 17, 68) 0%,rgb(18, 28, 82) 20%, rgb(25, 35, 95) 40%, rgb(46, 59, 135) 100%);
+    background: radial-gradient(circle at 0% 100%, #121144 0%,#121c52 20%, #19235f 40%, #2e3b87 100%);
 }
 .introduction .code div p{
     font-family: Barlow,Verdana, Geneva, Tahoma, sans-serif;
@@ -858,7 +858,7 @@ label input:checked ~ span ion-icon{
     }
     .container > .introduction > .code{
         width: 100%;
-        margin: 12vw 0 18vw 0;  /*altura del about*/
+        margin: 12vw 0 18vw 0;
         gap: 15px;
         align-items: center;
       

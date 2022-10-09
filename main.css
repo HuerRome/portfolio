@@ -387,15 +387,15 @@ body::-webkit-scrollbar-thumb {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     background: radial-gradient(circle at 0% 100%, #0e0c49 20%, #0e0d4a 40%, #020139 100%);
-    background: #162066;
+    background: #2e3b87;
 }
 .projects > div:last-child > div a ion-icon{
     color: #11152b;
-    color: var(--p);
+    color: var(--a);
 }
 .projects > div:last-child > div a span{
     color: #11152b;
-    color: var(--p);
+    color: var(--a);
 }
 
 /*-------------------------------technologies--------------------------------*/
@@ -606,7 +606,7 @@ body::-webkit-scrollbar-thumb {
 
     /*-----------------------technologies----------------------*/
     .technologies{
-        margin: 2vh 0 14vh 0; 
+        margin: 3vh 0 15vh 0; 
     }
     .technologies > div:last-child{
         gap: 10vw;

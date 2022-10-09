@@ -142,11 +142,7 @@ function checkBoxes() {
 }
 
 
-/*--------------------*/
-console.log(window.innerWidth);
-console.log(window.innerHeight)
-
-
+/*---------Day-Night button-----------*/
 let daynight1= document.querySelector(".day-night-1");
 let daynight2= document.querySelector(".day-night-2");
 
@@ -178,3 +174,24 @@ window.addEventListener('scroll', function()  {
 
       }
 });
+
+
+//-------------scrool nav effect--------------
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll(".links .menu-active > a");
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 60) {
+      current = section.getAttribute("id"); }
+  });
+
+  navLi.forEach((li) => {
+    li.classList.remove("activee");
+    if (li.classList.contains(current)) {
+      li.classList.add("activee");
+    }
+  });
+};
