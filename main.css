@@ -227,11 +227,11 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 480px){
     .about{
         margin-top: 5vh;
-        background: var(--border);
+       
     }
     .about .about-container .text{
         margin-top: 2vh;
-        margin: 12vh 4% 12vh 4%;
+        margin: 2vh 4% 2vh 4%;
         border-radius: 14px;
         padding: 25px 5vw 30px 5vw;
         padding: 4.5vh 5vw 5vh 5vw;
@@ -585,6 +585,7 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 480px){
     .projects{
+        margin-top: 10vh;
         padding: 10vh 5vw; 
         background: var(--violet);
     }
@@ -668,9 +669,11 @@ body::-webkit-scrollbar-thumb {
         margin: 0vh 0 0vh 0;
         background: none;
         padding: 2vh 5vw 15vh 5vw;
+        padding: 12vh 5vw 12vh 5vw;
         opacity: 0;
         transform: translate(-10vh, 0vh);
         transition: all 1s;
+        
     }
     .technologies.visible{
         opacity: 1;

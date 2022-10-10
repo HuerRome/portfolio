@@ -14,12 +14,12 @@ body.change #gotop{
 
 body.change .container{
     background: #fff;
-    background: #e6e6e6;
+    
 }
 body.change .container .introduction{
     background: #fff;
-    background: #e6e6e6;
-    background: radial-gradient(circle at 100% 0%, #9db7ff 0%, #aaa5ff 40%, #eee8fb 30%);
+    background: #eee8fb;
+    background: radial-gradient(circle at 100% 0%, #9db7ff 0%, #aaa5ff 40%, #fff 30%);
 }
 /*-----------------------scroll effect-------------------------*/
 body.change::-webkit-scrollbar-track {
