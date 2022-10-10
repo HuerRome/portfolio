@@ -9,6 +9,7 @@
     --a: #bdc8db;
     --title: #fafafa;
     --border: #52dee5;
+    --violet: #4e54c8;
 }
 
 .about{
@@ -226,20 +227,23 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 480px){
     .about{
         margin-top: 5vh;
+        background: var(--border);
     }
     .about .about-container .text{
         margin-top: 2vh;
+        margin: 12vh 4% 12vh 4%;
         border-radius: 14px;
         padding: 25px 5vw 30px 5vw;
         padding: 4.5vh 5vw 5vh 5vw;
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+        width: 92%;
+
         transition: all 1.2s ease;
+        box-shadow: 0 10px 20px 5px rgba(10, 8, 36, 0);
         background: radial-gradient(circle at 100% 0%, rgb(31, 56, 122) 0%, rgb(14, 10, 87) 50%, rgb(6, 5, 66) 70%);
         background: radial-gradient(circle at 0% 100%, rgb(18, 17, 68) 30%,rgb(18, 28, 82) 60%, rgb(46, 59, 135) 100%);
         background: #1c1c5c;
         background: #162066;
+
     }
 
     .about .about-container .text p{
@@ -247,7 +251,6 @@ body::-webkit-scrollbar-thumb {
         color: var(--p);
         font-weight: 300;
         margin: 2vh 0 0vh 0;
-        
     }
     .about .about-container .text h1{
         font-size: 24px;
@@ -260,12 +263,11 @@ body::-webkit-scrollbar-thumb {
         gap: 5px;
         display: flex;
         width: 90%;
-        color: var(--p);
         color: var(--a);
         font-size: 14px;
         font-weight: 500;
         padding: 2vh 3vw;
-        border-radius: 18px;
+        border-radius: 10px;
         border-radius: 15px;
         margin: 5vh 5% 0 5%;
         align-items: center;
@@ -365,19 +367,19 @@ body::-webkit-scrollbar-thumb {
     font-weight: 400;
     line-height: 20px;
     color: var(--title);
-    margin: 3vh 0 2vh 5%;
+    margin: 3vh 0 0vh 5%;
 }
 .projects > div:last-child > div p{
     font-size: 15px;
     font-weight: 300;
     line-height: 20px;
-    margin: 0 0 2vh 5%;
+    margin: 2vh 0 3vh 5%;
     color: var(--p);
 }
 .projects > div:last-child > div a{
     gap: 5px;
     width: 70%;
-    margin: 1vh 15% 2vh 15%;
+    margin: 0vh 15% 2vh 15%;
     display: flex;
     padding: 2.5vh 0;
     font-size: 15px;
@@ -409,9 +411,7 @@ body::-webkit-scrollbar-thumb {
     padding: 10vh 5vw;
     margin: 2vh 0 18vh 0;
     margin: 0vh 0 15vh 0;
-    background: #7e83ef;
-    background: #4e54c8;
-
+    background: var(--violet);
 }
 
 .technologies > div:last-child{
@@ -585,7 +585,8 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 480px){
     .projects{
-        padding: 12vh 5vw; 
+        padding: 10vh 5vw; 
+        background: var(--violet);
     }
     .projects > h1, .technologies h1, .contact > h1{
         font-size: 24px;  
@@ -607,9 +608,9 @@ body::-webkit-scrollbar-thumb {
     }
 
     .projects > div:last-child{
-        gap: 5vh;
+        gap: 6vh;
         width: 100%;
-        padding: 2vh 0;
+        padding-top: 2vh;
         flex-direction: column;
     }
     .projects > div:last-child > div:last-child{
@@ -635,6 +636,7 @@ body::-webkit-scrollbar-thumb {
     }
     .projects > div:last-child > div p{
         font-size: 14px;
+        margin: 1.2vh 0 3vh 5%;
     }
     .projects > div:last-child > div a{
         width: 80%;
@@ -643,6 +645,13 @@ body::-webkit-scrollbar-thumb {
         margin: 0 10% 0vh 10%;
         background: #47468f;
         background: #4e54c8;
+        background: #162066;
+        background: #ffff;
+        border-top: 2px solid rgba(167, 168, 217, 0.02);
+        border-left: 2px solid rgba(167, 168, 217, 0.02);
+    }
+    .projects > div:last-child > div a span, .projects > div:last-child > div a ion-icon{
+        color: #020139;
     }
 
     .projects > h1, .projects .div{
@@ -656,10 +665,9 @@ body::-webkit-scrollbar-thumb {
     }
     /*-----------------------technologies----------------------*/
     .technologies{
-        margin: 3vh 0 15vh 0; 
         margin: 0vh 0 0vh 0;
         background: none;
-        padding: 3vh 5vw 15vh 5vw;
+        padding: 2vh 5vw 15vh 5vw;
         opacity: 0;
         transform: translate(-10vh, 0vh);
         transition: all 1s;
@@ -672,7 +680,7 @@ body::-webkit-scrollbar-thumb {
         gap: 10vw;
         width: 88%;
         margin: 0 6%;
-        margin-top: 5vh;
+        margin-top: 6vh;
     }
     .technologies > div:last-child div{
         gap: 1.4vh;
@@ -694,7 +702,7 @@ body::-webkit-scrollbar-thumb {
     .contact{
         padding-top: 10vh;  
         background: var(--border);
-        background: #4e54c8;
+        background: var(--violet);
         opacity: 0;
         transform: translate(-10vh, 0vh);
         transition: all 1s;

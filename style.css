@@ -232,6 +232,7 @@ label input:checked ~ span ion-icon{
         left: 0;
         opacity: 1;
         background: #010030;
+        
     }
 
     .menu div{
@@ -488,6 +489,7 @@ label input:checked ~ span ion-icon{
     box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.18);
     background: rgb(18,28,82); 
     background: radial-gradient(circle at 0% 100%, #121144 0%,#121c52 20%, #19235f 40%, #2e3b87 100%);
+    background: radial-gradient(circle at 0% 100%, #121c52 0%,#131e5c 20%, #162266 40%, #3d4dab 100%);
 }
 .introduction .code div p{
     font-family: Barlow,Verdana, Geneva, Tahoma, sans-serif;
@@ -811,7 +813,7 @@ label input:checked ~ span ion-icon{
         font-size: 26px;
         line-height: 25px;
         font-weight: 400px;
-        margin: 12vw 0 5vw 0vw; /*cambio de altura del nombre*/
+        margin: 14vw 0 5vw 0vw; /*cambio de altura del nombre*/
         text-align: center;
         margin-left: -15vh;
     }
