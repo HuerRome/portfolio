@@ -82,7 +82,7 @@
     position: relative;
     border-radius: 14px;
     margin: 8vw 1vw 8vw 6%;
-    background: rgb(25, 35, 95);
+    background: #19235f;
     border-radius: 12px;
     flex-direction: column;
     justify-content: center;
@@ -231,6 +231,7 @@ body::-webkit-scrollbar-thumb {
         margin-top: 2vh;
         border-radius: 14px;
         padding: 25px 5vw 30px 5vw;
+        padding: 4.5vh 5vw 5vh 5vw;
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
@@ -265,12 +266,14 @@ body::-webkit-scrollbar-thumb {
         font-weight: 500;
         padding: 2vh 3vw;
         border-radius: 18px;
+        border-radius: 15px;
         margin: 5vh 5% 0 5%;
         align-items: center;
         justify-content: center;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         border-left: 1px solid rgba(255, 255, 255, 0.1);
-        background: #0e0c49;  
+        background: #0e0c49; 
+        background: #4e54c8; 
     }
     .about .about-container .text a ion-icon{
         color: var(--p);
@@ -388,6 +391,7 @@ body::-webkit-scrollbar-thumb {
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     background: radial-gradient(circle at 0% 100%, #0e0c49 20%, #0e0d4a 40%, #020139 100%);
     background: #2e3b87;
+    background: #4e54c8;
 }
 .projects > div:last-child > div a ion-icon{
     color: #11152b;
@@ -402,7 +406,12 @@ body::-webkit-scrollbar-thumb {
 .technologies{
     width: 100%;
     padding: 2vh 5vw;
+    padding: 10vh 5vw;
     margin: 2vh 0 18vh 0;
+    margin: 0vh 0 15vh 0;
+    background: #7e83ef;
+    background: #4e54c8;
+
 }
 
 .technologies > div:last-child{
@@ -441,7 +450,7 @@ body::-webkit-scrollbar-thumb {
 .technologies > div:last-child::-webkit-scrollbar-track {
     background-color: transparentize(#ccc, 0.7);
     background: #1f2864;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 6px;
     margin: 0 8vw;
 }
@@ -463,7 +472,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 15vh 10vw 8vh 10vw;
+    margin: 15vh 10vw 0vh 10vw;
     overflow: hidden;
 }
 
@@ -483,6 +492,37 @@ body::-webkit-scrollbar-thumb {
     line-height: 40px;
     color: var(--title);
 }
+
+.contact .click{
+    margin: 0 auto;
+    width: 5vw;
+    display: flex;
+    height: 5vw;
+    font-size: 19px;
+    margin-bottom: 10vh;
+    border-radius: 50%;
+    align-items: center;
+    color: var(--border);
+    animation-name: slide;
+    flex-direction: column;
+    justify-content: center;
+    animation-duration: 1.5s;
+    border: 1px solid var(--border);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.contact .click span{
+    font-size: 13px;
+}
+
+@keyframes slide{
+    100%{
+        transform: translate(0vh, 5vh);
+    }
+}
+
+
 .contact .reach{
     gap: 3vw;
     width: 100%;
@@ -491,7 +531,6 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     padding: 0 8vw;
 }
-
 .contact .reach a ion-icon{
     font-size: 25px;
 }
@@ -516,7 +555,7 @@ body::-webkit-scrollbar-thumb {
 /*-------------------------footer------------------------------*/
 .contact footer{
     width: 100%;
-    margin-top: 11vh;
+    margin-top: 15vh;
     margin-bottom: 2vh;
 }
 
@@ -566,6 +605,7 @@ body::-webkit-scrollbar-thumb {
         border-radius: 2px;
         margin: 1.5vh 0 4vh 0;  
     }
+
     .projects > div:last-child{
         gap: 5vh;
         width: 100%;
@@ -601,12 +641,32 @@ body::-webkit-scrollbar-thumb {
         border: none;
         padding: 2vh 0;
         margin: 0 10% 0vh 10%;
-
+        background: #47468f;
+        background: #4e54c8;
     }
 
+    .projects > h1, .projects .div{
+        opacity: 0;
+        transform: translate(-10vh, 0vh);
+        transition: all 1s;
+    }
+    .projects > h1.visible, .projects .div.visible{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
     /*-----------------------technologies----------------------*/
     .technologies{
         margin: 3vh 0 15vh 0; 
+        margin: 0vh 0 0vh 0;
+        background: none;
+        padding: 3vh 5vw 15vh 5vw;
+        opacity: 0;
+        transform: translate(-10vh, 0vh);
+        transition: all 1s;
+    }
+    .technologies.visible{
+        opacity: 1;
+        transform: translate(0, 0);
     }
     .technologies > div:last-child{
         gap: 10vw;
@@ -624,19 +684,31 @@ body::-webkit-scrollbar-thumb {
         font-size: 16px;
         font-weight: normal;
         margin-bottom: 4vh;
-        color: var(--p);
+        color: var(--a);
     }
     .technologies > div:last-child::-webkit-scrollbar-track {
         margin: 0 2vw;
     }   
 
     /*-------------contact--------------*/
+    .contact{
+        padding-top: 10vh;  
+        background: var(--border);
+        background: #4e54c8;
+        opacity: 0;
+        transform: translate(-10vh, 0vh);
+        transition: all 1s;
+    }
+    .contact.visible{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
     .contact .text{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items:flex-start;
-        margin: 2vh 0 2vh 0;
+        margin: 6vh 0 0 0;
     }
     .contact .text > div{
         margin-top: 3vh;
@@ -671,21 +743,24 @@ body::-webkit-scrollbar-thumb {
     }
     .contact .reach a ion-icon{
         font-size: 20px;
-        color: var(--p);      
+        color: var(--title);      
     }
     .contact .reach a span{
         display: none;
     }
     /*-------------footer--------------*/
     .contact .footer{
-        margin-bottom: 1vh;
+        margin-top: 12vh;
+        margin-bottom: 0;
     }
 
     .contact .footer h1{
         width: 100%;
         font-size: 10px;
-        background: #162066;
-        padding: 1.5vh 0 1.5vh 0;
+        background: none;
+        border-top: 1px solid var(--p);
+        border-radius: 0px;
+        padding: 3vh 0 3vh 0;
     }
     
     .contact .footer h1 span{
@@ -693,7 +768,22 @@ body::-webkit-scrollbar-thumb {
         margin: 0 0.1vw 0 1.2vh;  
     }
 
-
+    .contact .click{
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        margin-bottom: 2vh;
+        margin-top: 2vh;
+        border: none;
+    }
+    .contact .click span{
+        font-size: 14px;
+    }
+    @keyframes slide{
+        100%{
+            transform: translate(0vh, 2vh);
+        }
+    }
 }
 
 @media (max-width: 370px){

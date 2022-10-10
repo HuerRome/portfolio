@@ -30,6 +30,7 @@ body{
     width: 100%;
     height: auto;
     background: #02021f;
+    scroll-behavior: smooth;  
     background: radial-gradient(circle at 100% 0%, rgb(30, 52, 113) 0%, #01012a 25%, #00001b 60%);
     background: radial-gradient(circle at 100% 0%, rgb(30, 52, 113) 0%, #01012a 25%, #00001b 60%);
 }
@@ -37,7 +38,6 @@ body{
 .container{
     width: 100%;
     overflow: hidden;
-
 }
 
 .loader {
