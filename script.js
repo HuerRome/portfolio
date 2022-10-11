@@ -93,29 +93,6 @@ function topFunction() {
 
 mybutton.addEventListener("click",topFunction)
 
-/*-----------------------------slider-------------------------------- */
-//I iterate the array according to the number of sections of the slider
-//let array=['0','-156px','-312px','-468px','-624px','-780px','-936px','-1092px','-1248px','-1404px','-1560px','-1716px','-1872px'];
-/*let array=['0','-156px','-312px','-468px','-624px','-780px'];
-
-if (window.innerWidth < '600'){
-  let array=['0','-156px','-312px','-468px','-624px','-780px','-936px','-1092px','-1248px','-1404px','-1560px','-1716px','-1872px'];
-}
-let Contador=0;
-let list=array.length-1;
-let img=document.querySelector(".slider .technologies .set");
-
-setInterval(() => {
-  if(Contador<array.length-1){
-    img.style.transition='all 1s ease-out';
-    Contador=Contador+1;
-    img.style.marginLeft=`${array[Contador]}`;
-  }else{
-    img.style.transition='all 1s ease-out';
-    Contador=0;
-    img.style.marginLeft=`${array[Contador]}`;
-  }
-}, 3000);*/
 
 /*---------------------------div scroll effect---------------------------- */
 const text = document.querySelector(".text");

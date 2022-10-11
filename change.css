@@ -1,3 +1,4 @@
+
 body.change .links.up, body.change .links-cel.up{
     background-color: rgba(135, 108, 255, 0.3);
 }
@@ -13,13 +14,14 @@ body.change #gotop{
 }
 
 body.change .container{
-    background: #fff;
+    background: #e5edf1;
+    background: #ecf3fa;
     
 }
 body.change .container .introduction{
     background: #fff;
     background: #eee8fb;
-    background: radial-gradient(circle at 100% 0%, #9db7ff 0%, #aaa5ff 40%, #fff 30%);
+    background: radial-gradient(circle at 100% 0%, #9db7ff 0%, #aaa5ff 40%, #ecf3fa 30%);
 }
 /*-----------------------scroll effect-------------------------*/
 body.change::-webkit-scrollbar-track {
@@ -88,22 +90,29 @@ body.change .introduction .code > div{
     background: linear-gradient(200deg, rgb(163, 187, 253), rgb(165, 183, 255), rgb(126, 143, 255));
 }
 body.change .introduction .code > div:first-child .comment, body.change .introduction .code > div p{
-    color: #000;
+    color: #020139;
 }
 
 /*-------------------------------about----------------------------------*/
 body.change .about .about-container .text{
-    background: #7a8eff;
-    box-shadow: 0 10px 20px 5px rgba(10, 8, 36, 0.3);
+    background: #ffff;
+    background: rgb(126, 143, 255);
+    box-shadow: 0 10px 30px 5px rgba(114, 105, 247, 0.4);
 }
 body.change .about .about-container .text h1{
-    color: #ffff;
+    color:  #0b0c21;
+}
+body.change .about .about-container .text h1 span{
+    color: #51f1ff;
 }
 body.change .about .about-container .text p{
-    color: #ffff;
+    color:  #131432;
 }
 
 /*--------------------------projects-------------------------------*/
+body.change .projects{
+    background: #99bbff;
+}
 body.change .projects > h1, body.change .technologies h1, body.change .contact > h1{
     color: #000;
 }
@@ -123,14 +132,11 @@ body.change .projects > div:last-child > div a{
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     background: radial-gradient(circle at 0% 100%, #0e0c49 20%, #0e0d4a 40%, #020139 100%);
-    background: #2e3b87;
     background: #6873bf;
+    background: #eceef9;
 }
-body.change .projects > div:last-child > div a ion-icon{
-    color: var(--a);
-}
-body.change .projects > div:last-child > div a span{
-    color: var(--a);
+body.change .projects > div:last-child > div a ion-icon, body.change .projects > div:last-child > div a span{
+    color: #020139;
 }
 
 /*-------------------------------technologies--------------------------------*/
@@ -150,41 +156,49 @@ body.change .technologies > div:last-child::-webkit-scrollbar-thumb {
 }
 
 /*----------------------Contact------------------------*/
+body.change .contact{
+    background: #b4c7fa;
+}
 body.change .contact .text > div h1{
     font-weight: 500;
-    color: #000;
+    font-size: 22px;
+    color: #020139;
+    
 }
 body.change .contact .text > div a{
-    color: #000;
+    color: #020139;
     font-weight: 400;
 }
 
 body.change .contact .reach a {
     color: #8e6bff;
     font-weight: 400;
+    font-size: 20px;
     border: 2px solid #8e6bff;
 }
-
+body.change .contact .click{
+    color: #eceef9;
+    border: 1px solid #eceef9;
+}
 /*-------------------------footer------------------------------*/
 body.change .contact footer h1{
-    color: #000;
-    background: -webkit-linear-gradient(to right, #4e54c8, #8f94fb); 
-    background: linear-gradient(to right, #4a77ea, #52afe5);
-    background: linear-gradient(to right, #484dbe, #7e83ef);
-   
+    color: #020139;
+    background: none;
+    border-top: 2px solid rgb(2, 1, 57, 0.5);
 }
 
 /*-----------------------------------media queries----------------------------------*/
 
 @media (max-width: 480px){
     body.change .about .about-container .text a{
-        color: #000;
+        color: #020139;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         border-left: 1px solid rgba(255, 255, 255, 0.1);
-        background: #6d68fa;  
+        background: #6d68fa; 
+        background: #eceef9; 
     }
     body.change .about .about-container .text a ion-icon{
-        color: #000;
+        color: #020139;
     
     }
     body.change .contact .reach a ion-icon{
@@ -197,8 +211,11 @@ body.change .contact footer h1{
         border: none;
     }
     body.change .menu.active{
-        background: #7473b1;
+        background: #7e8fff;
         
+    }
+    body.change .contact .click{
+        border: none;
     }
 }
 
@@ -211,7 +228,7 @@ body.change label{
 
 body.change label span{
     background: #9391ff;
-    border: 6px solid #5a6be8
+    border: 6px solid #5a6be8;
 }
 
 body.change label span ion-icon{
@@ -222,3 +239,19 @@ body.change label input:checked ~ span ion-icon{
     color: #ffffff;
     filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 10px #fff) drop-shadow(0 0 15px #fff);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

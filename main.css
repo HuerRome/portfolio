@@ -407,9 +407,7 @@ body::-webkit-scrollbar-thumb {
 /*-------------------------------technologies--------------------------------*/
 .technologies{
     width: 100%;
-    padding: 2vh 5vw;
-    padding: 10vh 5vw;
-    margin: 2vh 0 18vh 0;
+    padding: 10vh 5vw 12vh 5vw;
     margin: 0vh 0 15vh 0;
     background: var(--violet);
 }
@@ -668,12 +666,11 @@ body::-webkit-scrollbar-thumb {
     .technologies{
         margin: 0vh 0 0vh 0;
         background: none;
-        padding: 2vh 5vw 15vh 5vw;
         padding: 12vh 5vw 12vh 5vw;
         opacity: 0;
         transform: translate(-10vh, 0vh);
         transition: all 1s;
-        
+       
     }
     .technologies.visible{
         opacity: 1;
