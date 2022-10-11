@@ -75,15 +75,15 @@ window.addEventListener("scroll",() => {
 mybutton = document.getElementById("gotop");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+/*window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 170 || document.documentElement.scrollTop > 150) {
-    mybutton.classList.add('show');
+    mybutton.classList.add('active');
   } else {
-    mybutton.classList.remove("show");
+    mybutton.classList.remove("active");
   }
-}
+}*/
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {

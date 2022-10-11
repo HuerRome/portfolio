@@ -230,7 +230,6 @@ body::-webkit-scrollbar-thumb {
        
     }
     .about .about-container .text{
-        margin-top: 2vh;
         margin: 2vh 4% 2vh 4%;
         border-radius: 14px;
         padding: 25px 5vw 30px 5vw;
@@ -583,9 +582,11 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 480px){
     .projects{
-        margin-top: 10vh;
-        padding: 10vh 5vw; 
+        margin-top: 12vh;
+        padding: 12vh 5vw; 
         background: var(--violet);
+        background: #8f94fb;
+        background: #4e54c8;
     }
     .projects > h1, .technologies h1, .contact > h1{
         font-size: 24px;  
@@ -635,22 +636,23 @@ body::-webkit-scrollbar-thumb {
     }
     .projects > div:last-child > div p{
         font-size: 14px;
-        margin: 1.2vh 0 3vh 5%;
+        margin: 1vh 0 2vh 5%;
     }
     .projects > div:last-child > div a{
         width: 80%;
         border: none;
         padding: 2vh 0;
         margin: 0 10% 0vh 10%;
-        background: #47468f;
         background: #4e54c8;
-        background: #162066;
         background: #ffff;
+        background: none;
         border-top: 2px solid rgba(167, 168, 217, 0.02);
         border-left: 2px solid rgba(167, 168, 217, 0.02);
+        border: 1px solid var(--border);
     }
     .projects > div:last-child > div a span, .projects > div:last-child > div a ion-icon{
         color: #020139;
+        color: var(--border);
     }
 
     .projects > h1, .projects .div{
@@ -700,7 +702,7 @@ body::-webkit-scrollbar-thumb {
 
     /*-------------contact--------------*/
     .contact{
-        padding-top: 10vh;  
+        padding-top: 12vh;  
         background: var(--border);
         background: var(--violet);
         opacity: 0;
@@ -780,7 +782,7 @@ body::-webkit-scrollbar-thumb {
         width: 50px;
         height: 50px;
         font-size: 18px;
-        margin-bottom: 2vh;
+        margin-bottom: 4vh;
         margin-top: 2vh;
         border: none;
     }
