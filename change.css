@@ -2,9 +2,14 @@
 body.change .links.up, body.change .links-cel.up{
     background-color: rgba(135, 108, 255, 0.3);
 }
-
+body.change .circle{
+    background: #4e54c8; 
+    background: -webkit-linear-gradient(to top, #6c72e9, #8f94fb); 
+    background: linear-gradient(to top, #6c72e9, #9ca0fb);
+}
 body.change .links a{
     color: #000;
+    color: #020139;
 }
 
 body.change #gotop{
@@ -15,13 +20,11 @@ body.change #gotop{
 
 body.change .container{
     background: #e5edf1;
-    background: #ecf3fa;
     
 }
 body.change .container .introduction{
-    background: #fff;
-    background: #eee8fb;
-    background: radial-gradient(circle at 100% 0%, #9db7ff 0%, #aaa5ff 40%, #ecf3fa 30%);
+    background: #e5edf1;
+    background: radial-gradient(circle at 100% 0%, #9db7ff 0%, #aaa5ff 40%, #e5edf1 30%);
 }
 /*-----------------------scroll effect-------------------------*/
 body.change::-webkit-scrollbar-track {
@@ -31,16 +34,6 @@ body.change::-webkit-scrollbar-track {
 body.change::-webkit-scrollbar-thumb {
     background-image: linear-gradient(to top,#b7a1f4,#bde3fd,#ffbdd1); 
     border: 3px solid #8e6bff;  
-}
-
-/*----------------------------container-----------------------------*/
-body.change .contact footer h1{
-    background: #7f4ec8;
-    background: -webkit-linear-gradient(to right, #8a57d6, #d1a2ff); 
-    background: linear-gradient(to right, #7f4ec8, #b05bff);
-    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0, 0.5);
-    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
 }
 
 /*------------------------------------ start-----------------------------------------*/
@@ -88,6 +81,7 @@ body.change .introduction .code > div{
     background: #0F2027;  
     background: -webkit-linear-gradient(200deg, #3B4264, #262c4e, #11152b);  
     background: linear-gradient(200deg, rgb(163, 187, 253), rgb(165, 183, 255), rgb(126, 143, 255));
+    background: #ffffff;  
 }
 body.change .introduction .code > div:first-child .comment, body.change .introduction .code > div p{
     color: #020139;
@@ -96,23 +90,21 @@ body.change .introduction .code > div:first-child .comment, body.change .introdu
 /*-------------------------------about----------------------------------*/
 body.change .about .about-container .text{
     background: #ffff;
-    background: rgb(126, 143, 255);
+    background:  #aaa5ff;
     box-shadow: 0 10px 30px 5px rgba(114, 105, 247, 0.4);
 }
 body.change .about .about-container .text h1{
-    color:  #0b0c21;
+    color: #020139;
 }
 body.change .about .about-container .text h1 span{
     color: #51f1ff;
 }
 body.change .about .about-container .text p{
-    color:  #131432;
+    color: #020139;
 }
 
 /*--------------------------projects-------------------------------*/
-body.change .projects{
-    background: #99bbff;
-}
+
 body.change .projects > h1, body.change .technologies h1, body.change .contact > h1{
     color: #000;
 }
@@ -129,17 +121,18 @@ body.change .projects > div:last-child > div p{
     color: rgb(35, 35, 35);
 }
 body.change .projects > div:last-child > div a{
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid #5a6be8;
     background: radial-gradient(circle at 0% 100%, #0e0c49 20%, #0e0d4a 40%, #020139 100%);
-    background: #6873bf;
-    background: #eceef9;
+    background: none;
 }
 body.change .projects > div:last-child > div a ion-icon, body.change .projects > div:last-child > div a span{
-    color: #020139;
+    color: #5a6be8;
 }
 
 /*-------------------------------technologies--------------------------------*/
+body.change .technologies{
+    background: #aaa5ff;
+}
 body.change .technologies > div:last-child div span{
     color: #000;
     font-weight: 500;
@@ -156,9 +149,7 @@ body.change .technologies > div:last-child::-webkit-scrollbar-thumb {
 }
 
 /*----------------------Contact------------------------*/
-body.change .contact{
-    background: #b4c7fa;
-}
+
 body.change .contact .text > div h1{
     font-weight: 500;
     font-size: 22px;
@@ -169,12 +160,15 @@ body.change .contact .text > div a{
     color: #020139;
     font-weight: 400;
 }
-
+body.change .contact .reach{
+    gap: 3vw;
+    padding: 0 2vw;
+}
 body.change .contact .reach a {
-    color: #8e6bff;
+    color: #5a6be8;
     font-weight: 400;
     font-size: 20px;
-    border: 2px solid #8e6bff;
+    border: 2px solid #5a6be8;
 }
 body.change .contact .click{
     color: #eceef9;
@@ -183,8 +177,10 @@ body.change .contact .click{
 /*-------------------------footer------------------------------*/
 body.change .contact footer h1{
     color: #020139;
-    background: none;
-    border-top: 2px solid rgb(2, 1, 57, 0.5);
+    background: #8e6bff;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0, 0.5);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
 }
 
 /*-----------------------------------media queries----------------------------------*/
@@ -216,6 +212,11 @@ body.change .contact footer h1{
     }
     body.change .contact .click{
         border: none;
+    }
+    body.change .contact footer h1{
+        color: #020139;
+        background: none;
+        border-top: 2px solid rgb(2, 1, 57, 0.5);
     }
 }
 

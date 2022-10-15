@@ -78,7 +78,7 @@
     opacity: 0;
     width: 50%;
     display: flex;
-    padding: 7vh 5vw 8vh 5vw;
+    padding: 7vh 5vw 8.5vh 5vw;
     overflow: hidden; 
     position: relative;
     border-radius: 14px;
@@ -235,14 +235,10 @@ body::-webkit-scrollbar-thumb {
         padding: 25px 5vw 30px 5vw;
         padding: 4.5vh 5vw 5vh 5vw;
         width: 92%;
-
         transition: all 1.2s ease;
         box-shadow: 0 10px 20px 5px rgba(10, 8, 36, 0);
-        background: radial-gradient(circle at 100% 0%, rgb(31, 56, 122) 0%, rgb(14, 10, 87) 50%, rgb(6, 5, 66) 70%);
         background: radial-gradient(circle at 0% 100%, rgb(18, 17, 68) 30%,rgb(18, 28, 82) 60%, rgb(46, 59, 135) 100%);
-        background: #1c1c5c;
         background: #162066;
-
     }
 
     .about .about-container .text p{
@@ -268,7 +264,7 @@ body::-webkit-scrollbar-thumb {
         padding: 2vh 3vw;
         border-radius: 10px;
         border-radius: 15px;
-        margin: 5vh 5% 0 5%;
+        margin: 4vh 5% 0 5%;
         align-items: center;
         justify-content: center;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -312,8 +308,8 @@ body::-webkit-scrollbar-thumb {
 
 .projects{
     width: 100%;
-    padding: 10vh 5vw;
-    
+    padding: 12vh 5% 10vh 5%;
+   
 }
 .projects > h1, .technologies h1, .contact > h1{
     color: var(--title);
@@ -329,12 +325,12 @@ body::-webkit-scrollbar-thumb {
     margin: 3vh 0;
 }
 .projects > div:last-child{
-    gap: 2vw;
     width: 100%;
     display: flex;
     padding: 2vh 0;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    
 }
 .projects > div:last-child > div:last-child{
     margin-bottom: 4vh;
@@ -342,13 +338,14 @@ body::-webkit-scrollbar-thumb {
 .projects > div:last-child > div{
     width: 28vw;
     width: 33vw;
+    width: 30%;
     display: flex;
     margin-top: 1.5vh;
     flex-direction: column;
 }
 .projects > div:last-child > div div{
     width: 100%;
-    height: 240px;
+    height: 200px;
     overflow: hidden;
     border-radius: 20px;  
 }
@@ -377,8 +374,8 @@ body::-webkit-scrollbar-thumb {
 }
 .projects > div:last-child > div a{
     gap: 5px;
-    width: 70%;
-    margin: 0vh 15% 2vh 15%;
+    width: 80%;
+    margin: 0vh 10% 6vh 10%;
     display: flex;
     padding: 2.5vh 0;
     font-size: 15px;
@@ -386,28 +383,27 @@ body::-webkit-scrollbar-thumb {
     line-height: 20px;
     border-radius: 10px;
     align-items: center;
-    transition: all 0.5s;
+    transition: all 0.2s;
     justify-content: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    background: radial-gradient(circle at 0% 100%, #0e0c49 20%, #0e0d4a 40%, #020139 100%);
-    background: #2e3b87;
-    background: #4e54c8;
+    border: 2px solid var(--border);
 }
-.projects > div:last-child > div a ion-icon{
-    color: #11152b;
-    color: var(--a);
-}
+.projects > div:last-child > div a ion-icon, 
 .projects > div:last-child > div a span{
-    color: #11152b;
-    color: var(--a);
+    color: var(--border);
+}
+
+.projects > div:last-child > div a:hover{
+    background: var(--border);
+}
+.projects > div:last-child > div a:hover ion-icon,
+.projects > div:last-child > div a:hover span{
+    color: var(--title);
 }
 
 /*-------------------------------technologies--------------------------------*/
 .technologies{
     width: 100%;
-    padding: 10vh 5vw 12vh 5vw;
-    margin: 0vh 0 15vh 0;
+    padding: 11vh 5vw 13vh 5vw;
     background: var(--violet);
 }
 
@@ -462,6 +458,8 @@ body::-webkit-scrollbar-thumb {
 .contact{
     width: 100%;
     padding: 0vh 5vw;
+    padding-top: 15vh;
+    padding-bottom: 2vh;
 }
 
 .contact .text{
@@ -489,7 +487,6 @@ body::-webkit-scrollbar-thumb {
     line-height: 40px;
     color: var(--title);
 }
-
 .contact .click{
     margin: 0 auto;
     width: 5vw;
@@ -508,18 +505,14 @@ body::-webkit-scrollbar-thumb {
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
-
 .contact .click span{
     font-size: 13px;
 }
-
 @keyframes slide{
     100%{
         transform: translate(0vh, 5vh);
     }
 }
-
-
 .contact .reach{
     gap: 3vw;
     width: 100%;
@@ -543,8 +536,7 @@ body::-webkit-scrollbar-thumb {
     transition: .1s;
     font-weight: 400;
     border: 2px solid var(--border);
-}
-   
+} 
 .contact .reach a:hover {
     transform: scale(1.1);
 }
@@ -553,7 +545,7 @@ body::-webkit-scrollbar-thumb {
 .contact footer{
     width: 100%;
     margin-top: 15vh;
-    margin-bottom: 2vh;
+    
 }
 
 .contact footer h1{
@@ -606,7 +598,6 @@ body::-webkit-scrollbar-thumb {
         border-radius: 2px;
         margin: 1.5vh 0 4vh 0;  
     }
-
     .projects > div:last-child{
         gap: 6vh;
         width: 100%;
@@ -634,27 +625,19 @@ body::-webkit-scrollbar-thumb {
         height: 190px;
         border-radius: 15px;
     }
+    .projects > div:last-child > div h1{
+        margin: 2.5vh 0 0vh 5%;
+    }
     .projects > div:last-child > div p{
         font-size: 14px;
         margin: 1vh 0 2vh 5%;
     }
     .projects > div:last-child > div a{
         width: 80%;
-        border: none;
         padding: 2vh 0;
         margin: 0 10% 0vh 10%;
-        background: #4e54c8;
-        background: #ffff;
-        background: none;
-        border-top: 2px solid rgba(167, 168, 217, 0.02);
-        border-left: 2px solid rgba(167, 168, 217, 0.02);
         border: 1px solid var(--border);
     }
-    .projects > div:last-child > div a span, .projects > div:last-child > div a ion-icon{
-        color: #020139;
-        color: var(--border);
-    }
-
     .projects > h1, .projects .div{
         opacity: 0;
         transform: translate(-10vh, 0vh);
@@ -708,6 +691,7 @@ body::-webkit-scrollbar-thumb {
         opacity: 0;
         transform: translate(-10vh, 0vh);
         transition: all 1s;
+        padding-bottom: 0;
     }
     .contact.visible{
         opacity: 1;
@@ -760,8 +744,7 @@ body::-webkit-scrollbar-thumb {
     }
     /*-------------footer--------------*/
     .contact .footer{
-        margin-top: 12vh;
-        margin-bottom: 0;
+        margin-top: 14vh;
     }
 
     .contact .footer h1{
@@ -782,7 +765,7 @@ body::-webkit-scrollbar-thumb {
         width: 50px;
         height: 50px;
         font-size: 18px;
-        margin-bottom: 4vh;
+        margin-bottom: 2vh;
         margin-top: 2vh;
         border: none;
     }

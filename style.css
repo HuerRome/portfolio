@@ -232,7 +232,6 @@ label input:checked ~ span ion-icon{
         left: 0;
         opacity: 1;
         background: #010030;
-        
     }
 
     .menu div{
@@ -579,8 +578,6 @@ label input:checked ~ span ion-icon{
 }
 
 #gotop:hover{
-    border: 1px solid #52dee5;
-    color: #52dee5;
     box-shadow: 0px 0px 4px 1px #52dee5;
 }
 
