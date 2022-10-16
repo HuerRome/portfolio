@@ -113,6 +113,9 @@ body.change .projects{
 body.change .projects > div:last-child > div{
     border-bottom: 1px solid rgba(0,0,0, 0.5);
 }
+body.change .projects > div:last-child > div:last-child{
+    border: none;
+}
 body.change .projects > h1, body.change .technologies h1, body.change .contact > h1{
     color: #000;
 }
@@ -207,7 +210,8 @@ body.change .contact footer h1{
     
     }
     body.change .contact .reach a ion-icon{
-        color: #3e54fa;      
+        color: #3e54fa;   
+        color: #fff;   
     }
 
     body.change .contact .reach a {
@@ -225,7 +229,7 @@ body.change .contact footer h1{
     body.change .contact footer h1{
         color: #020139;
         background: none;
-        border-top: 2px solid rgb(2, 1, 57, 0.5);
+        border-top: 2px solid #020139;
     }
 }
 
