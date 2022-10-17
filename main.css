@@ -176,140 +176,10 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid #161d4a;  
 }
 
-/*----------------------media querias--------------------------*/
-@media (max-width: 780px){
-    .about .about-container .img{
-        display: none;
-    }
-    .about .about-container .text{
-        width: 86%;
-        margin: 8vw 7%; 
-        padding: 4.5vh 7vw;
-        transform: translateX(-80vw);
-        backdrop-filter: blur(10px);
-    }
-    .about .about-container .text p{
-        font-size: 14px;
-        margin: 3vh 0 5vh 0;
-    }
-    .about .about-container .text h1{
-        font-size: 31px;
-    }
-    .circle{
-        width: 46vw;
-        height: 46vw;
-    }
-    .circle1{
-        margin-left: 3vw;
-    }
-    .circles{
-        display: flex;
-        margin-left: 49vw;
-        flex-direction: column;
-    }
-    .circle2{
-        width: 38vw;
-        height: 38vw;
-        margin-left: 10vw;
-    }
-    .circle3{
-        width: 25vw;
-        height: 25vw;
-        margin-top: 0vh;
-    }
-
-    .about .about-container .text .reflection{
-        width: 18vw;
-        transition: all 1.5s ease-in-out;
-    }
-}
-
-@media (max-width: 480px){
-    .about{
-        margin-top: 5vh;
-       
-    }
-    .about .about-container .text{
-        margin: 2vh 4% 2vh 4%;
-        border-radius: 14px;
-        padding: 25px 5vw 30px 5vw;
-        padding: 4.5vh 5vw 5vh 5vw;
-        width: 92%;
-        transition: all 1.2s ease;
-        box-shadow: 0 10px 20px 5px rgba(10, 8, 36, 0);
-        background: radial-gradient(circle at 0% 100%, rgb(18, 17, 68) 30%,rgb(18, 28, 82) 60%, rgb(46, 59, 135) 100%);
-        background: #162066;
-    }
-
-    .about .about-container .text p{
-        font-size: 14px;  
-        color: var(--p);
-        font-weight: 300;
-        margin: 2vh 0 0vh 0;
-    }
-    .about .about-container .text h1{
-        font-size: 24px;
-        font-weight: 600;
-        margin-bottom: 0vh;
-        text-align: center;
-    }
-
-    .about .about-container .text a{
-        gap: 5px;
-        display: flex;
-        width: 90%;
-        color: var(--a);
-        font-size: 14px;
-        font-weight: 500;
-        padding: 2vh 3vw;
-        border-radius: 10px;
-        border-radius: 15px;
-        margin: 4vh 5% 0 5%;
-        align-items: center;
-        justify-content: center;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        border-left: 1px solid rgba(255, 255, 255, 0.1);
-        background: #0e0c49; 
-        background: #4e54c8; 
-    }
-    .about .about-container .text a ion-icon{
-        color: var(--p);
-        color: var(--a);
-        font-size: 14px;
-        font-weight: 400;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*----------------------projects----------------------*/
 .projects{
     width: 100%;
     padding: 12vh 5% 10vh 5%;
-   
 }
 .projects > h1, .technologies h1, .contact > h1{
     color: var(--title);
@@ -331,9 +201,7 @@ body::-webkit-scrollbar-thumb {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.projects > div:last-child > div:last-child{
-    margin-bottom: 4vh;
-}
+
 .projects > div:last-child > div{
     width: 30%;
     display: flex;
@@ -403,7 +271,6 @@ body::-webkit-scrollbar-thumb {
     padding: 11vh 5vw 13vh 5vw;
     background: var(--violet);
 }
-
 .technologies > div:last-child{
     gap: 4.6vw;
     width: 90%;
@@ -486,9 +353,9 @@ body::-webkit-scrollbar-thumb {
 }
 .contact .click{
     margin: 0 auto;
-    width: 5vw;
+    width: 70px;
     display: flex;
-    height: 5vw;
+    height: 70px;
     font-size: 19px;
     margin-bottom: 10vh;
     border-radius: 50%;
@@ -542,7 +409,6 @@ body::-webkit-scrollbar-thumb {
 .contact footer{
     width: 100%;
     margin-top: 15vh;
-    
 }
 
 .contact footer h1{
@@ -567,14 +433,170 @@ body::-webkit-scrollbar-thumb {
     font-size: 18px;
 }
 
+/*----------------------media querias--------------------------*/
+@media (max-width: 820px){
+    .projects{
+        padding: 7vh 5% 4vh 5%;   
+    }
+    .about .about-container .text{
+        opacity: 0;
+        width: 50%;
+        display: flex;
+        padding: 5vh 2vw 5.5vh 4vw;
+    }
+    .about .about-container .text h1{
+        margin-bottom: 1vh;
+    }
+    .projects > div:last-child > div{
+        width: 48%;
+        margin-top: 0vh;
+        justify-content: space-between;
+    }
+    .projects > div:last-child > div p{
+        font-size: 14px;
+    }
+    .projects > div:last-child > div a{
+        gap: 5px;
+        width: 80%;
+        margin: 0vh 10% 6vh 10%;
+        display: flex;
+        padding: 2vh 0;
+    }
+    .contact{
+        padding-top: 12vh;
+    }
+    .contact .text{
+        margin: 12vh 10vw 0vh 10vw;
+    }
+    .contact .click{
+        display: none;
+    }
+    .contact .reach{
+        margin-top: 4vh;
+    }
+    .contact footer{
+        margin-top: 12vh;
+    }
+    .technologies{
+        padding: 8vh 5vw 10vh 5vw;
+    }
+    .technologies > div:last-child div span{
+        margin-bottom: 5vh;
+    }
+}
+@media (max-width: 780px){
+    .container .introduction header{
+        margin-bottom: 8vh;
+    }
+    .projects{
+        padding: 10vh 5% 5vh 5%;   
+    }
+    .about .about-container .text{
+        width: 86%;
+        margin: 8vw 7%; 
+        padding: 6vh 6vw 7vh 6vw;
+        transform: translateX(-80vw);
+        backdrop-filter: blur(10px);
+    }
+    .about .about-container .img{
+        display: none;
+    }
+    .about .about-container .text p{
+        font-size: 14px;
+    }
+    .about .about-container .text h1{
+        font-size: 31px;
+    }
+    .circle{
+        width: 46vw;
+        height: 46vw;
+    }
+    .circle1{
+        margin-left: 3vw;
+    }
+    .circles{
+        display: flex;
+        margin-left: 49vw;
+        flex-direction: column;
+    }
+    .circle2{
+        width: 38vw;
+        height: 38vw;
+        margin-left: 10vw;
+    }
+    .circle3{
+        width: 25vw;
+        height: 25vw;
+        margin-top: 0vh;
+    }
 
+    .about .about-container .text .reflection{
+        width: 18vw;
+        transition: all 1.5s ease-in-out;
+    }
+}
 
 @media (max-width: 480px){
+    .container .introduction header{
+        margin-bottom: 0vh;
+    }
+    /*---------------------about-----------------------*/
+    .about{
+        margin-top: 5vh;
+       
+    }
+    .about .about-container .text{
+        margin: 2vh 4% 2vh 4%;
+        border-radius: 14px;
+        padding: 25px 5vw 30px 5vw;
+        padding: 4.5vh 5vw 5vh 5vw;
+        width: 92%;
+        transition: all 1.2s ease;
+        box-shadow: 0 10px 20px 5px rgba(10, 8, 36, 0);
+        background: radial-gradient(circle at 0% 100%, rgb(18, 17, 68) 30%,rgb(18, 28, 82) 60%, rgb(46, 59, 135) 100%);
+        background: #162066;
+    }
+    .about .about-container .text p{
+        font-size: 14px;  
+        color: var(--p);
+        font-weight: 300;
+        margin: 2vh 0 0vh 0;
+    }
+    .about .about-container .text h1{
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 0vh;
+        text-align: center;
+    }
+    .about .about-container .text a{
+        gap: 5px;
+        display: flex;
+        width: 90%;
+        color: var(--a);
+        font-size: 14px;
+        font-weight: 500;
+        padding: 2vh 3vw;
+        border-radius: 10px;
+        border-radius: 15px;
+        margin: 4vh 5% 0 5%;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        background: #0e0c49; 
+        background: #4e54c8; 
+    }
+    .about .about-container .text a ion-icon{
+        color: var(--p);
+        color: var(--a);
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    /*-------------------projects----------------------*/
     .projects{
         margin-top: 12vh;
-        padding: 12vh 5vw; 
-        background: var(--violet);
-        background: #8f94fb;
+        padding: 12vh 5vw 10vh 5vw; 
         background: #4e54c8;
     }
     .projects > h1, .technologies h1, .contact > h1{
@@ -639,6 +661,7 @@ body::-webkit-scrollbar-thumb {
         margin: 0 10% 0vh 10%;
         border: 1px solid var(--border);
     }
+
     .projects > h1, .projects .div{
         opacity: 0;
         transform: translate(-10vh, 0vh);
@@ -652,7 +675,7 @@ body::-webkit-scrollbar-thumb {
     .technologies{
         margin: 0vh 0 0vh 0;
         background: none;
-        padding: 14vh 5vw 14vh 5vw;
+        padding: 12vh 5vw 12vh 5vw;
         opacity: 0;
         transform: translate(-10vh, 0vh);
         transition: all 1s;
@@ -706,13 +729,13 @@ body::-webkit-scrollbar-thumb {
         margin: 6vh 0 0 0;
     }
     .contact .text > div{
-        margin-top: 3vh;
+        margin-top: 4vh;
         width: 100%;
         display: flex;
         justify-content: center;
     }
     .contact .text > div h1{
-        font-size: 20px;
+        font-size: 19px;
         line-height: 25px;
         color: var(--border);
         font-weight: normal;
@@ -720,7 +743,7 @@ body::-webkit-scrollbar-thumb {
     }
     .contact .text > div > a{
         width: 100%;
-        font-size: 18px;
+        font-size: 19px;
         font-weight: 500;
         text-align: center;
     } 
@@ -730,6 +753,7 @@ body::-webkit-scrollbar-thumb {
         display: flex;
         flex-wrap: wrap;
         padding: 0 5vw;
+        margin-top: 0;
     }
     .contact .reach a {
         padding: 0em 0em;
@@ -763,6 +787,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .contact .click{
+        display: flex;
         width: 50px;
         height: 50px;
         font-size: 18px;

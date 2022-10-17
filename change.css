@@ -107,12 +107,6 @@ body.change .about .about-container .text p{
 }
 
 /*--------------------------projects-------------------------------*/
-body.change .projects{
-    background: #aaa5ff;
-}
-body.change .projects > div:last-child > div{
-    border-bottom: 1px solid rgba(0,0,0, 0.5);
-}
 body.change .projects > div:last-child > div:last-child{
     border: none;
 }
@@ -120,7 +114,7 @@ body.change .projects > h1, body.change .technologies h1, body.change .contact >
     color: #000;
 }
 body.change .projects .div, body.change .technologies .div, body.change .contact .div{
-    background: #3e54fa;
+    background: #5a6be8;
 }
 
 body.change .projects > div:last-child > div h1{
@@ -142,6 +136,9 @@ body.change .projects > div:last-child > div a ion-icon, body.change .projects >
 }
 
 /*-------------------------------technologies--------------------------------*/
+body.change .technologies{
+    background: #aaa5ff;
+}
 body.change .technologies > div:last-child div span{
     color: #000;
     font-weight: 500;
@@ -158,19 +155,15 @@ body.change .technologies > div:last-child::-webkit-scrollbar-thumb {
 }
 
 /*----------------------Contact------------------------*/
-body.change .contact{
-    background: #aaa5ff;
-}
-
 body.change .contact .text > div h1{
     font-weight: 500;
-    font-size: 22px;
+    font-size: 25px;
     color: #020139;
-    
 }
 body.change .contact .text > div a{
     color: #020139;
     font-weight: 400;
+    font-size: 28px;
 }
 body.change .contact .reach{
     gap: 3vw;
@@ -183,21 +176,28 @@ body.change .contact .reach a {
     border: 2px solid #5a6be8;
 }
 body.change .contact .click{
-    color: #eceef9;
-    border: 1px solid #eceef9;
+    color: #5a6be8;
+    border: 2px solid #5a6be8;
+    font-weight: 600;
 }
 /*-------------------------footer------------------------------*/
 body.change .contact footer h1{
     color: #020139;
-    background: #8e6bff;
+    background: #aaa5ff;
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
     -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0, 0.5);
     -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
 }
 
 /*-----------------------------------media queries----------------------------------*/
+body.change .menu.active{
+    background: #aaa5ff; 
+}
 
 @media (max-width: 480px){
+    body.change .technologies{
+        background: none;
+    }
     body.change .about .about-container .text a{
         color: #020139;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -207,7 +207,12 @@ body.change .contact footer h1{
     }
     body.change .about .about-container .text a ion-icon{
         color: #020139;
-    
+    }
+    body.change .projects{
+        background: #aaa5ff;
+    }
+    body.change .projects > div:last-child > div{
+        border-bottom: 1px solid rgba(0,0,0, 0.5);
     }
     body.change .contact .reach a ion-icon{
         color: #3e54fa;   
@@ -219,17 +224,27 @@ body.change .contact footer h1{
         font-weight: 400;
         border: none;
     }
-    body.change .menu.active{
-        background: #7e8fff;
-        
-    }
     body.change .contact .click{
         border: none;
     }
     body.change .contact footer h1{
         color: #020139;
         background: none;
-        border-top: 2px solid #020139;
+        border-top: 1px solid #020139;
+    }
+    body.change .contact .text > div h1{
+        font-size: 19px;
+    }
+    body.change .contact .text > div a{
+        font-size: 19px;
+    }
+    body.change .contact{
+        background: #aaa5ff;
+    }
+
+    body.change .contact .click{
+        color: #eceef9;
+        border: none;
     }
 }
 

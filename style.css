@@ -98,7 +98,6 @@ body{
     padding-bottom: 3px 0;
 }
 
-
 .links .menu-active > a:hover, .links .menu-active > a.active, .links .menu-active > a.activee{
     color: #62edd1;   
     border-bottom: 2px solid #62edd1;  
@@ -681,6 +680,7 @@ label input:checked ~ span ion-icon{
         width: 100%;
         margin: 0 7vw 0 8vw;
         margin-top: 10vh;
+        margin-bottom: 0vh;
     }
     .container .introduction{
         align-items: flex-start;
@@ -728,6 +728,7 @@ label input:checked ~ span ion-icon{
         width: 100%;
         padding-bottom: 8vw;
         margin-left: 0vw;
+        display: none;
     }
     .code > div{
         width: 50vw;
